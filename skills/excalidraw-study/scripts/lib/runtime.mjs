@@ -30,7 +30,9 @@ export function runtimeDir() {
 function npmInstall(cwd, log) {
   const npm = process.platform === "win32" ? "npm.cmd" : "npm";
   log(`npm install in ${cwd}`);
-  const r = spawnSync(npm, ["install", "--no-audit", "--no-fund", "--loglevel=error"], { cwd, stdio: ["ignore", "inherit", "inherit"], shell: process.platform === "win32" });
+  // A private npm cache keeps the install working when ~/.npm is unwritable (root-owned files, sandboxes).
+  const cache = path.join(cacheRoot(), "npm-cache");
+  const r = spawnSync(npm, ["install", "--no-audit", "--no-fund", "--loglevel=error"], { cwd, stdio: ["ignore", "inherit", "inherit"], shell: process.platform === "win32", env: { ...process.env, npm_config_cache: cache } });
   if (r.status !== 0) throw new Error(`npm install failed in ${cwd}`);
 }
 
@@ -91,7 +93,10 @@ export async function ensureRuntime({ log = (m) => console.error(m) } = {}) {
   const pkgDir = path.join(buildDir, "node_modules", "@excalidraw", "excalidraw");
   const license = fs.readdirSync(pkgDir).find((f) => /^licen[cs]e/i.test(f));
   fs.writeFileSync(path.join(dir, "NOTICE.txt"), `excalidraw-export.js bundles @excalidraw/excalidraw ${RUNTIME.excalidraw} (MIT, https://github.com/excalidraw/excalidraw) with React ${RUNTIME.react} (MIT).\n${license ? fs.readFileSync(path.join(pkgDir, license), "utf8") : ""}`);
-  if (!process.env.EXCALIDRAW_STUDY_KEEP_BUILD) fs.rmSync(buildDir, { recursive: true, force: true });
+  if (!process.env.EXCALIDRAW_STUDY_KEEP_BUILD) {
+    fs.rmSync(buildDir, { recursive: true, force: true });
+    fs.rmSync(path.join(cacheRoot(), "npm-cache"), { recursive: true, force: true });
+  }
   fs.writeFileSync(path.join(dir, "READY.json"), `${JSON.stringify({ ...RUNTIME, builtAt: new Date().toISOString() }, null, 2)}\n`);
   log("render runtime ready");
   return dir;
@@ -111,13 +116,40 @@ export async function launchBrowser() {
   const errors = [];
   for (const opts of tries) {
     try {
-      const browser = await chromium.launch({ headless: true, ...opts });
+      const browser = await chromium.launch({ headless: true, timeout: 30000, ...opts });
       return { browser, how: opts.executablePath ?? opts.channel ?? "playwright chromium" };
     } catch (e) {
-      errors.push(`${JSON.stringify(opts)}: ${e.message.split("\n")[0]}`);
+      errors.push({ opts, message: e.message });
+      // Denied permissions or a hang will happen to every browser here; other failures may not.
+      if (blockedBrowser(e.message)) break;
     }
   }
-  const err = new Error(`no Chromium-based browser found.\n  ${errors.join("\n  ")}\nInstall Chrome, or run: npx playwright-core@${RUNTIME.playwright} install chromium`);
+  throw launchFailure(errors);
+}
+
+// Playwright puts its own reason on the first line and the browser's stderr after it.
+const missingBrowser = (m) => /is not found|doesn't exist|does not exist|not installed|ENOENT|no such file/i.test(m.split("\n")[0]);
+// Playwright logs its own command line (with --no-sandbox) in every launch error; leave it out.
+const reasons = (m) => m.split("\n").filter((l) => !l.includes("<launching>")).join("\n");
+const blockedBrowser = (m) => !missingBrowser(m) && /permission denied|mach_port|bootstrap_check_in|sandbox|EPERM|Timeout \d+ms exceeded/i.test(reasons(m));
+
+// errors: [{ opts, message }] from each launch attempt.
+export function launchFailure(errors) {
+  const lines = errors.map((x) => `${JSON.stringify(x.opts)}: ${x.message.split("\n")[0]}`).join("\n  ");
+  // A browser denied permissions or hanging on start points to a sandbox (Codex's
+  // workspace-write on macOS blocks Chrome's mach ports). Another browser
+  // download fails the same way, so say so instead of suggesting one.
+  if (errors.some((x) => blockedBrowser(x.message))) {
+    const err = new Error(`a browser was found but could not start; it was denied permissions or hung, which points to a sandbox.\n  ${lines}\nInstalling another browser will not help. Run the render outside the agent's sandbox (ask the user to approve running check.mjs or render.mjs unsandboxed), or point EXCALIDRAW_STUDY_BROWSER at a browser that can start here.`);
+    err.code = "BROWSER_BLOCKED";
+    return err;
+  }
+  if (errors.some((x) => !missingBrowser(x.message))) {
+    const err = new Error(`no browser could start.\n  ${lines}\nPoint EXCALIDRAW_STUDY_BROWSER at a Chromium-based browser that starts here, or install Playwright's Chromium with its system libraries: npx playwright-core@${RUNTIME.playwright} install --with-deps chromium`);
+    err.code = "BROWSER_FAILED";
+    return err;
+  }
+  const err = new Error(`no Chromium-based browser found.\n  ${lines}\nInstall Chrome, or run: npx playwright-core@${RUNTIME.playwright} install chromium`);
   err.code = "NO_BROWSER";
-  throw err;
+  return err;
 }

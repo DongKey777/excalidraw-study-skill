@@ -29,7 +29,7 @@ async function main() {
   }
   if (args.includes("--no-render")) return first.result.counts.error > 0 ? 2 : 0;
   console.log("\n── render");
-  let { report, lint, manifest, metricsChanged } = await renderStudy(built.dir, { slides: val("--slides"), preview: args.includes("--preview") });
+  let { report, lint, manifest, metricsChanged, previous } = await renderStudy(built.dir, { slides: val("--slides"), preview: args.includes("--preview") });
   if (metricsChanged && !val("--slides") && !args.includes("--no-calibrate")) {
     console.log("text widths calibrated from this render (build/metrics.json); building and rendering once more");
     await buildStudy(built.dir, { quiet: true });
@@ -39,11 +39,12 @@ async function main() {
       console.log("\nthe calibrated build has errors; fix them or pass --no-calibrate");
       return 2;
     }
-    ({ report, lint, manifest } = await renderStudy(built.dir, { preview: args.includes("--preview") }));
+    ({ report, lint, manifest } = await renderStudy(built.dir, { preview: args.includes("--preview"), previous }));
   } else if (metricsChanged) {
     console.log("text widths calibrated from this render; the next full check rebuilds with them");
   }
   console.log(`rendered ${report.slides.length} slide(s) with ${report.renderer}`);
+  if (report.changed) console.log(report.changed.length ? `changed since the previous render: ${report.changed.join(", ")}` : "no slide changed since the previous render");
   for (const s of report.sheets) console.log(`  contact sheet ${s.file}`);
   console.log("\n── lint (after render)");
   console.log(formatReport(lint, { manifest }));
@@ -53,7 +54,7 @@ async function main() {
 }
 
 if (isMain(import.meta.url)) {
-  main().then((code) => { process.exitCode = code; }).catch((e) => {
+  main().then((code) => process.stdout.write("", () => process.exit(code))).catch((e) => {
     console.error(`check failed: ${e.message}`);
     process.exit(1);
   });

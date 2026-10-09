@@ -10,7 +10,7 @@ import http from "node:http";
 import path from "node:path";
 import { formatReport, loadLintContext, runLint } from "./lib/lint.mjs";
 import { frameToSvg } from "./lib/preview-svg.mjs";
-import { loadConfig, outPaths, resolveStudyDir } from "./lib/project.mjs";
+import { loadConfig, outPaths, resolveStudyDir, studyMetrics } from "./lib/project.mjs";
 import { ensureRuntime, launchBrowser, RUNTIME, runtimeDir, runtimeRequire } from "./lib/runtime.mjs";
 import { isMain } from "./lib/main.mjs";
 import { DEFAULT_METRICS, fitMetrics } from "./lib/text.mjs";
@@ -59,7 +59,14 @@ async function renderWithBrowser({ scene, entries, pngDir, scale, log }) {
   const { server, port } = await serve(dir, extra);
   extra["/page.html"] = `<!doctype html><html><head><meta charset="utf-8"><style>body{margin:0;background:#fff}#out svg{display:block}</style></head>
 <body><div id="out"></div><script>window.EXCALIDRAW_ASSET_PATH="http://127.0.0.1:${port}/";</script><script src="/excalidraw-export.js"></script></body></html>`;
-  const { browser, how } = await launchBrowser();
+  let launched;
+  try {
+    launched = await launchBrowser();
+  } catch (e) {
+    server.close();
+    throw e;
+  }
+  const { browser, how } = launched;
   const version = browser.version();
   const page = await browser.newPage({ viewport: { width: 1600, height: 900 }, deviceScaleFactor: scale });
   const pageErrors = [];
@@ -154,6 +161,25 @@ figcaption{margin-top:6px;color:#334155}</style></head><body><main>${cells}</mai
   return sheets;
 }
 
+// True when the next build would wrap with other widths than this one used: the
+// fit merged under any factors fixed in study.config.mjs, nothing with calibrate: false.
+export function widthsMoved(config, paths, used) {
+  const numbers = (m) => Object.fromEntries(Object.entries(m ?? {}).filter(([, v]) => typeof v === "number"));
+  const next = { ...DEFAULT_METRICS, ...numbers(studyMetrics(config, paths)) };
+  const was = { ...DEFAULT_METRICS, ...numbers(used) };
+  return Object.keys(DEFAULT_METRICS).some((k) => Math.abs(next[k] - was[k]) > 0.01);
+}
+
+// True when every text in the scene has measured widths.
+export function coversScene(scene, widths) {
+  return scene.elements.every((el) => el.type !== "text" || !el.text.trim() || widths[el.id]);
+}
+
+// Slide numbers whose PNG differs from the previous render (previous: id -> sha256).
+export function changedSlides(previous, slides) {
+  return slides.filter((x) => x.sha256 && previous.get(x.id) !== x.sha256).map((x) => x.number);
+}
+
 async function renderPreview({ scene, entries, pngDir, log }) {
   let Resvg = null;
   try {
@@ -201,18 +227,25 @@ export async function renderStudy(dirArg, opts = {}) {
     }
   }
 
+  // The PNGs already on disk are the previous render; hash them to tell which slides change now.
+  const previous = opts.previous ?? new Map(manifest.slides.flatMap((s) => {
+    const file = path.join(p.renderDir, `${String(s.number).padStart(2, "0")}-${s.id}.png`);
+    return fs.existsSync(file) ? [[s.id, sha(fs.readFileSync(file))]] : [];
+  }));
   let report;
   let metricsChanged = false;
   let mode = opts.preview ? "preview" : "excalidraw";
   let rendered;
+  let fallbackReason;
   if (mode === "excalidraw") {
     try {
       rendered = await renderWithBrowser({ scene, entries, pngDir: p.renderDir, scale: opts.scale ?? 1, log });
     } catch (e) {
-      if (e.code !== "NO_BROWSER") throw e;
+      if (!["NO_BROWSER", "BROWSER_BLOCKED", "BROWSER_FAILED"].includes(e.code)) throw e;
       log(e.message);
-      log("falling back to the approximate preview renderer");
+      log("falling back to the approximate preview renderer; these PNGs are not Excalidraw renders and text widths are not measured");
       mode = "preview";
+      fallbackReason = e.code;
     }
   }
   if (mode === "excalidraw") {
@@ -228,11 +261,16 @@ export async function renderStudy(dirArg, opts = {}) {
     }
     const renderer = `excalidraw@${RUNTIME.excalidraw} exportToSvg in ${how} ${version}`;
     fs.writeFileSync(p.measure, `${JSON.stringify({ combinedSha256, renderer, widths: { ...prior, ...widths } }, null, 2)}\n`);
-    metricsChanged = calibrate({ scene, widths: { ...prior, ...widths }, p, renderer, used: manifest.metrics });
+    // A --slides render on a changed build measures only part of the text; fitting
+    // that would reset the study's widths, so keep the last full fit instead.
+    if (coversScene(scene, { ...prior, ...widths })) {
+      calibrate({ scene, widths: { ...prior, ...widths }, p, renderer });
+      metricsChanged = widthsMoved(config, p, manifest.metrics);
+    }
     report = { mode, renderer, combinedSha256, textsMeasuredByCanvas: fallbackTexts, pageErrors, slides: results.map((r) => ({ ...r, png: path.relative(dir, r.png) })), sheets: sheets.map((s) => ({ ...s, file: path.relative(dir, s.file) })) };
   } else {
     const results = await renderPreview({ scene, entries, pngDir: p.renderDir, log });
-    report = { mode, renderer: "approximate SVG preview (not Excalidraw); text widths are not measured", combinedSha256, slides: results.map((r) => ({ ...r, png: r.png && path.relative(dir, r.png), svg: r.svg && path.relative(dir, r.svg) })), sheets: [] };
+    report = { mode, fallbackReason, renderer: "approximate SVG preview (not Excalidraw); text widths are not measured", combinedSha256, slides: results.map((r) => ({ ...r, png: r.png && path.relative(dir, r.png), svg: r.svg && path.relative(dir, r.svg) })), sheets: [] };
   }
   if (pick && fs.existsSync(p.renderReport)) {
     const old = JSON.parse(fs.readFileSync(p.renderReport, "utf8"));
@@ -242,18 +280,19 @@ export async function renderStudy(dirArg, opts = {}) {
       report.slides = [...merged.values()].sort((a, b) => a.number - b.number);
     }
   }
+  // SVG-only previews have no PNG hash to compare, so they report nothing rather than "no change".
+  if (previous.size && report.slides.every((s) => s.sha256)) report.changed = changedSlides(previous, report.slides);
   fs.writeFileSync(p.renderReport, `${JSON.stringify(report, null, 2)}\n`);
 
   const ctx = loadLintContext(dir, config);
   const lint = runLint(ctx);
   fs.writeFileSync(p.lint, `${JSON.stringify(lint, null, 2)}\n`);
-  return { report, lint, manifest, paths: p, metricsChanged };
+  return { report, lint, manifest, paths: p, metricsChanged, previous };
 }
 
 // Fit text width factors to what Excalidraw laid out and save them for the
-// next build (build/metrics.json). Returns true when they moved enough to
-// change wrapping.
-function calibrate({ scene, widths, p, renderer, used }) {
+// next build (build/metrics.json).
+function calibrate({ scene, widths, p, renderer }) {
   const samples = [];
   for (const el of scene.elements) {
     if (el.type !== "text" || !widths[el.id]) continue;
@@ -264,8 +303,6 @@ function calibrate({ scene, widths, p, renderer, used }) {
   }
   const metrics = fitMetrics(samples);
   fs.writeFileSync(p.metrics, `${JSON.stringify({ renderer, samples: samples.length, metrics }, null, 2)}\n`);
-  const before = used ?? DEFAULT_METRICS;
-  return Object.keys(metrics).some((k) => Math.abs(metrics[k] - (before[k] ?? metrics[k])) > 0.01);
 }
 
 if (isMain(import.meta.url)) {
@@ -278,10 +315,12 @@ if (isMain(import.meta.url)) {
   renderStudy(dirArg, { slides: val("--slides"), sheet: !args.includes("--no-sheet"), preview: args.includes("--preview"), scale: Number(val("--scale") ?? 1) })
     .then(({ report, lint, manifest }) => {
       console.log(`rendered ${report.slides.length} slide(s) with ${report.renderer}`);
+      if (report.changed) console.log(report.changed.length ? `changed since the previous render: ${report.changed.join(", ")}` : "no slide changed since the previous render");
       for (const s of report.sheets) console.log(`  contact sheet ${s.file} (slides ${s.slides[0]}-${s.slides[s.slides.length - 1]})`);
       if (report.pageErrors?.length) console.log(`  page errors: ${report.pageErrors.join(" | ")}`);
       console.log(formatReport(lint, { manifest }));
-      process.exitCode = lint.counts.error > 0 ? 2 : 0;
+      // Exit once stdout has drained: a stray browser process must not keep node alive, and a piped report must not be cut.
+      process.stdout.write("", () => process.exit(lint.counts.error > 0 ? 2 : 0));
     })
     .catch((e) => {
       console.error(`render failed: ${e.stack ?? e.message}`);
