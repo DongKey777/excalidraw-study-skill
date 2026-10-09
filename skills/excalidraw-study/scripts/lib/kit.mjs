@@ -473,16 +473,20 @@ export class Slide {
     let p2;
     if (horizontal) {
       const right = bc.x > ac.x;
-      const y = opts.y ?? (Math.max(a.y, b.y) + Math.min(a.y + a.h, b.y + b.h)) / 2;
-      const yy = Number.isFinite(y) && y > Math.max(a.y, b.y) && y < Math.min(a.y + a.h, b.y + b.h) ? y : ac.y;
+      const lo = Math.max(a.y, b.y);
+      const hi = Math.min(a.y + a.h, b.y + b.h);
+      const inSpan = (v) => Number.isFinite(v) && v > lo && v < hi;
+      const yy = inSpan(opts.y) ? opts.y : inSpan((lo + hi) / 2) ? (lo + hi) / 2 : ac.y;
       p1 = [right ? a.x + a.w + gap : a.x - gap, yy];
-      p2 = [right ? b.x - gap : b.x + b.w + gap, opts.y ?? (yy >= b.y && yy <= b.y + b.h ? yy : bc.y)];
+      p2 = [right ? b.x - gap : b.x + b.w + gap, yy >= b.y && yy <= b.y + b.h ? yy : bc.y];
     } else {
       const down = bc.y > ac.y;
-      const x = opts.x ?? (Math.max(a.x, b.x) + Math.min(a.x + a.w, b.x + b.w)) / 2;
-      const xx = x > Math.max(a.x, b.x) && x < Math.min(a.x + a.w, b.x + b.w) ? x : ac.x;
+      const lo = Math.max(a.x, b.x);
+      const hi = Math.min(a.x + a.w, b.x + b.w);
+      const inSpan = (v) => Number.isFinite(v) && v > lo && v < hi;
+      const xx = inSpan(opts.x) ? opts.x : inSpan((lo + hi) / 2) ? (lo + hi) / 2 : ac.x;
       p1 = [xx, down ? a.y + a.h + gap : a.y - gap];
-      p2 = [opts.x ?? (xx >= b.x && xx <= b.x + b.w ? xx : bc.x), down ? b.y - gap : b.y + b.h + gap];
+      p2 = [xx >= b.x && xx <= b.x + b.w ? xx : bc.x, down ? b.y - gap : b.y + b.h + gap];
     }
     const id = this.arrow(p1[0], p1[1], p2[0], p2[1], { color: opts.color, width: opts.width ?? 2, style: opts.style, start: opts.start, end: opts.end });
     if (opts.label) {
@@ -629,7 +633,7 @@ export class Slide {
         });
         row.forEach((c, ci) => {
           const col = cols[ci];
-          if (ci > 0) this.line(col.x, y, col.x, y + h, { color: this.C.line, width: 1, hint: "table-sep" });
+          if (ci > 0) this.line(col.x, y, col.x, y + h, { color: this.C.line, width: 1, hint: "table-sep", role: "table.sep" });
           if (c.fill) this.rect(col.x + 1, y + 1, col.w - 2, h - 2, { fill: c.fill, stroke: c.fill, strokeWidth: 1, radius: 0, hint: "table-cell-fill", role: "table.fill" });
           const th = lineCount(c.t) * c.s * lh;
           this.text(c.t, col.x + pad, y + (h - th) / 2, col.w - pad * 2, {

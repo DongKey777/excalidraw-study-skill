@@ -21,7 +21,7 @@ export async function lintStudy(dirArg, { write = true } = {}) {
 if (isMain(import.meta.url)) {
   const args = process.argv.slice(2);
   if (args.includes("--rules")) {
-    for (const r of RULES) console.log(`${r.id.padEnd(20)} ${r.severity.padEnd(6)} ${r.category.padEnd(10)} ${r.summary}`);
+    for (const r of RULES) console.log(`${r.id.padEnd(20)} ${r.severity.padEnd(6)} ${r.scope.padEnd(8)} ${r.category.padEnd(10)} ${r.summary}`);
   } else {
     lintStudy(args.find((a) => !a.startsWith("--")))
     .then(({ result, manifest }) => {

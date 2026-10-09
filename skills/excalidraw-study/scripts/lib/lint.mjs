@@ -22,7 +22,8 @@ export const RULES = [
   { id: "shape-overlap", category: "layout", severity: "warn", summary: "two boxes partly overlap (chip collisions, misplaced cards)" },
   { id: "tight-box", category: "layout", severity: "warn", summary: "text inside a box comes within 6px of its top or bottom edge" },
   { id: "card-align", category: "layout", severity: "warn", summary: "side-by-side boxes of the same size start their titles at different heights" },
-  { id: "arrow-through-text", category: "layout", severity: "warn", summary: "an arrow or connecting line crosses text" },
+  { id: "card-size", category: "type", severity: "warn", summary: "a card in a row has smaller body text than its neighbours (shrunk to fit)" },
+  { id: "arrow-through-text", category: "layout", severity: "warn", summary: "an arrow or any drawn line crosses text" },
   { id: "arrow-through-shape", category: "layout", severity: "warn", summary: "an arrow or connecting line passes through a shape it does not connect" },
   { id: "empty-space", category: "layout", severity: "warn", summary: "a large part of the body area is empty" },
   { id: "sparse-box", category: "layout", severity: "warn", summary: "a box is much larger than the text in it" },
@@ -59,6 +60,12 @@ export const RULES = [
   { id: "claims", category: "evidence", severity: "error", summary: "claim id missing from the ledger or not verified" },
   { id: "unsourced-numbers", category: "evidence", severity: "warn", summary: "measured-looking numbers with no source or claims" },
 ];
+// Where an ignore can go. Element rules report an element, so an ignore on it
+// (or on the slide) works; slide rules only see the slide; study rules only the study.
+const SLIDE_RULES = new Set(["frames", "spec", "empty-space", "type-scale", "accent-budget", "step-order", "layout-repeat",
+  "density", "contrast-cadence", "repeated-text", "numbers", "claims", "unsourced-numbers"]);
+const STUDY_RULES = new Set(["schema", "text-only", "variants", "docs", "unfilled"]);
+for (const r of RULES) r.scope = STUDY_RULES.has(r.id) ? "study" : SLIDE_RULES.has(r.id) ? "slide" : "element";
 
 const RULE = Object.fromEntries(RULES.map((r) => [r.id, r]));
 const NEUTRALS = new Set(["#172033", "#64748B", "#475569", "#CBD5E1", "#94A3B8", "#F8FAFC", "#FFFFFF", "#334155", "#F1F5F9", "TRANSPARENT"]);
@@ -167,10 +174,12 @@ export function runLint(ctx, { docs = true } = {}) {
     if (measuredBy) f.measuredBy = measuredBy;
     const elIgnore = el ? metaOf(el).lint : null;
     const slideIgnore = slide?.entry.lint;
-    const reason = (elIgnore?.ignore?.includes(ruleId) && (elIgnore.reason ?? "element ignore"))
-      || (slideIgnore?.ignore?.includes(ruleId) && (slideIgnore.reason ?? "slide ignore"))
+    const why = (spec, fallback) => (typeof spec.reason === "object" ? spec.reason?.[ruleId] : spec.reason) ?? fallback;
+    const byElement = elIgnore?.ignore?.includes(ruleId);
+    const reason = (byElement && why(elIgnore, "element ignore"))
+      || (slideIgnore?.ignore?.includes(ruleId) && why(slideIgnore, "slide ignore"))
       || configIgnore[ruleId];
-    if (reason) ignored.push({ ...f, reason });
+    if (reason) ignored.push({ ...f, reason, ...(byElement ? { by: "element" } : {}) });
     else findings.push(f);
   }
 
@@ -181,6 +190,31 @@ export function runLint(ctx, { docs = true } = {}) {
   checkEvidence(ctx, report);
   if (docs) checkDocs(ctx, report);
 
+  // Ignores that cannot work where they are written, and element ignores that
+  // swallow more than one finding (an axis ignored for its tick labels also hides a caption it crosses).
+  const notes = [];
+  for (const slide of ctx.slides) {
+    for (const el of slide.elements) {
+      for (const id of metaOf(el).lint?.ignore ?? []) {
+        const rule = RULE[id];
+        if (!rule) notes.push(`slide ${slide.entry.number}: element ignore names unknown rule "${id}" [${el.id}]`);
+        else if (rule.scope !== "element") notes.push(`slide ${slide.entry.number}: element ignore for ${id} has no effect; it is a ${rule.scope} rule [${el.id}]`);
+        else if (/^arrow-through-/.test(id) && el.type !== "arrow" && el.type !== "line") notes.push(`slide ${slide.entry.number}: element ignore for ${id} has no effect here; it is reported on the arrow or line, not the ${el.type} it crosses [${el.id}]`);
+      }
+    }
+    for (const id of slide.entry.lint?.ignore ?? []) {
+      if (!RULE[id]) notes.push(`slide ${slide.entry.number}: slide ignore names unknown rule "${id}"`);
+      else if (RULE[id].scope === "study") notes.push(`slide ${slide.entry.number}: slide ignore for ${id} has no effect; it is a study rule`);
+    }
+  }
+  const swallowed = new Map();
+  for (const f of ignored) {
+    if (f.by !== "element") continue;
+    const key = `${f.slide}|${f.element}|${f.rule}`;
+    swallowed.set(key, { f, n: (swallowed.get(key)?.n ?? 0) + 1 });
+  }
+  for (const { f, n } of swallowed.values()) if (n > 1) notes.push(`slide ${f.slide}: element ignore for ${f.rule} hides ${n} findings [${f.element}]; check each in lint.json`);
+
   const counts = { error: 0, warn: 0, info: 0 };
   for (const f of findings) counts[f.severity] = (counts[f.severity] ?? 0) + 1;
   return {
@@ -190,6 +224,7 @@ export function runLint(ctx, { docs = true } = {}) {
     counts,
     findings,
     ignored,
+    notes,
   };
 }
 
@@ -346,6 +381,20 @@ function checkLayout(ctx, report) {
         report("card-align", { slide, el: a, message: `titles of ${a.id} and ${b.id} start ${Math.round(Math.abs(ta.y - tb.y))}px apart; use valign: "top" so a row of cards reads across` });
       }
     }
+    // s.card shrinks a body that does not fit; next to full-size siblings that reads as a mistake.
+    const bodyOf = (r) => texts.find((t) => roleOf(t) === "card.body" && t.x >= r.x && t.x <= r.x + r.width && t.y >= r.y && t.y <= r.y + r.height);
+    const rows = new Map();
+    for (const c of cards) {
+      const key = `${Math.round(c.y)}:${Math.round(c.height)}`;
+      rows.set(key, [...(rows.get(key) ?? []), c]);
+    }
+    for (const row of rows.values()) {
+      const sized = row.map((c) => ({ c, b: bodyOf(c) })).filter((x) => x.b);
+      if (sized.length < 2) continue;
+      const max = Math.max(...sized.map((x) => x.b.fontSize));
+      const small = sized.find((x) => metaOf(x.b).shrunkFrom && x.b.fontSize <= max - 2);
+      if (small) report("card-size", { slide, el: small.c, message: `card body was shrunk from ${metaOf(small.b).shrunkFrom}px to ${small.b.fontSize}px to fit while cards beside it use ${max}px; shorten the text or give the row more height` });
+    }
 
     const solid = elements.filter((el) => (el.type === "rectangle" || el.type === "ellipse") && !isChrome(el) && !/^(table\.|code\.mark)/.test(roleOf(el)));
     for (let i = 0; i < solid.length; i += 1) {
@@ -381,7 +430,10 @@ function checkLayout(ctx, report) {
       return Boolean(sa && sb && sa !== sb);
     };
     const arrows = elements.filter((el) => (el.type === "arrow" && !isChrome(el)) || connector(el));
-    for (const ar of arrows) {
+    // Any drawn line (lifelines, markers, axes) crossing text is a defect; only
+    // arrows and connectors are held to the stricter shape rule below.
+    const crossers = elements.filter((el) => (el.type === "arrow" || el.type === "line") && !isChrome(el) && !/^table\./.test(roleOf(el)) && Array.isArray(el.points));
+    for (const ar of crossers) {
       for (const { t, g } of boxes) {
         if (isChrome(t)) continue;
         const box = { x0: g.x0 + 3, x1: g.x1 - 3, y0: g.y0 + 3, y1: g.y1 - 3 };
@@ -749,6 +801,7 @@ export function formatReport(result, { manifest, verbose = false } = {}) {
     }
   }
   if (result.ignored.length) out.push(`ignored ${result.ignored.length} finding(s) with recorded reasons (see lint.json)`);
+  for (const n of result.notes ?? []) out.push(`  note: ${n}`);
   out.push(`widths: ${result.widths}`);
   out.push(`${result.counts.error} error(s), ${result.counts.warn} warning(s)`);
   return out.join("\n");

@@ -220,3 +220,44 @@ test("a connecting line through a chip and a note running into a table are flagg
   assert.ok(rules.includes("arrow-through-shape"), JSON.stringify(result.findings, null, 2));
   assert.ok(result.findings.some((f) => f.rule === "card-spill" && /table/.test(f.message)), JSON.stringify(result.findings, null, 2));
 });
+
+test("a plain line through text and a card shrunk next to its row are flagged", async () => {
+  const { result } = await lintOf({
+    "study.config.mjs": baseConfig(),
+    "slides/10.mjs": `export default ({ slide }) => [
+      slide({ id: "lines", part: "a", step: "원리", title: "선과 카드", subtitle: "부제", takeaway: "정리 문장이다." }, (s) => {
+        s.text("요청이 없는 구간", 100, 300, 300, { size: 18 });
+        s.line(200, 280, 200, 360);
+        const [a, b, c] = s.cols({ x: 100, y: 420, w: 1400, h: 200 }, 3);
+        s.card(a, { title: "첫째", body: "짧은 본문이다." });
+        s.card(b, { title: "둘째", body: "짧은 본문이다." });
+        s.card(c, { title: "셋째", body: "본문이 길어서 상자에 맞추려면 글자를 줄여야 한다. ".repeat(5) });
+      }),
+    ];`,
+  });
+  const rules = result.findings.map((f) => f.rule);
+  assert.ok(rules.includes("arrow-through-text"), JSON.stringify(result.findings, null, 2));
+  assert.ok(rules.includes("card-size"), JSON.stringify(result.findings, null, 2));
+});
+
+test("ignores that cannot work or hide several findings are noted", async () => {
+  const { result } = await lintOf({
+    "study.config.mjs": baseConfig(),
+    "slides/10.mjs": `export default ({ slide }) => [
+      slide({ id: "notes", part: "a", step: "원리", title: "무시 범위", subtitle: "부제", takeaway: "정리 문장이다.",
+        lint: { ignore: ["numbers", "repeated-text"], reason: { numbers: "값이 내용이다", "repeated-text": "칸마다 같은 표시다" } } }, (s) => {
+        s.text("첫째 칸", 100, 300, 200, { size: 18 });
+        s.text("둘째 칸", 100, 400, 200, { size: 18 });
+        s.line(150, 280, 150, 440, { lint: { ignore: ["arrow-through-text"], reason: "눈금" } });
+        s.text("같은 문장이 반복되는 칸", 600, 300, 400, { size: 18, lint: { ignore: ["repeated-text"], reason: "효과 없음" } });
+        s.text("같은 문장이 반복되는 칸", 600, 360, 400, { size: 18 });
+        s.text("같은 문장이 반복되는 칸", 600, 420, 400, { size: 18 });
+        s.text("가로지르는 선 아래 글", 1100, 300, 300, { size: 18, lint: { ignore: ["arrow-through-text"], reason: "효과 없음" } });
+      }),
+    ];`,
+  });
+  assert.ok(result.notes.some((n) => /repeated-text has no effect; it is a slide rule/.test(n)), JSON.stringify(result.notes));
+  assert.ok(result.notes.some((n) => /arrow-through-text hides 2 findings/.test(n)), JSON.stringify(result.notes));
+  assert.ok(result.notes.some((n) => /reported on the arrow or line, not the text/.test(n)), JSON.stringify(result.notes));
+  assert.ok(result.ignored.some((f) => f.rule === "repeated-text" && f.reason === "칸마다 같은 표시다"), JSON.stringify(result.ignored));
+});
