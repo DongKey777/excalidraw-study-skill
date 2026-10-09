@@ -1,0 +1,14 @@
+{
+  "name": "excalidraw-study-skill",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Agent skill for Claude Code and Codex: build verified study material as Excalidraw slides",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "test": "node --test",
+    "example": "node skills/excalidraw-study/scripts/check.mjs examples/pg-date-range-ko",
+    "example:lint": "node skills/excalidraw-study/scripts/check.mjs examples/pg-date-range-ko --no-render"
+  }
+}
