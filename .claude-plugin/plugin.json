@@ -1,0 +1,11 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "excalidraw-study",
+  "version": "0.1.0",
+  "description": "Build a verified study material as Excalidraw slides from a topic and structure: brief, evidence ledger, plan, deterministic generator, lint, Excalidraw render, slide-by-slide review and fresh-context audits.",
+  "author": { "name": "DongKey777", "url": "https://github.com/DongKey777" },
+  "homepage": "https://github.com/DongKey777/excalidraw-study-skill",
+  "repository": "https://github.com/DongKey777/excalidraw-study-skill",
+  "license": "MIT",
+  "keywords": ["excalidraw", "study", "slides", "learning", "diagram", "korean"]
+}

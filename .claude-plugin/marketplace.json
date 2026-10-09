@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "excalidraw-study-skill",
+  "description": "Excalidraw study material skill for Claude Code and Codex",
+  "owner": {
+    "name": "DongKey777",
+    "url": "https://github.com/DongKey777"
+  },
+  "plugins": [
+    {
+      "name": "excalidraw-study",
+      "source": "./",
+      "description": "Build a verified study material as Excalidraw slides from a topic and structure.",
+      "version": "0.1.0"
+    }
+  ]
+}
