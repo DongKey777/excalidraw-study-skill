@@ -72,10 +72,10 @@ export default ({ slide }) => [
       "…",
       "Execution Time: 54.894 ms",
     ].join("\n");
-    const codeH = 300;
-    s.code(plan, left.x, left.y, left.w, codeH, { size: 15, highlight: [7, 8, 9, 10] });
+    const codeH = 336;
+    s.code(plan, left.x, left.y, left.w, codeH, { size: 17, highlight: [7, 8, 9, 10] });
     const n = s.note("SET 두 줄은 실험 조건이다. 계획을 읽기 쉽게 병렬 실행을 껐고 COSTS OFF로 비용 추정을 뺐다. 병렬 실행을 끄지 않으면 여러 프로세스가 나눠 읽는 계획(Gather 아래 Parallel Seq Scan)이 나오고 Buffers 합은 같은 7,353이다.", left.x, left.y + codeH + 14, left.w, { size: 16 });
-    const flowY = n.y + n.h + 22;
+    const flowY = n.y + n.h + 20;
     s.flow({ x: left.x, y: flowY, w: left.w, h: left.y + left.h - flowY }, [
       { title: "Seq Scan", body: "테이블의 페이지를 처음부터 끝까지 읽으며 행마다 Filter 조건을 계산한다. 인덱스를 쓰지 않았다.", tone: "problem", weight: 3 },
       { title: "Aggregate", body: "남은 9,600행의 amount를 더한다", weight: 2 },
@@ -226,15 +226,15 @@ export default ({ slide }) => [
     s.arrow(leaves[2].x + leafW / 2 - 30, leafY + leafH + 8, leaves[2].x + leafW / 2 - 30, pageY - 8, { color: hot, width: 2 });
     s.marker(1, root.x - 96, root.y + 34, { color: hot, d: 28 });
     s.marker(2, gapX + gapW / 2 - 14, mid - 44, { color: hot, d: 28 });
-    s.marker(3, leaves[2].x + leafW + 10, rowY(2) - 2, { color: hot, d: 26 });
-    s.marker(4, leaves[1].x + leafW / 2 - 44, leafY + leafH + 14, { color: hot, d: 28 });
+    s.marker(4, leaves[2].x + leafW + 10, rowY(2) - 2, { color: hot, d: 26 });
+    s.marker(3, leaves[1].x + leafW / 2 - 44, leafY + leafH + 14, { color: hot, d: 28 });
     const stripRight = strip[5][1] + pageW;
     s.label("7월 1일 행이 든\n페이지(초록)", stripRight + 16, pageY + 2, 150, { size: 15, color: s.C.mutedStrong });
-    s.note("경계 키는 예로 든 값이다. 실제 created_at 인덱스도 루트·내부·리프 3층이고 리프가 2,733개라서 7월 1일 키는 리프 수십 개에 걸쳐 있다.", b.x, pageY + pageH + 30, leaves[3].x + leafW - b.x, { size: 16 });
-    const right = { x: leaves[3].x + leafW + 40, y: b.y, w: b.x + b.w - (leaves[3].x + leafW + 40), h: b.h };
+    const n = s.note("경계 키는 예로 든 값이다. 실제 created_at 인덱스도 루트·내부·리프 3층이고 리프가 2,733개라서 7월 1일 키는 리프 수십 개에 걸쳐 있다.", b.x, pageY + pageH + 30, leaves[3].x + leafW - b.x, { size: 16 });
+    const right = { x: leaves[3].x + leafW + 40, y: b.y, w: b.x + b.w - (leaves[3].x + leafW + 40), h: n.y + n.h - b.y };
     const cards = [
       { title: "리프와 TID", body: "리프는 키를 정렬해 담고 키마다 테이블 행의 위치(TID)를 붙여 둔다. 그림의 키는 created_at을 KST로 쓴 값이다. 같은 층의 페이지는 양옆과 이어져 있다." },
-      { title: "Index Scan이 읽는 순서", body: "① 시작 키를 찾아 리프까지 내려간다\n② 리프를 옆으로 이어 읽는다\n③ 끝 키(붉은 점선)를 만나면 멈춘다\n④ 읽는 동안 키마다 TID로 테이블 행을 가져온다" },
+      { title: "Index Scan이 읽는 순서", body: "① 시작 키를 찾아 리프까지 내려간다\n② 리프를 옆으로 이어 읽는다\n③ 읽는 동안 키마다 TID로 테이블 행을 가져온다\n④ 끝 키(붉은 점선)를 만나면 멈춘다" },
     ];
     const cells = s.rows(right, cards.map((c) => s.cardHeight(right.w, c)), 20);
     cards.forEach((c, i) => s.card(cells[i], { ...c, tone: "concept", align: "left" }));
@@ -270,7 +270,7 @@ export default ({ slide }) => [
     s.line(x1, bracketY, x1, bracketY + 12, { color: s.C.green, width: 3 });
     const keyY = bracketY + 22;
     const keyH = 56;
-    s.text("created_at\n인덱스에 있다", b.x, keyY + 6, headW, { size: 16, color: s.C.mutedStrong, lineHeight: 1.3 });
+    s.text("created_at (KST)\n인덱스에 있다", b.x, keyY + 6, headW, { size: 16, color: s.C.mutedStrong, lineHeight: 1.3 });
     hours.forEach((h, i) => {
       s.rect(cx(i), keyY, cellW, keyH, { fill: inRange(i) ? s.C.greenSoft : s.C.white, stroke: inRange(i) ? s.C.green : s.C.line, strokeWidth: inRange(i) ? 3 : 2, radius: 6, hint: "key" });
       s.text(h, cx(i), keyY + 17, cellW, { size: 17, align: "center", color: s.C.ink });
@@ -367,7 +367,7 @@ export default ({ slide }) => [
       "…",
     ].join("\n");
     const codeH = 196;
-    s.code(plan, b.x, b.y, b.w, codeH, { size: 14, highlight: [5, 6, 7] });
+    s.code(plan, b.x, b.y, b.w, codeH, { size: 14, highlight: [4, 5, 6, 7] });
     const lowY = b.y + codeH + 24;
     const [ca, cb, cc] = s.cols({ x: b.x, y: lowY, w: b.w, h: b.y + b.h - lowY }, [4, 4.6, 4.4], 36);
     const condCard = { title: "Index Cond와 Index Searches", body: "Index Cond는 인덱스 안에서 검사하는 조건이다. 시작 키(>=)로 내려갈 자리를 찾고 끝 키(<)를 만나면 멈춘다. Index Searches는 루트에서 리프까지 내려간 횟수다." };
@@ -396,7 +396,7 @@ export default ({ slide }) => [
     s.text("범위 조건", cb.x, splitY + 43, 114, { size: 18, color: s.C.ink, align: "right" });
     s.text("= 102", x + 12, splitY + 43, 68, { size: 18, color: s.C.ink });
     s.note("hit·read는 공유 버퍼에 있었는지로 나눈 값이라 기준이 다르다. 같은 쿼리를 다시 돌리면 hit=102다.", cb.x, splitY + 92, cb.w, { size: 16 });
-    const whyCard = { title: "테이블 접근이 72번인 이유", body: "7월 1일 행은 시간 순서로 쌓여 72페이지에 모여 있다. 이어지는 TID가 같은 페이지면 다시 읽지 않는다. 행을 섞은 사본에 Index Scan을 강제하면 TID가 대부분 다른 페이지를 가리킨다(플래너는 Bitmap Heap Scan을 골랐다)." };
+    const whyCard = { title: "테이블 접근이 72번인 이유", body: "7월 1일 행은 시간 순서로 쌓여 72페이지에 모여 있다. 이어지는 TID가 같은 페이지면 다시 읽지 않는다. 행을 섞은 사본에 Index Scan을 강제하면 이어지는 TID가 대부분 다른 페이지를 가리킨다(플래너는 Bitmap Heap Scan을 골랐다)." };
     const whyH = s.cardHeight(cc.w, whyCard);
     s.card({ x: cc.x, y: cc.y, w: cc.w, h: whyH }, { ...whyCard, tone: "info", align: "left" });
     const tableY = cc.y + whyH + 20;
@@ -429,7 +429,13 @@ export default ({ slide }) => [
     ], { gap: 40, bodySize: 17, titleSize: 19 });
     const stepsBottom = steps[0].y + steps[0].h;
     const n1 = s.note("AT TIME ZONE은 timestamptz를 그 시간대의 시각(시간대 없는 timestamp)으로 바꾼다. 시간대가 식에 적혀 있어 세션과 상관없이 같은 날짜가 나오므로 표현식 인덱스(식의 값을 저장하는 인덱스)로 만들 수 있다.", b.x, stepsBottom + 12, b.w, { size: 16 });
-    const midY = n1.y + n1.h + 18;
+    const options = [
+      { title: "고른 방법: 범위 조건", body: "인덱스를 더 만들지 않고 기존 created_at 인덱스를 그대로 쓴다. 쿼리는 하루의 시작과 끝 시각을 받는다.", tone: "fix", align: "left" },
+      { title: "대안: 표현식 인덱스", body: "쿼리에 같은 식을 적어야 이 인덱스를 쓴다. 인덱스가 하나(852페이지) 늘어나서 행을 넣거나 고칠 때 갱신할 인덱스도 하나 많아진다.", tone: "info", align: "left" },
+    ];
+    const optH = Math.max(...options.map((o) => s.cardHeight((b.w - 40) / 2, o)));
+    const cardsY = b.y + b.h - optH;
+    const midY = n1.y + n1.h + Math.round((cardsY - (n1.y + n1.h) - 150) / 2);
     const [cl, cr] = s.cols({ x: b.x, y: midY, w: b.w, h: 10 }, [6, 5], 40);
     const codeH = 104;
     s.code("CREATE INDEX orders_created_kst_date_idx ON orders\n  (((created_at AT TIME ZONE 'Asia/Seoul')::date));\n\nWHERE (created_at AT TIME ZONE 'Asia/Seoul')::date = '2026-07-01'", cl.x, midY, cl.w, codeH, { size: 15 });
@@ -454,11 +460,8 @@ export default ({ slide }) => [
       }
       s.text(row.total, x + 10, y + 6, totalW - 10, { size: 17, color: s.C.ink });
     });
-    const optY = midY + codeH + 20;
-    const dedup = s.note("테이블 접근은 같다. 표현식 인덱스는 같은 날짜의 TID를 묶어 묶음마다 키를 한 번만 적으므로 크기가 3분의 1쯤이고 읽는 리프도 적다.", cr.x, midY + 112, cr.w, { size: 15 });
-    const cardsY = Math.max(optY, dedup.y + dedup.h + 16);
-    const [ol, or] = s.cols({ x: b.x, y: cardsY, w: b.w, h: b.y + b.h - cardsY }, 2, 40);
-    s.card(ol, { title: "고른 방법: 범위 조건", body: "인덱스를 더 만들지 않고 기존 created_at 인덱스를 그대로 쓴다. 쿼리는 하루의 시작과 끝 시각을 받는다.", tone: "fix", align: "left" });
-    s.card(or, { title: "대안: 표현식 인덱스", body: "쿼리에 같은 식을 적어야 이 인덱스를 쓴다. 인덱스가 하나(852페이지) 늘어나서 행을 넣거나 고칠 때 갱신할 인덱스도 하나 많아진다.", tone: "info", align: "left" });
+    s.note("테이블 접근은 같다. 표현식 인덱스는 같은 날짜의 TID를 묶어 묶음마다 키를 한 번만 적으므로 크기가 3분의 1쯤이고 읽는 리프도 적다.", cr.x, midY + 112, cr.w, { size: 15 });
+    const cols = s.cols({ x: b.x, y: cardsY, w: b.w, h: optH }, 2, 40);
+    options.forEach((o, i) => s.card(cols[i], o));
   }),
 ];

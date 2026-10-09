@@ -1482,7 +1482,7 @@
       "locked": false,
       "customData": {
         "study": {
-          "role": "rule"
+          "role": "table.sep"
         }
       }
     },
@@ -1575,7 +1575,7 @@
       "locked": false,
       "customData": {
         "study": {
-          "role": "rule"
+          "role": "table.sep"
         }
       }
     },
@@ -1744,7 +1744,7 @@
       "locked": false,
       "customData": {
         "study": {
-          "role": "rule"
+          "role": "table.sep"
         }
       }
     },
@@ -1837,7 +1837,7 @@
       "locked": false,
       "customData": {
         "study": {
-          "role": "rule"
+          "role": "table.sep"
         }
       }
     },
@@ -2006,7 +2006,7 @@
       "locked": false,
       "customData": {
         "study": {
-          "role": "rule"
+          "role": "table.sep"
         }
       }
     },
@@ -2099,7 +2099,7 @@
       "locked": false,
       "customData": {
         "study": {
-          "role": "rule"
+          "role": "table.sep"
         }
       }
     },

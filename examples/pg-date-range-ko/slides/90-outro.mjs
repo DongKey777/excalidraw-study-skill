@@ -6,7 +6,7 @@ export default ({ slide }) => [
     title: "이제 설명할 수 있는 것",
     subtitle: "실행 계획에서 시작해 인덱스에서 범위를 읽는 방식까지 따라왔다",
     takeaway: "느린 쿼리를 만나면 실행 계획의 Filter와 Buffers부터 본다.",
-    lint: { ignore: ["density"], reason: "마무리 장은 앞 장의 질문과 답을 모은 표라 글이 많은 것이 내용이다" },
+    lint: { ignore: ["density"], reason: "8~10장 연속 밀도 경고다. 8장은 고친 계획과 테이블 접근 이유를 함께 두기로 했고(brief 결정 기록), 10장은 앞 장의 질문과 답을 모은 표다" },
     source: "근거 §1 labs/08-pages, 10-shuffled",
     claims: ["C21", "C28", "C42"],
   }, (s) => {

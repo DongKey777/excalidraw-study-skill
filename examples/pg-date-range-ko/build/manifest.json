@@ -30,7 +30,7 @@
     "wide": 0.88,
     "narrow": 0.5,
     "monoWide": 1.2,
-    "monoNarrow": 0.6
+    "monoNarrow": 0.567
   },
   "slides": [
     {
@@ -173,7 +173,7 @@
       "module": "slides/10-case.mjs",
       "file": "build/slides/05-btree.excalidraw",
       "elements": 87,
-      "textSha256": "f9fdfe7525eb17f8c78abafdf780bbcc19c4f9f9105f820782ea4b4c2f951c6f",
+      "textSha256": "ddee76ce515133515b84d21865f5e1520789a577d18351f52f25699418f7712d",
       "bodyBottom": 794,
       "barY": 810
     },
@@ -205,7 +205,7 @@
       "module": "slides/10-case.mjs",
       "file": "build/slides/06-function-order.excalidraw",
       "elements": 74,
-      "textSha256": "a99fc32a68bfcc3de3e3151c5bedb39da34e08a08ab127a5867dc544a38a6489",
+      "textSha256": "ba9f3b97dee61424e45aa2632c91fd58363a5f0496fc520fdc6256707c4b3107",
       "bodyBottom": 794,
       "barY": 810
     },
@@ -271,7 +271,7 @@
       "module": "slides/10-case.mjs",
       "file": "build/slides/08-fix.excalidraw",
       "elements": 51,
-      "textSha256": "5f9d9d2e2c1dd4aac6f81b81fc4b319b464abeb61a91e6e7eb55f8246480a413",
+      "textSha256": "5d37fbaec2e298dc032f85b00a7831ded9bba78b25483e705f172ee647930adc",
       "bodyBottom": 794,
       "barY": 810
     },
@@ -331,7 +331,7 @@
         "ignore": [
           "density"
         ],
-        "reason": "마무리 장은 앞 장의 질문과 답을 모은 표라 글이 많은 것이 내용이다"
+        "reason": "8~10장 연속 밀도 경고다. 8장은 고친 계획과 테이블 접근 이유를 함께 두기로 했고(brief 결정 기록), 10장은 앞 장의 질문과 답을 모은 표다"
       },
       "module": "slides/90-outro.mjs",
       "file": "build/slides/10-recap.excalidraw",

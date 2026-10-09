@@ -1,6 +1,6 @@
 {
   "generatedBy": "lint.mjs",
-  "combinedSha256": "22fb9ce02e9f7d64c8c41545b19a21b54b5a42d089fa13efb178eb359538bb4a",
+  "combinedSha256": "988941af29c2722d6a8c048759f8d2b5c779720576243c2f5ad5301e232f2671",
   "widths": "measured (excalidraw@0.18.1 exportToSvg in chrome 154.0.8037.98)",
   "counts": {
     "error": 0,
@@ -17,7 +17,7 @@
       "slideId": "recap",
       "element": null,
       "message": "slides 8, 9, 10 are dense in a row; give the reader a lighter slide",
-      "reason": "마무리 장은 앞 장의 질문과 답을 모은 표라 글이 많은 것이 내용이다"
+      "reason": "8~10장 연속 밀도 경고다. 8장은 고친 계획과 테이블 접근 이유를 함께 두기로 했고(brief 결정 기록), 10장은 앞 장의 질문과 답을 모은 표다"
     },
     {
       "rule": "numbers",
@@ -29,5 +29,6 @@
       "message": "32 quantities on one slide (limit 12); keep the ones that help understanding",
       "reason": "정렬된 키 값을 보여 주는 장이라 시각 라벨이 그림의 내용이다"
     }
-  ]
+  ],
+  "notes": []
 }
