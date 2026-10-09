@@ -1,9 +1,9 @@
 <!-- excalidraw-study:template delete this line once the file is filled in -->
 # {{TITLE}}: plan
 
-Before drawing, fix one takeaway sentence, a figure type, new terms and the evidence for every slide. Get the user's confirmation, then write slides/.
+Before drawing, fix one takeaway sentence, a figure type, new terms and the claims it cites for every slide. Get the user's confirmation, then write slides/.
 
-| # | id | part | step | takeaway | figure | new terms | evidence |
+| # | id | part | step | takeaway | figure | new terms | claims |
 |---|---|---|---|---|---|---|---|
 | 1 | cover | intro |  | the question this material answers | cover |  |  |
 

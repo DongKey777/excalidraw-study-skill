@@ -34,6 +34,46 @@ const FLOWS = {
   },
 };
 
+// Series line and sample-slide wording for flows other than case-first.
+const FLOW_WORDS = {
+  concept: {
+    ko: { series: "개념을 차례로 쌓는 학습 자료", sample: [
+      ["무슨 일이 있었는지 한 문장으로 쓴다", "이 장이 답하는 질문을 한 문장으로 쓴다"],
+      ["보인 것", "이미 아는 것"], ["관측한 사실만 쓴다. 숫자는 이해를 돕는 것만 남긴다.", "독자가 알고 있다고 가정한 것을 쓴다."],
+      ['...seenText, tone: "problem"', '...seenText, tone: "concept"'], ["다음 장에서 볼 것", "이 장에서 볼 것"], ["원인을 찾으려면 어떤 개념이 필요한지 적는다.", "그림으로 보여 줄 관계를 적는다."],
+    ] },
+    en: { series: "A study that builds one idea at a time", sample: [
+      ["What happened, in one sentence", "The question this slide answers, in one sentence"],
+      ['"Observed"', '"What you know"'], ["Only what was observed. Keep the numbers that help understanding.", "What the reader is assumed to know already."],
+      ['...seenText, tone: "problem"', '...seenText, tone: "concept"'], ['"Next slide"', '"On this slide"'], ["Which concept the reader needs to find the cause.", "The relationship the figure will show."],
+    ] },
+  },
+  comparison: {
+    ko: { series: "두 가지를 견주는 학습 자료", sample: [
+      ["무슨 일이 있었는지 한 문장으로 쓴다", "무엇과 무엇을 비교하는지 한 문장으로 쓴다"],
+      ["보인 것", "A"], ["관측한 사실만 쓴다. 숫자는 이해를 돕는 것만 남긴다.", "첫 번째 선택지의 특징을 쓴다."],
+      ['...seenText, tone: "problem"', '...seenText, tone: "concept"'], ["다음 장에서 볼 것", "B"], ["원인을 찾으려면 어떤 개념이 필요한지 적는다.", "두 번째 선택지의 특징을 쓴다."],
+    ] },
+    en: { series: "A study that compares two options", sample: [
+      ["What happened, in one sentence", "What is being compared, in one sentence"],
+      ['"Observed"', '"Option A"'], ["Only what was observed. Keep the numbers that help understanding.", "What sets the first option apart."],
+      ['...seenText, tone: "problem"', '...seenText, tone: "concept"'], ['"Next slide"', '"Option B"'], ["Which concept the reader needs to find the cause.", "What sets the second option apart."],
+    ] },
+  },
+  tour: {
+    ko: { series: "처음부터 끝까지 둘러보는 학습 자료", sample: [
+      ["무슨 일이 있었는지 한 문장으로 쓴다", "이 구성 요소가 하는 일을 한 문장으로 쓴다"],
+      ["보인 것", "들어오는 것"], ["관측한 사실만 쓴다. 숫자는 이해를 돕는 것만 남긴다.", "이 구성 요소가 받는 입력을 쓴다."],
+      ['...seenText, tone: "problem"', '...seenText, tone: "concept"'], ["다음 장에서 볼 것", "나가는 것"], ["원인을 찾으려면 어떤 개념이 필요한지 적는다.", "다음 구성 요소로 넘기는 것을 쓴다."],
+    ] },
+    en: { series: "A walk through a system, end to end", sample: [
+      ["What happened, in one sentence", "What this component does, in one sentence"],
+      ['"Observed"', '"In"'], ["Only what was observed. Keep the numbers that help understanding.", "What this component receives."],
+      ['...seenText, tone: "problem"', '...seenText, tone: "concept"'], ['"Next slide"', '"Out"'], ["Which concept the reader needs to find the cause.", "What it hands to the next component."],
+    ] },
+  },
+};
+
 const T = {
   ko: {
     series: "주제로 읽는 학습 자료",
@@ -149,6 +189,11 @@ function main() {
 ${flow.parts[lk].map(([id, label, topic]) => `    ${id}: { label: ${JSON.stringify(label)}, topic: ${JSON.stringify(topic)} },`).join("\n")}
     outro: { label: ${JSON.stringify(intro[1])} },
   }`;
+  const words = FLOW_WORDS[flowName]?.[lk];
+  if (words) {
+    t.series = words.series;
+    for (const [from, to] of words.sample) t.sample = t.sample.replace(from, to);
+  }
   t.sample = t.sample
     .replace('id: "c1-situation"', `id: ${JSON.stringify(sampleId)}`)
     .replace('part: "c1"', `part: ${JSON.stringify(samplePart)}`)

@@ -76,10 +76,13 @@ async function audit(dirArg, kindArg, by, summary, file, verdict, amend) {
   const at = new Date().toISOString();
   let stored;
   if (file) {
-    if (!fs.existsSync(file)) throw new Error(`--file ${file} does not exist`);
+    // Relative paths are tried from the current folder, then from the study folder.
+    if (!fs.existsSync(file) && fs.existsSync(path.join(st.dir, file))) file = path.join(st.dir, file);
+    if (!fs.existsSync(file)) throw new Error(`--file ${file} does not exist (looked in ${process.cwd()} and ${st.dir})`);
     const dir = path.join(st.dir, "audits");
     fs.mkdirSync(dir, { recursive: true });
-    const n = String(fs.readdirSync(dir).length + 1).padStart(2, "0");
+    const taken = fs.readdirSync(dir).map((f) => Number(f.match(/^(\d+)-/)?.[1] ?? 0));
+    const n = String(Math.max(0, ...taken) + 1).padStart(2, "0");
     const name = `${n}-${kinds.join("-")}-${at.slice(0, 10)}${path.extname(file) || ".md"}`;
     fs.copyFileSync(file, path.join(dir, name));
     stored = `audits/${name}`;
@@ -100,6 +103,7 @@ export function formatStatus(st) {
   const groups = {};
   for (const r of st.rows) (groups[r.state] ??= []).push(r.number);
   if (st.staleRender) out.push("render: stale or missing (run render.mjs)");
+  else if (st.report?.mode === "preview") out.push(`render: approximate preview${st.report.fallbackReason ? ` (${st.report.fallbackReason})` : ""}, not Excalidraw; review these PNGs for layout only and render with Excalidraw before delivery`);
   for (const [state, nums] of Object.entries(groups)) out.push(`${state.padEnd(22)} ${nums.length} ${state === "reviewed" ? "" : `→ ${nums.join(", ")}`}`);
   const current = st.ledger.audits.filter((a) => a.combinedSha256 === st.combinedSha);
   out.push(`audits on this build: ${current.length ? current.map((a) => (a.verdict ? `${a.kind} (${a.verdict})` : a.kind)).join(", ") : "none"}${st.ledger.audits.length > current.length ? ` (${st.ledger.audits.length - current.length} on older builds)` : ""}`);

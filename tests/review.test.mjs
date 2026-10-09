@@ -53,3 +53,12 @@ test("claims.mjs --apply replaces rows by id and inserts new ones next to their 
   fs.writeFileSync(rows, "| C4 | 열이 모자라다 |\n");
   assert.throws(() => execFileSync(process.execPath, [path.join(scripts, "claims.mjs"), dir, "--apply", rows], { stdio: "pipe" }));
 });
+
+test("--file is found relative to the study folder too", async () => {
+  const dir = copyStudy(example);
+  await buildStudy(dir, { quiet: true });
+  fs.mkdirSync(path.join(dir, "audits", "drafts"), { recursive: true });
+  fs.writeFileSync(path.join(dir, "audits", "drafts", "facts.md"), "# facts\n");
+  const out = execFileSync(process.execPath, [path.join(scripts, "review.mjs"), dir, "--audit", "facts", "--file", "audits/drafts/facts.md"], { encoding: "utf8", cwd: path.dirname(dir) });
+  assert.match(out, /report saved to audits\/01-facts-/);
+});

@@ -1,9 +1,10 @@
 import assert from "node:assert/strict";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { buildStudy } from "../skills/excalidraw-study/scripts/build.mjs";
-import { baseConfig, copyStudy, example, writeStudy } from "./helpers.mjs";
+import { baseConfig, copyStudy, example, scripts, tmpdir, writeStudy } from "./helpers.mjs";
 
 test("the same slides build byte-identical files", async () => {
   const dir = copyStudy(example);
@@ -69,7 +70,6 @@ test("consecutive highlighted code lines share one mark", async () => {
 });
 
 test("scripts run when called through a symlink", async () => {
-  const { execFileSync } = await import("node:child_process");
   const os = await import("node:os");
   const link = path.join(fs.mkdtempSync(path.join(os.tmpdir(), "es-link-")), "skill");
   fs.symlinkSync(path.resolve(example, "..", "..", "skills", "excalidraw-study"), link);
@@ -98,4 +98,39 @@ test("graph draws nodes and edges and returns node rects", async () => {
     "slides/10.mjs": `export default ({ slide }) => [slide({ id: "g", part: "a", title: "t", subtitle: "s", takeaway: "정리." }, (s) => { s.graph([{ id: "A", x: 1, y: 1 }], [{ from: "A", to: "Z" }]); })];`,
   });
   await assert.rejects(buildStudy(bad, { quiet: true }), /unknown node/);
+});
+
+test("each flow scaffolds its own wording", () => {
+  for (const [flow, lang, unwanted] of [["concept", "en", /real cases|What happened|Observed/], ["comparison", "ko", /사건|보인 것/], ["case", "ko", /^$/]]) {
+    const dir = path.join(tmpdir(), "study");
+    execFileSync(process.execPath, [path.join(scripts, "new.mjs"), dir, "--title", "t", "--lang", lang, "--flow", flow], { stdio: "pipe" });
+    const config = fs.readFileSync(path.join(dir, "study.config.mjs"), "utf8");
+    const slides = fs.readdirSync(path.join(dir, "slides")).filter((f) => !f.startsWith("_")).map((f) => fs.readFileSync(path.join(dir, "slides", f), "utf8")).join("\n");
+    if (flow !== "case") {
+      assert.ok(!unwanted.test(config), `${flow}/${lang} config: ${config}`);
+      assert.ok(!unwanted.test(slides), `${flow}/${lang} slides: ${slides}`);
+      assert.ok(slides.includes('...seenText, tone: "concept"'), `${flow}/${lang}: the first card keeps the problem tone`);
+    }
+    execFileSync(process.execPath, [path.join(scripts, "build.mjs"), dir], { stdio: "pipe" });
+  }
+});
+
+test("a connect pin outside the shared span is ignored", async () => {
+  const dir = writeStudy({
+    "study.config.mjs": baseConfig(),
+    "slides/10.mjs": `export default ({ slide }) => [
+      slide({ id: "c", part: "a", step: "원리", title: "연결", subtitle: "부제", takeaway: "정리 문장이다." }, (s) => {
+        const a = { x: 100, y: 300, w: 200, h: 100 };
+        const b = { x: 500, y: 320, w: 200, h: 100 };
+        s.connect(a, b);
+        s.connect(a, b, { y: 600 });
+        s.connect(a, b, { y: 330 });
+      }),
+    ];`,
+  });
+  const built = await buildStudy(dir, { quiet: true });
+  const arrows = JSON.parse(fs.readFileSync(built.paths.combined, "utf8")).elements.filter((e) => e.type === "arrow");
+  const ends = (e) => JSON.stringify([e.x, e.y, e.points]);
+  assert.equal(ends(arrows[1]), ends(arrows[0]));
+  assert.notEqual(ends(arrows[2]), ends(arrows[0]));
 });
