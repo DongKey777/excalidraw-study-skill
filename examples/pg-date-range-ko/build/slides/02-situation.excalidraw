@@ -1,0 +1,4635 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "frame",
+      "x": 1780,
+      "y": 0,
+      "width": 1600,
+      "height": 900,
+      "name": "02. 하루치 주문 금액을 더하는 쿼리가 테이블 전체를 읽었다",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "situation-frame",
+      "version": 1,
+      "versionNonce": 1607740709,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 812526795,
+      "groupIds": [],
+      "frameId": null,
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "frame",
+          "slide": "situation"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1780,
+      "y": 0,
+      "width": 1600,
+      "height": 900,
+      "backgroundColor": "#F8FAFC",
+      "fillStyle": "solid",
+      "strokeColor": "#F8FAFC",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "situation-001-background",
+      "version": 1,
+      "versionNonce": 475902581,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 684480955,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.background"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 45,
+      "width": 313,
+      "height": 40,
+      "backgroundColor": "#FFEDD5",
+      "fillStyle": "solid",
+      "strokeColor": "#FFEDD5",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "situation-003-badge-box",
+      "version": 1,
+      "versionNonce": 1930598134,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1718296552,
+      "groupIds": [
+        "situation-002-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 53.75,
+      "width": 313,
+      "height": 23,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#C2410C",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "02  예제 상황 · 하루치 주문 조회",
+      "originalText": "02  예제 상황 · 하루치 주문 조회",
+      "id": "situation-004-badge-label",
+      "version": 1,
+      "versionNonce": 179848791,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1117234405,
+      "groupIds": [
+        "situation-002-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3044,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#C2410C",
+      "fillStyle": "solid",
+      "strokeColor": "#C2410C",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "situation-006-step-box",
+      "version": 1,
+      "versionNonce": 1643668745,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1508426703,
+      "groupIds": [
+        "situation-005-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3044,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "상황",
+      "originalText": "상황",
+      "id": "situation-007-step-label",
+      "version": 1,
+      "versionNonce": 880597146,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2044988576,
+      "groupIds": [
+        "situation-005-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3112,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "situation-009-step-box",
+      "version": 1,
+      "versionNonce": 229643188,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 385789070,
+      "groupIds": [
+        "situation-008-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3112,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "분석",
+      "originalText": "분석",
+      "id": "situation-010-step-label",
+      "version": 1,
+      "versionNonce": 1422844910,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1463884824,
+      "groupIds": [
+        "situation-008-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3180,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "situation-012-step-box",
+      "version": 1,
+      "versionNonce": 2126820714,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1244935204,
+      "groupIds": [
+        "situation-011-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3180,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "원리",
+      "originalText": "원리",
+      "id": "situation-013-step-label",
+      "version": 1,
+      "versionNonce": 1010052685,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1850272151,
+      "groupIds": [
+        "situation-011-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3248,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "situation-015-step-box",
+      "version": 1,
+      "versionNonce": 754867639,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2105952573,
+      "groupIds": [
+        "situation-014-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3248,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "해결",
+      "originalText": "해결",
+      "id": "situation-016-step-label",
+      "version": 1,
+      "versionNonce": 177900479,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 119145253,
+      "groupIds": [
+        "situation-014-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2710,
+      "y": 88,
+      "width": 600,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "originalText": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "id": "situation-017-series",
+      "version": 1,
+      "versionNonce": 1303291181,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1648282979,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.series"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 112,
+      "width": 1460,
+      "height": 55,
+      "fontSize": 44,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "하루치 주문 금액을 더하는 쿼리가 테이블 전체를 읽었다",
+      "originalText": "하루치 주문 금액을 더하는 쿼리가 테이블 전체를 읽었다",
+      "id": "situation-018-title",
+      "version": 1,
+      "versionNonce": 1089548936,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1142128726,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1852,
+      "y": 178,
+      "width": 1460,
+      "height": 27,
+      "fontSize": 21,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "7월 1일 주문은 9,600건이고 테이블에는 100만 건이 있다",
+      "originalText": "7월 1일 주문은 9,600건이고 테이블에는 100만 건이 있다",
+      "id": "situation-019-subtitle",
+      "version": 1,
+      "versionNonce": 1752846502,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2043839676,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.subtitle"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 874,
+      "width": 1460,
+      "height": 17,
+      "fontSize": 13,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "근거 §1 labs/01-data, 08-pages · 로컬에서 재현한 예제 상황",
+      "originalText": "근거 §1 labs/01-data, 08-pages · 로컬에서 재현한 예제 상황",
+      "id": "situation-020-source",
+      "version": 1,
+      "versionNonce": 2040719256,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 564589318,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.source"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 810,
+      "width": 1460,
+      "height": 54,
+      "backgroundColor": "#FFEDD5",
+      "fillStyle": "solid",
+      "strokeColor": "#C2410C",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "situation-021-takeaway",
+      "version": 1,
+      "versionNonce": 410073680,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 316069790,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1872,
+      "y": 825,
+      "width": 64,
+      "height": 22,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#C2410C",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "정리",
+      "originalText": "정리",
+      "id": "situation-022-takeaway-label",
+      "version": 1,
+      "versionNonce": 1973910442,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 492638120,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1945,
+      "y": 822,
+      "width": 1335,
+      "height": 24,
+      "fontSize": 19,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "필요한 행은 약 1%인데 PostgreSQL은 모든 행을 확인했다.",
+      "originalText": "필요한 행은 약 1%인데 PostgreSQL은 모든 행을 확인했다.",
+      "id": "situation-023-takeaway-text",
+      "version": 1,
+      "versionNonce": 1539046957,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1388796415,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.takeaway"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 236,
+      "width": 817,
+      "height": 168,
+      "backgroundColor": "#334155",
+      "fillStyle": "solid",
+      "strokeColor": "#334155",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "situation-025-code-box",
+      "version": 1,
+      "versionNonce": 141678534,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1865007768,
+      "groupIds": [
+        "situation-024-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.box"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1860,
+      "y": 330.15000000000003,
+      "width": 797,
+      "height": 28.3,
+      "backgroundColor": "#3B82F6",
+      "fillStyle": "solid",
+      "strokeColor": "#3B82F6",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 40,
+      "id": "situation-026-code-mark",
+      "version": 1,
+      "versionNonce": 438616553,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1396453407,
+      "groupIds": [
+        "situation-024-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.mark"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1874,
+      "y": 283.55,
+      "width": 769,
+      "height": 73,
+      "fontSize": 18,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "SELECT sum(amount)\nFROM orders\nWHERE date(created_at) = '2026-07-01';",
+      "originalText": "SELECT sum(amount)\nFROM orders\nWHERE date(created_at) = '2026-07-01';",
+      "id": "situation-027-code",
+      "version": 1,
+      "versionNonce": 143674729,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1213519915,
+      "groupIds": [
+        "situation-024-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2715,
+      "y": 236,
+      "width": 595,
+      "height": 168,
+      "backgroundColor": "#DBEAFE",
+      "fillStyle": "solid",
+      "strokeColor": "#2563EB",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "situation-029-box",
+      "version": 1,
+      "versionNonce": 1774372895,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 329459065,
+      "groupIds": [
+        "situation-028-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2737,
+      "y": 263,
+      "width": 551,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#1D4ED8",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "orders 테이블",
+      "originalText": "orders 테이블",
+      "id": "situation-030-box-title",
+      "version": 1,
+      "versionNonce": 66682143,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 841978133,
+      "groupIds": [
+        "situation-028-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2737,
+      "y": 301.4,
+      "width": 551,
+      "height": 76,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "주문 100만 건을 9초에 한 건씩 시간 순서로 넣었다(약 100일).\ncreated_at은 timestamptz(timestamp with time zone) 열이고\n인덱스가 있다. 날짜는 KST(UTC+9, Asia/Seoul) 기준이다.",
+      "originalText": "주문 100만 건을 9초에 한 건씩 시간 순서로 넣었다(약 100일).\ncreated_at은 timestamptz(timestamp with time zone) 열이고\n인덱스가 있다. 날짜는 KST(UTC+9, Asia/Seoul) 기준이다.",
+      "id": "situation-031-box-body",
+      "version": 1,
+      "versionNonce": 1732479013,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1420903599,
+      "groupIds": [
+        "situation-028-group"
+      ],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 444,
+      "width": 1460,
+      "height": 22,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "테이블은 8kB 페이지 7,353개다 (칸 하나가 테이블의 1%)",
+      "originalText": "테이블은 8kB 페이지 7,353개다 (칸 하나가 테이블의 1%)",
+      "id": "situation-032-text",
+      "version": 1,
+      "versionNonce": 1869824173,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 409480659,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-033-page",
+      "version": 1,
+      "versionNonce": 1711893215,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1321409561,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1908,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-034-page",
+      "version": 1,
+      "versionNonce": 842762552,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2049308806,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1966,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-035-page",
+      "version": 1,
+      "versionNonce": 53420882,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 940165544,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2024,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-036-page",
+      "version": 1,
+      "versionNonce": 483943859,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1026344417,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2082,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-037-page",
+      "version": 1,
+      "versionNonce": 1045718277,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1905395363,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2140,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-038-page",
+      "version": 1,
+      "versionNonce": 1144794950,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1747276408,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2198,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-039-page",
+      "version": 1,
+      "versionNonce": 35651688,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 957934738,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2256,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-040-page",
+      "version": 1,
+      "versionNonce": 1132657874,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 638907968,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2314,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-041-page",
+      "version": 1,
+      "versionNonce": 1921999544,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1886910430,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2372,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-042-page",
+      "version": 1,
+      "versionNonce": 2124955269,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1652936987,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2430,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-043-page",
+      "version": 1,
+      "versionNonce": 1563180851,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 826467225,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2488,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-044-page",
+      "version": 1,
+      "versionNonce": 972521716,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1558668830,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2546,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-045-page",
+      "version": 1,
+      "versionNonce": 1989889890,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1927146340,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2604,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-046-page",
+      "version": 1,
+      "versionNonce": 643646559,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1425399089,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2662,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-047-page",
+      "version": 1,
+      "versionNonce": 1694509661,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 54497247,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2720,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-048-page",
+      "version": 1,
+      "versionNonce": 815951782,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2033822892,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2778,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-049-page",
+      "version": 1,
+      "versionNonce": 1770085740,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 648561754,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2836,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-050-page",
+      "version": 1,
+      "versionNonce": 1910325333,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1081850427,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2894,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-051-page",
+      "version": 1,
+      "versionNonce": 1788633079,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 623801165,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2952,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-052-page",
+      "version": 1,
+      "versionNonce": 823284890,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1605409824,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3010,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-053-page",
+      "version": 1,
+      "versionNonce": 61062380,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 470839962,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3068,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-054-page",
+      "version": 1,
+      "versionNonce": 1209342091,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 124694213,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3126,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-055-page",
+      "version": 1,
+      "versionNonce": 1334686877,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1640353063,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3184,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-056-page",
+      "version": 1,
+      "versionNonce": 1031276976,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 483512906,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3242,
+      "y": 482,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-057-page",
+      "version": 1,
+      "versionNonce": 129775786,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 422914908,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-058-page",
+      "version": 1,
+      "versionNonce": 1001190361,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 219959183,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1908,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-059-page",
+      "version": 1,
+      "versionNonce": 1827660123,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1472578977,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1966,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-060-page",
+      "version": 1,
+      "versionNonce": 2074184905,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1583654463,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2024,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-061-page",
+      "version": 1,
+      "versionNonce": 709405591,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 115868605,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2062.8026655786753,
+      "y": 545,
+      "width": 9.19733442132457,
+      "height": 42,
+      "backgroundColor": "#DCFCE7",
+      "fillStyle": "solid",
+      "strokeColor": "#15803D",
+      "strokeWidth": 3,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 3
+      },
+      "opacity": 100,
+      "id": "situation-062-july-1",
+      "version": 1,
+      "versionNonce": 1443467811,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1781187621,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2082,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-063-page",
+      "version": 1,
+      "versionNonce": 221494236,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 644265922,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2086,
+      "y": 545,
+      "width": 33.88712090303284,
+      "height": 42,
+      "backgroundColor": "#DCFCE7",
+      "fillStyle": "solid",
+      "strokeColor": "#15803D",
+      "strokeWidth": 3,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 3
+      },
+      "opacity": 100,
+      "id": "situation-064-july-1",
+      "version": 1,
+      "versionNonce": 136356440,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 531680998,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2140,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-065-page",
+      "version": 1,
+      "versionNonce": 354048977,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 588670611,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2198,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-066-page",
+      "version": 1,
+      "versionNonce": 267921688,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2093402546,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2256,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-067-page",
+      "version": 1,
+      "versionNonce": 866880822,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 947489304,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2314,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-068-page",
+      "version": 1,
+      "versionNonce": 1490217013,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 522214211,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2372,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-069-page",
+      "version": 1,
+      "versionNonce": 14589347,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 226557313,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2430,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-070-page",
+      "version": 1,
+      "versionNonce": 913856596,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1784029562,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2488,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-071-page",
+      "version": 1,
+      "versionNonce": 545327502,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1234035788,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2546,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-072-page",
+      "version": 1,
+      "versionNonce": 1519150351,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 723586357,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2604,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-073-page",
+      "version": 1,
+      "versionNonce": 624286497,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 422220759,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2662,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-074-page",
+      "version": 1,
+      "versionNonce": 873620686,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 36029968,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2720,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-075-page",
+      "version": 1,
+      "versionNonce": 1401936560,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 698566794,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2778,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-076-page",
+      "version": 1,
+      "versionNonce": 514801993,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 214043499,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2836,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-077-page",
+      "version": 1,
+      "versionNonce": 1341271755,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2136546557,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2894,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-078-page",
+      "version": 1,
+      "versionNonce": 757117344,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 874894590,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2952,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-079-page",
+      "version": 1,
+      "versionNonce": 1770031130,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1382473696,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3010,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-080-page",
+      "version": 1,
+      "versionNonce": 373277508,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 537827382,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3068,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-081-page",
+      "version": 1,
+      "versionNonce": 1019428786,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1002513980,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3126,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-082-page",
+      "version": 1,
+      "versionNonce": 1979605679,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1099726249,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3184,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-083-page",
+      "version": 1,
+      "versionNonce": 22475629,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1511213687,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3242,
+      "y": 540,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-084-page",
+      "version": 1,
+      "versionNonce": 1395827170,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1069781368,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-085-page",
+      "version": 1,
+      "versionNonce": 972326792,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1456460182,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1908,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-086-page",
+      "version": 1,
+      "versionNonce": 1175282517,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1333335091,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1966,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-087-page",
+      "version": 1,
+      "versionNonce": 2059367235,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1155908657,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2024,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-088-page",
+      "version": 1,
+      "versionNonce": 165267512,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 152857378,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2082,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-089-page",
+      "version": 1,
+      "versionNonce": 551946326,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1876840648,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2140,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-090-page",
+      "version": 1,
+      "versionNonce": 1766873135,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1083593001,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2198,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-091-page",
+      "version": 1,
+      "versionNonce": 680568897,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 133744427,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2256,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-092-page",
+      "version": 1,
+      "versionNonce": 578185332,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1442411694,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2314,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-093-page",
+      "version": 1,
+      "versionNonce": 601609902,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 406689552,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2372,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-094-page",
+      "version": 1,
+      "versionNonce": 179079145,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 523903343,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2430,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-095-page",
+      "version": 1,
+      "versionNonce": 1376714219,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1585082753,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2488,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-096-page",
+      "version": 1,
+      "versionNonce": 537897838,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1482699188,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2546,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-097-page",
+      "version": 1,
+      "versionNonce": 1649659344,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1506123758,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2604,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-098-page",
+      "version": 1,
+      "versionNonce": 269000411,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 428638373,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2662,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-099-page",
+      "version": 1,
+      "versionNonce": 23179885,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1381639943,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2720,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-100-page",
+      "version": 1,
+      "versionNonce": 2062036410,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1726537476,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2778,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-101-page",
+      "version": 1,
+      "versionNonce": 1512042636,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1729173694,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2836,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-102-page",
+      "version": 1,
+      "versionNonce": 1001593205,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2001372031,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2894,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-103-page",
+      "version": 1,
+      "versionNonce": 700227607,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1808132689,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2952,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-104-page",
+      "version": 1,
+      "versionNonce": 314036816,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2057415294,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3010,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-105-page",
+      "version": 1,
+      "versionNonce": 976573642,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 417510752,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3068,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-106-page",
+      "version": 1,
+      "versionNonce": 492050347,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 996972089,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3126,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-107-page",
+      "version": 1,
+      "versionNonce": 267069757,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1823441851,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3184,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-108-page",
+      "version": 1,
+      "versionNonce": 1152901438,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1218550672,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3242,
+      "y": 598,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-109-page",
+      "version": 1,
+      "versionNonce": 1660480544,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1881087498,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-110-page",
+      "version": 1,
+      "versionNonce": 1861661311,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1471126073,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1908,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-111-page",
+      "version": 1,
+      "versionNonce": 393875453,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2094893831,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1966,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-112-page",
+      "version": 1,
+      "versionNonce": 43052820,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 419831430,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2024,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-113-page",
+      "version": 1,
+      "versionNonce": 922272770,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1606930892,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2082,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-114-page",
+      "version": 1,
+      "versionNonce": 1428503461,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1704734915,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2140,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-115-page",
+      "version": 1,
+      "versionNonce": 866677459,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1409078017,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2198,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-116-page",
+      "version": 1,
+      "versionNonce": 223925746,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1110721992,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2256,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-117-page",
+      "version": 1,
+      "versionNonce": 1225496152,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 263770406,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2314,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-118-page",
+      "version": 1,
+      "versionNonce": 800221059,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 185533669,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2372,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-119-page",
+      "version": 1,
+      "versionNonce": 504564161,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1771191315,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2430,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-120-page",
+      "version": 1,
+      "versionNonce": 1359857275,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1307214917,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2488,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-121-page",
+      "version": 1,
+      "versionNonce": 901808013,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 675390119,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2546,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-122-page",
+      "version": 1,
+      "versionNonce": 1883416672,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1666033610,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2604,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-123-page",
+      "version": 1,
+      "versionNonce": 748846810,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1605435612,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2662,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-124-page",
+      "version": 1,
+      "versionNonce": 402701061,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 116887483,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2720,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-125-page",
+      "version": 1,
+      "versionNonce": 1918359911,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1806321869,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2778,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-126-page",
+      "version": 1,
+      "versionNonce": 761519754,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 640446880,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2836,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-127-page",
+      "version": 1,
+      "versionNonce": 700921756,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1653360666,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2894,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-128-page",
+      "version": 1,
+      "versionNonce": 497966031,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 398131529,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2952,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-129-page",
+      "version": 1,
+      "versionNonce": 1750585825,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1224601291,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3010,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-130-page",
+      "version": 1,
+      "versionNonce": 916914816,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1614827970,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3068,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-131-page",
+      "version": 1,
+      "versionNonce": 17433630,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 958362088,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3126,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-132-page",
+      "version": 1,
+      "versionNonce": 1930943835,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1373546549,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3184,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-133-page",
+      "version": 1,
+      "versionNonce": 1104474073,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2045402531,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3242,
+      "y": 656,
+      "width": 52,
+      "height": 52,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 1.5,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 100,
+      "id": "situation-134-page",
+      "version": 1,
+      "versionNonce": 1836675678,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2135579556,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "shape"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 728,
+      "width": 1460,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "시간 순서로 넣어서 7월 1일 주문은 이웃한 페이지(초록, 두 칸의 경계에 걸쳐 있다)에 모여 있다. 쿼리는 빨간 테두리의 100칸을 모두 읽었다.",
+      "originalText": "시간 순서로 넣어서 7월 1일 주문은 이웃한 페이지(초록, 두 칸의 경계에 걸쳐 있다)에 모여 있다. 쿼리는 빨간 테두리의 100칸을 모두 읽었다.",
+      "id": "situation-135-text",
+      "version": 1,
+      "versionNonce": 840401402,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1508386308,
+      "groupIds": [],
+      "frameId": "situation-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "note"
+        }
+      }
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#FFFFFF"
+  },
+  "files": {}
+}

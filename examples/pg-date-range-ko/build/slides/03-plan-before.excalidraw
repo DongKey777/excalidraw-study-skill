@@ -1,0 +1,1558 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "frame",
+      "x": 3560,
+      "y": 0,
+      "width": 1600,
+      "height": 900,
+      "name": "03. 실행 계획에 Seq Scan과 Filter가 찍혔다",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "plan-before-frame",
+      "version": 1,
+      "versionNonce": 843914281,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 224977503,
+      "groupIds": [],
+      "frameId": null,
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "frame",
+          "slide": "plan-before"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3560,
+      "y": 0,
+      "width": 1600,
+      "height": 900,
+      "backgroundColor": "#F8FAFC",
+      "fillStyle": "solid",
+      "strokeColor": "#F8FAFC",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "plan-before-001-background",
+      "version": 1,
+      "versionNonce": 47584644,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 579908058,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.background"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 45,
+      "width": 313,
+      "height": 40,
+      "backgroundColor": "#DBEAFE",
+      "fillStyle": "solid",
+      "strokeColor": "#DBEAFE",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "plan-before-003-badge-box",
+      "version": 1,
+      "versionNonce": 1967198926,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 54980864,
+      "groupIds": [
+        "plan-before-002-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 53.75,
+      "width": 313,
+      "height": 23,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#1D4ED8",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "03  예제 상황 · 하루치 주문 조회",
+      "originalText": "03  예제 상황 · 하루치 주문 조회",
+      "id": "plan-before-004-badge-label",
+      "version": 1,
+      "versionNonce": 99819919,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1225011741,
+      "groupIds": [
+        "plan-before-002-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4824,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "plan-before-006-step-box",
+      "version": 1,
+      "versionNonce": 623294270,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 630143676,
+      "groupIds": [
+        "plan-before-005-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4824,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "상황",
+      "originalText": "상황",
+      "id": "plan-before-007-step-label",
+      "version": 1,
+      "versionNonce": 1649703665,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1289556575,
+      "groupIds": [
+        "plan-before-005-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4892,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#1D4ED8",
+      "fillStyle": "solid",
+      "strokeColor": "#1D4ED8",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "plan-before-009-step-box",
+      "version": 1,
+      "versionNonce": 505188159,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 771430417,
+      "groupIds": [
+        "plan-before-008-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4892,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "분석",
+      "originalText": "분석",
+      "id": "plan-before-010-step-label",
+      "version": 1,
+      "versionNonce": 1689176793,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 670518875,
+      "groupIds": [
+        "plan-before-008-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4960,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "plan-before-012-step-box",
+      "version": 1,
+      "versionNonce": 37126649,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1506858299,
+      "groupIds": [
+        "plan-before-011-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4960,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "원리",
+      "originalText": "원리",
+      "id": "plan-before-013-step-label",
+      "version": 1,
+      "versionNonce": 856510922,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1067834028,
+      "groupIds": [
+        "plan-before-011-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 5028,
+      "y": 48,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "plan-before-015-step-box",
+      "version": 1,
+      "versionNonce": 1751967600,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 788414750,
+      "groupIds": [
+        "plan-before-014-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 5028,
+      "y": 53.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "해결",
+      "originalText": "해결",
+      "id": "plan-before-016-step-label",
+      "version": 1,
+      "versionNonce": 2075620784,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1869616022,
+      "groupIds": [
+        "plan-before-014-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4490,
+      "y": 88,
+      "width": 600,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "originalText": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "id": "plan-before-017-series",
+      "version": 1,
+      "versionNonce": 1849689006,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1113976564,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.series"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 112,
+      "width": 1460,
+      "height": 55,
+      "fontSize": 44,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "실행 계획에 Seq Scan과 Filter가 찍혔다",
+      "originalText": "실행 계획에 Seq Scan과 Filter가 찍혔다",
+      "id": "plan-before-018-title",
+      "version": 1,
+      "versionNonce": 463171980,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2045280442,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3632,
+      "y": 178,
+      "width": 1460,
+      "height": 27,
+      "fontSize": 21,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "EXPLAIN ANALYZE는 쿼리를 실제로 실행하고 노드(Seq Scan 같은 처리 단위)마다 한 일을 적는다",
+      "originalText": "EXPLAIN ANALYZE는 쿼리를 실제로 실행하고 노드(Seq Scan 같은 처리 단위)마다 한 일을 적는다",
+      "id": "plan-before-019-subtitle",
+      "version": 1,
+      "versionNonce": 1272272163,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2028054537,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.subtitle"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 874,
+      "width": 1460,
+      "height": 17,
+      "fontSize": 13,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "근거 §1 labs/02-before, 12-parallel · §2 · §6",
+      "originalText": "근거 §1 labs/02-before, 12-parallel · §2 · §6",
+      "id": "plan-before-020-source",
+      "version": 1,
+      "versionNonce": 248127423,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 87434533,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.source"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 810,
+      "width": 1460,
+      "height": 54,
+      "backgroundColor": "#DBEAFE",
+      "fillStyle": "solid",
+      "strokeColor": "#1D4ED8",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-021-takeaway",
+      "version": 1,
+      "versionNonce": 1200337013,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1789778627,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 825,
+      "width": 64,
+      "height": 22,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#1D4ED8",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "정리",
+      "originalText": "정리",
+      "id": "plan-before-022-takeaway-label",
+      "version": 1,
+      "versionNonce": 1520304129,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 807546151,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3725,
+      "y": 822,
+      "width": 1335,
+      "height": 24,
+      "fontSize": 19,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "조건이 인덱스 검색에 쓰이지 못하고 읽은 행을 거르는 Filter에만 쓰였다.",
+      "originalText": "조건이 인덱스 검색에 쓰이지 못하고 읽은 행을 거르는 Filter에만 쓰였다.",
+      "id": "plan-before-023-takeaway-text",
+      "version": 1,
+      "versionNonce": 1717663219,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 909294693,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.takeaway"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 236,
+      "width": 847,
+      "height": 300,
+      "backgroundColor": "#334155",
+      "fillStyle": "solid",
+      "strokeColor": "#334155",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-025-code-box",
+      "version": 1,
+      "versionNonce": 2074224153,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1353660867,
+      "groupIds": [
+        "plan-before-024-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.box"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3640,
+      "y": 394.125,
+      "width": 827,
+      "height": 85,
+      "backgroundColor": "#3B82F6",
+      "fillStyle": "solid",
+      "strokeColor": "#3B82F6",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 40,
+      "id": "plan-before-026-code-mark",
+      "version": 1,
+      "versionNonce": 1955132361,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 528861463,
+      "groupIds": [
+        "plan-before-024-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.mark"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3654,
+      "y": 254.375,
+      "width": 799,
+      "height": 264,
+      "fontSize": 15,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "SET TIME ZONE 'Asia/Seoul';\nSET max_parallel_workers_per_gather = 0;\nEXPLAIN (ANALYZE, BUFFERS, COSTS OFF)\nSELECT sum(amount) FROM orders WHERE date(created_at) = '2026-07-01';\n\nAggregate (actual time=54.847..54.852 rows=1.00 loops=1)\n  Buffers: shared hit=7353\n  ->  Seq Scan on orders (actual time=19.151..54.570 rows=9600.00 loops=1)\n        Filter: (date(created_at) = '2026-07-01'::date)\n        Rows Removed by Filter: 990400\n        Buffers: shared hit=7353\n…\nExecution Time: 54.894 ms",
+      "originalText": "SET TIME ZONE 'Asia/Seoul';\nSET max_parallel_workers_per_gather = 0;\nEXPLAIN (ANALYZE, BUFFERS, COSTS OFF)\nSELECT sum(amount) FROM orders WHERE date(created_at) = '2026-07-01';\n\nAggregate (actual time=54.847..54.852 rows=1.00 loops=1)\n  Buffers: shared hit=7353\n  ->  Seq Scan on orders (actual time=19.151..54.570 rows=9600.00 loops=1)\n        Filter: (date(created_at) = '2026-07-01'::date)\n        Rows Removed by Filter: 990400\n        Buffers: shared hit=7353\n…\nExecution Time: 54.894 ms",
+      "id": "plan-before-027-code",
+      "version": 1,
+      "versionNonce": 1217161160,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 74082242,
+      "groupIds": [
+        "plan-before-024-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 550,
+      "width": 847,
+      "height": 44,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "SET 두 줄은 실험 조건이다. 계획을 읽기 쉽게 병렬 실행을 껐고 COSTS OFF로 비용 추정을 뺐다. 병렬 실행을 끄지 않으면\n여러 프로세스가 나눠 읽는 계획(Gather 아래 Parallel Seq Scan)이 나오고 Buffers 합은 같은 7,353이다.",
+      "originalText": "SET 두 줄은 실험 조건이다. 계획을 읽기 쉽게 병렬 실행을 껐고 COSTS OFF로 비용 추정을 뺐다. 병렬 실행을 끄지 않으면\n여러 프로세스가 나눠 읽는 계획(Gather 아래 Parallel Seq Scan)이 나오고 Buffers 합은 같은 7,353이다.",
+      "id": "plan-before-028-text",
+      "version": 1,
+      "versionNonce": 1038978194,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1294849416,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "note"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 656,
+      "width": 479,
+      "height": 138,
+      "backgroundColor": "#FEE2E2",
+      "fillStyle": "solid",
+      "strokeColor": "#DC2626",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-030-box",
+      "version": 1,
+      "versionNonce": 946865100,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1154345878,
+      "groupIds": [
+        "plan-before-029-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 682,
+      "width": 435,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#B91C1C",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "Seq Scan",
+      "originalText": "Seq Scan",
+      "id": "plan-before-031-box-title",
+      "version": 1,
+      "versionNonce": 360134112,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 574822838,
+      "groupIds": [
+        "plan-before-029-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 720.4,
+      "width": 435,
+      "height": 48,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "테이블의 페이지를 처음부터 끝까지 읽으며 행마다 Filter\n조건을 계산한다. 인덱스를 쓰지 않았다.",
+      "originalText": "테이블의 페이지를 처음부터 끝까지 읽으며 행마다 Filter\n조건을 계산한다. 인덱스를 쓰지 않았다.",
+      "id": "plan-before-032-box-body",
+      "version": 1,
+      "versionNonce": 1318760427,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 956160949,
+      "groupIds": [
+        "plan-before-029-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4157,
+      "y": 656,
+      "width": 320,
+      "height": 138,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-034-box",
+      "version": 1,
+      "versionNonce": 275235726,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2032981108,
+      "groupIds": [
+        "plan-before-033-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4179,
+      "y": 682,
+      "width": 276,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "Aggregate",
+      "originalText": "Aggregate",
+      "id": "plan-before-035-box-title",
+      "version": 1,
+      "versionNonce": 696877262,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1515521160,
+      "groupIds": [
+        "plan-before-033-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4179,
+      "y": 720.4,
+      "width": 276,
+      "height": 24,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "남은 9,600행의 amount를 더한다",
+      "originalText": "남은 9,600행의 amount를 더한다",
+      "id": "plan-before-036-box-body",
+      "version": 1,
+      "versionNonce": 94325869,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2011948147,
+      "groupIds": [
+        "plan-before-033-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "arrow",
+      "x": 4115,
+      "y": 725,
+      "width": 36,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          36,
+          0
+        ]
+      ],
+      "strokeColor": "#334155",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "plan-before-037-arrow",
+      "version": 1,
+      "versionNonce": 1589755638,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 563612360,
+      "groupIds": [],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "connector"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4525,
+      "y": 236,
+      "width": 565,
+      "height": 146,
+      "backgroundColor": "#CCFBF1",
+      "fillStyle": "solid",
+      "strokeColor": "#0F766E",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-039-box",
+      "version": 1,
+      "versionNonce": 1170490709,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 359945975,
+      "groupIds": [
+        "plan-before-038-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4547,
+      "y": 264.6,
+      "width": 521,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#0F766E",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "Filter",
+      "originalText": "Filter",
+      "id": "plan-before-040-box-title",
+      "version": 1,
+      "versionNonce": 321315132,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2052541990,
+      "groupIds": [
+        "plan-before-038-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4547,
+      "y": 303,
+      "width": 521,
+      "height": 51,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "읽은 행마다 조건을 계산해 맞지 않는 행을 버린다. 이 쿼리는\n990,400행을 버렸다.",
+      "originalText": "읽은 행마다 조건을 계산해 맞지 않는 행을 버린다. 이 쿼리는\n990,400행을 버렸다.",
+      "id": "plan-before-041-box-body",
+      "version": 1,
+      "versionNonce": 258781216,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 425600054,
+      "groupIds": [
+        "plan-before-038-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4525,
+      "y": 402,
+      "width": 565,
+      "height": 172,
+      "backgroundColor": "#CCFBF1",
+      "fillStyle": "solid",
+      "strokeColor": "#0F766E",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-043-box",
+      "version": 1,
+      "versionNonce": 1549872921,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 637841423,
+      "groupIds": [
+        "plan-before-042-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4547,
+      "y": 431,
+      "width": 521,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#0F766E",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "Buffers",
+      "originalText": "Buffers",
+      "id": "plan-before-044-box-title",
+      "version": 1,
+      "versionNonce": 1832545690,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 835221560,
+      "groupIds": [
+        "plan-before-042-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4547,
+      "y": 469.4,
+      "width": 521,
+      "height": 76,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "쿼리가 페이지에 접근한 횟수다. Seq Scan은 페이지마다 한 번\n접근하므로 7,353은 테이블 전체다. 위 노드의 값은 아래 노드의\n접근을 포함한 누계라서 두 줄을 더하지 않는다.",
+      "originalText": "쿼리가 페이지에 접근한 횟수다. Seq Scan은 페이지마다 한 번\n접근하므로 7,353은 테이블 전체다. 위 노드의 값은 아래 노드의\n접근을 포함한 누계라서 두 줄을 더하지 않는다.",
+      "id": "plan-before-045-box-body",
+      "version": 1,
+      "versionNonce": 52625570,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1144921268,
+      "groupIds": [
+        "plan-before-042-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4525,
+      "y": 594,
+      "width": 565,
+      "height": 200,
+      "backgroundColor": "#CCFBF1",
+      "fillStyle": "solid",
+      "strokeColor": "#0F766E",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "plan-before-047-box",
+      "version": 1,
+      "versionNonce": 671186107,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 896208509,
+      "groupIds": [
+        "plan-before-046-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4547,
+      "y": 624.4,
+      "width": 521,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#0F766E",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "숫자 읽는 법",
+      "originalText": "숫자 읽는 법",
+      "id": "plan-before-048-box-title",
+      "version": 1,
+      "versionNonce": 2144690776,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 551232634,
+      "groupIds": [
+        "plan-before-046-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4547,
+      "y": 662.8,
+      "width": 521,
+      "height": 101,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "actual time은 첫 행과 마지막 행이 나온 시각(ms)이고 한 번 잰\n참고값이다. rows는 노드를 한 번 실행할 때 나온 행 수의\n평균이다. PostgreSQL 18부터 소수 둘째 자리까지 보인다.\nloops는 실행 횟수다.",
+      "originalText": "actual time은 첫 행과 마지막 행이 나온 시각(ms)이고 한 번 잰\n참고값이다. rows는 노드를 한 번 실행할 때 나온 행 수의\n평균이다. PostgreSQL 18부터 소수 둘째 자리까지 보인다.\nloops는 실행 횟수다.",
+      "id": "plan-before-049-box-body",
+      "version": 1,
+      "versionNonce": 247427668,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2143175426,
+      "groupIds": [
+        "plan-before-046-group"
+      ],
+      "frameId": "plan-before-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#FFFFFF"
+  },
+  "files": {}
+}

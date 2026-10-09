@@ -1,0 +1,144 @@
+{
+  "slides": {
+    "cover": {
+      "number": 1,
+      "pngSha256": "0325089b5db419f5ceb17979a11d3125211964006f5e5cc5c6b01df018c57306",
+      "reviewedAt": "2026-10-08T11:34:31.622Z",
+      "note": "2026-10-08 감사 3차 반영 뒤 10장 원래 크기로 봄"
+    },
+    "situation": {
+      "number": 2,
+      "pngSha256": "9c96b8826525d249b8c33c622b6c68e2bb506bfbd1db653aa0db80dd30d60cf7",
+      "reviewedAt": "2026-10-08T11:46:25.222Z",
+      "note": "2026-10-08 확인 감사 반영 뒤 다시 봄"
+    },
+    "plan-before": {
+      "number": 3,
+      "pngSha256": "e80b21c85831812f4263c568fd202bd059ef45be18fe4b27bf5395b8c924b0dc",
+      "reviewedAt": "2026-10-08T11:46:25.223Z",
+      "note": "2026-10-08 확인 감사 반영 뒤 다시 봄"
+    },
+    "buffers": {
+      "number": 4,
+      "pngSha256": "58e34406e8a26cff1d4797b6bbdbb9d91567de6cb264061fb070f2284f32662d",
+      "reviewedAt": "2026-10-08T11:34:31.623Z",
+      "note": "2026-10-08 감사 3차 반영 뒤 10장 원래 크기로 봄"
+    },
+    "btree": {
+      "number": 5,
+      "pngSha256": "22d00405b7cff2891a33ae1b7af30ef231a780cef71bbff8c52aabf89c6bef19",
+      "reviewedAt": "2026-10-08T11:46:25.223Z",
+      "note": "2026-10-08 확인 감사 반영 뒤 다시 봄"
+    },
+    "function-order": {
+      "number": 6,
+      "pngSha256": "d1b469b04a40d2e21893a5a35ffb1afd7f882dc9950d27ee864fe8d26ec46a75",
+      "reviewedAt": "2026-10-08T11:34:31.623Z",
+      "note": "2026-10-08 감사 3차 반영 뒤 10장 원래 크기로 봄"
+    },
+    "volatility": {
+      "number": 7,
+      "pngSha256": "3ca3042b63a6f59b388f46531f64f5751658a2b723da24b3561b22cfe0bd2ae9",
+      "reviewedAt": "2026-10-08T11:34:31.624Z",
+      "note": "2026-10-08 감사 3차 반영 뒤 10장 원래 크기로 봄"
+    },
+    "fix": {
+      "number": 8,
+      "pngSha256": "ff21bf8d47a3c5215d16c39b40ce6e09c261ab5f6001e7440daa0a0e64771032",
+      "reviewedAt": "2026-10-08T11:46:25.223Z",
+      "note": "2026-10-08 확인 감사 반영 뒤 다시 봄"
+    },
+    "recap": {
+      "number": 10,
+      "pngSha256": "bd61b16d47e3ba0ea584405f0ba29414cdf084f70db398168e969bb0b1819568",
+      "reviewedAt": "2026-10-08T11:46:25.223Z",
+      "note": "2026-10-08 확인 감사 반영 뒤 다시 봄"
+    },
+    "expr-index": {
+      "number": 9,
+      "pngSha256": "900cd64dbaa85b068c0f4b53797f2411b112b1f4be6291a07a8d2cb107105736",
+      "reviewedAt": "2026-10-08T11:46:25.223Z",
+      "note": "2026-10-08 확인 감사 반영 뒤 다시 봄"
+    }
+  },
+  "audits": [
+    {
+      "kind": "facts+pedagogy+writing+visual",
+      "by": "fresh subagent (one agent, four passes, not independent)",
+      "summary": "[on the build before the fixes] verdict fix: numbers all matched labs; ligatures, Index Scan heap reads, Buffers wording, Filter drawing, slide 7 layout, recap row, 5 ledger fixes",
+      "combinedSha256": "pre-fix build (not recorded)",
+      "at": "2026-09-30T08:16:32.845Z"
+    },
+    {
+      "kind": "follow-up:visual+facts+writing",
+      "by": "three fresh subagents, one lens each",
+      "summary": "verdict fix on all three lenses; earlier visual 7/8 resolved; new: after-plan never shown, sideways read not drawn, slide 8 calls Buffers a page count",
+      "combinedSha256": "542c6d3e783fbae4c5b39f10660f66b68ec2b291ff50b5d8f36f4f62b857937d",
+      "at": "2026-09-30T08:23:05.654Z"
+    },
+    {
+      "kind": "facts",
+      "by": "fresh subagent (labs rerun in throwaway container)",
+      "summary": "fix. 숫자는 모두 재현됨. 3장 재현 조건(SET TIME ZONE, 병렬 끔) 누락, 8장 72번의 이유(행이 시간 순서로 모여 있음)·71/72 혼동, 5장 Index Cond 정의 반쪽, rows 정의, 근거 목록 표기 4건",
+      "combinedSha256": "1256e6608fd981deae88ccba2f87d0ea121e661cfafa50b5c870543da76a2ff9",
+      "at": "2026-10-01T09:11:33.184Z"
+    },
+    {
+      "kind": "pedagogy",
+      "by": "fresh subagent",
+      "summary": "fix. 5장이 해결(고친 쿼리, 102)을 원리 단계에서 먼저 꺼냄, 7장이 두 가지를 가르침, 3장 누계 Buffers 설명 없음, hit/read와 테이블/인덱스 나눔 혼동",
+      "combinedSha256": "1256e6608fd981deae88ccba2f87d0ea121e661cfafa50b5c870543da76a2ff9",
+      "at": "2026-10-01T09:11:33.256Z"
+    },
+    {
+      "kind": "writing",
+      "by": "fresh subagent",
+      "summary": "fix. 19건: 8장 71/72, 5장 부제, 정리 문장 어색함, '표현식 조건' 미정의, 7장 timestamptz 문장, '조건의 식' 번역투 등",
+      "combinedSha256": "1256e6608fd981deae88ccba2f87d0ea121e661cfafa50b5c870543da76a2ff9",
+      "at": "2026-10-01T09:11:33.335Z"
+    },
+    {
+      "kind": "visual",
+      "by": "fresh subagent",
+      "summary": "fix. 5장 끝 키 표시 없음과 초록 의미 어긋남, 4장 화살표가 이동을 안 보임, 6장 실패 쪽 그림 없음, 3장 Seq Scan 상자 중복, 킷: 카드 줄바꿈이 폭의 75~82%, 나란한 카드 제목 기준선 어긋남, 강조 띠 겹침, 하단 여백",
+      "combinedSha256": "1256e6608fd981deae88ccba2f87d0ea121e661cfafa50b5c870543da76a2ff9",
+      "at": "2026-10-01T09:11:33.409Z"
+    },
+    {
+      "kind": "visual",
+      "by": "fresh subagent (follow-up, one agent, four passes)",
+      "summary": "확인 감사: 이전 지적 대부분 해결. 남은 것은 5·10장 Index Scan 순서 설명(N1), 섞은 사본 강제 조건, 키/값 표현, 막대 라벨, 8장 근거 C4, 시각 다섯 곳",
+      "combinedSha256": "ce084d4d9f0d8e7efad63d9091cdcb7fa12523ec6d7b8b86720055a9dec31df9",
+      "at": "2026-10-08T11:44:35.635Z",
+      "verdict": "fix",
+      "file": "audits/01-visual-pedagogy-consistency-facts-2026-10-08.md"
+    },
+    {
+      "kind": "pedagogy",
+      "by": "fresh subagent (follow-up, one agent, four passes)",
+      "summary": "확인 감사: 이전 지적 대부분 해결. 남은 것은 5·10장 Index Scan 순서 설명(N1), 섞은 사본 강제 조건, 키/값 표현, 막대 라벨, 8장 근거 C4, 시각 다섯 곳",
+      "combinedSha256": "ce084d4d9f0d8e7efad63d9091cdcb7fa12523ec6d7b8b86720055a9dec31df9",
+      "at": "2026-10-08T11:44:35.635Z",
+      "verdict": "fix",
+      "file": "audits/01-visual-pedagogy-consistency-facts-2026-10-08.md"
+    },
+    {
+      "kind": "consistency",
+      "by": "fresh subagent (follow-up, one agent, four passes)",
+      "summary": "확인 감사: 이전 지적 대부분 해결. 남은 것은 5·10장 Index Scan 순서 설명(N1), 섞은 사본 강제 조건, 키/값 표현, 막대 라벨, 8장 근거 C4, 시각 다섯 곳",
+      "combinedSha256": "ce084d4d9f0d8e7efad63d9091cdcb7fa12523ec6d7b8b86720055a9dec31df9",
+      "at": "2026-10-08T11:44:35.635Z",
+      "verdict": "fix",
+      "file": "audits/01-visual-pedagogy-consistency-facts-2026-10-08.md"
+    },
+    {
+      "kind": "facts",
+      "by": "fresh subagent (follow-up, one agent, four passes)",
+      "summary": "확인 감사: 이전 지적 대부분 해결. 남은 것은 5·10장 Index Scan 순서 설명(N1), 섞은 사본 강제 조건, 키/값 표현, 막대 라벨, 8장 근거 C4, 시각 다섯 곳",
+      "combinedSha256": "ce084d4d9f0d8e7efad63d9091cdcb7fa12523ec6d7b8b86720055a9dec31df9",
+      "at": "2026-10-08T11:44:35.635Z",
+      "verdict": "fix",
+      "file": "audits/01-visual-pedagogy-consistency-facts-2026-10-08.md"
+    }
+  ]
+}

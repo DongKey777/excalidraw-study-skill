@@ -1,0 +1,26 @@
+SET
+SET
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate (actual time=1.067..1.069 rows=1.00 loops=1)
+   Buffers: shared hit=72 read=30
+   ->  Index Scan using orders_created_at_idx on orders (actual time=0.051..0.773 rows=9600.00 loops=1)
+         Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+         Index Searches: 1
+         Buffers: shared hit=72 read=30
+ Planning:
+   Buffers: shared hit=88
+ Planning Time: 0.209 ms
+ Execution Time: 1.093 ms
+(10 rows)
+
+ by_function 
+-------------
+   480008800
+(1 row)
+
+ by_range  
+-----------
+ 480008800
+(1 row)
+

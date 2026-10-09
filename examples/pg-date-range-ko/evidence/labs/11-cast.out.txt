@@ -1,0 +1,13 @@
+SET
+  seoul_wall_clock   |         result_type         
+---------------------+-----------------------------
+ 2026-07-01 00:30:00 | timestamp without time zone
+(1 row)
+
+           source            | target |             function              | volatility 
+-----------------------------+--------+-----------------------------------+------------
+ timestamp without time zone | date   | date(timestamp without time zone) | i
+ timestamp with time zone    | date   | date(timestamp with time zone)    | s
+(2 rows)
+
+ERROR:  functions in index expression must be marked IMMUTABLE

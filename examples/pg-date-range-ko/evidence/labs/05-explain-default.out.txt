@@ -1,0 +1,21 @@
+SET
+ block_size 
+------------
+ 8192
+(1 row)
+
+                                   QUERY PLAN                                   
+--------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=6
+   ->  Index Only Scan using orders_pkey on orders (actual rows=999.00 loops=1)
+         Index Cond: (id < 1000)
+         Heap Fetches: 0
+         Index Searches: 1
+         Buffers: shared hit=6
+ Planning:
+   Buffers: shared hit=91
+ Planning Time: 0.570 ms
+ Execution Time: 0.115 ms
+(11 rows)
+

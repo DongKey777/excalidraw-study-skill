@@ -1,0 +1,16 @@
+SET
+SET
+                                 QUERY PLAN                                 
+----------------------------------------------------------------------------
+ Aggregate (actual time=54.847..54.852 rows=1.00 loops=1)
+   Buffers: shared hit=7353
+   ->  Seq Scan on orders (actual time=19.151..54.570 rows=9600.00 loops=1)
+         Filter: (date(created_at) = '2026-07-01'::date)
+         Rows Removed by Filter: 990400
+         Buffers: shared hit=7353
+ Planning:
+   Buffers: shared hit=78 read=1
+ Planning Time: 0.336 ms
+ Execution Time: 54.894 ms
+(10 rows)
+

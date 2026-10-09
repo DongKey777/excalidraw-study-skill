@@ -1,0 +1,27 @@
+SET
+SET
+                function                 | volatility 
+-----------------------------------------+------------
+ timezone(text,timestamp with time zone) | i
+ date(timestamp with time zone)          | s
+ date(timestamp without time zone)       | i
+(3 rows)
+
+ERROR:  functions in index expression must be marked IMMUTABLE
+CREATE INDEX
+ANALYZE
+                                                  QUERY PLAN                                                  
+--------------------------------------------------------------------------------------------------------------
+ Aggregate (actual time=0.840..0.840 rows=1.00 loops=1)
+   Buffers: shared hit=72 read=11
+   ->  Index Scan using orders_created_kst_date_idx on orders (actual time=0.017..0.543 rows=9600.00 loops=1)
+         Index Cond: (((created_at AT TIME ZONE 'Asia/Seoul'::text))::date = '2026-07-01'::date)
+         Index Searches: 1
+         Buffers: shared hit=72 read=11
+ Planning:
+   Buffers: shared hit=19 read=1
+ Planning Time: 0.089 ms
+ Execution Time: 0.852 ms
+(10 rows)
+
+DROP INDEX

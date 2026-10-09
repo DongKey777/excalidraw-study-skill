@@ -1,0 +1,126 @@
+{
+  "mode": "excalidraw",
+  "renderer": "excalidraw@0.18.1 exportToSvg in chrome 154.0.8037.98",
+  "combinedSha256": "22fb9ce02e9f7d64c8c41545b19a21b54b5a42d089fa13efb178eb359538bb4a",
+  "textsMeasuredByCanvas": 0,
+  "pageErrors": [],
+  "slides": [
+    {
+      "number": 1,
+      "id": "cover",
+      "png": "build/render/01-cover.png",
+      "sha256": "0325089b5db419f5ceb17979a11d3125211964006f5e5cc5c6b01df018c57306",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 2,
+      "id": "situation",
+      "png": "build/render/02-situation.png",
+      "sha256": "9c96b8826525d249b8c33c622b6c68e2bb506bfbd1db653aa0db80dd30d60cf7",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 3,
+      "id": "plan-before",
+      "png": "build/render/03-plan-before.png",
+      "sha256": "e80b21c85831812f4263c568fd202bd059ef45be18fe4b27bf5395b8c924b0dc",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 4,
+      "id": "buffers",
+      "png": "build/render/04-buffers.png",
+      "sha256": "58e34406e8a26cff1d4797b6bbdbb9d91567de6cb264061fb070f2284f32662d",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 5,
+      "id": "btree",
+      "png": "build/render/05-btree.png",
+      "sha256": "22d00405b7cff2891a33ae1b7af30ef231a780cef71bbff8c52aabf89c6bef19",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 6,
+      "id": "function-order",
+      "png": "build/render/06-function-order.png",
+      "sha256": "d1b469b04a40d2e21893a5a35ffb1afd7f882dc9950d27ee864fe8d26ec46a75",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 7,
+      "id": "volatility",
+      "png": "build/render/07-volatility.png",
+      "sha256": "3ca3042b63a6f59b388f46531f64f5751658a2b723da24b3561b22cfe0bd2ae9",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 8,
+      "id": "fix",
+      "png": "build/render/08-fix.png",
+      "sha256": "ff21bf8d47a3c5215d16c39b40ce6e09c261ab5f6001e7440daa0a0e64771032",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 9,
+      "id": "expr-index",
+      "png": "build/render/09-expr-index.png",
+      "sha256": "900cd64dbaa85b068c0f4b53797f2411b112b1f4be6291a07a8d2cb107105736",
+      "size": [
+        1600,
+        900
+      ]
+    },
+    {
+      "number": 10,
+      "id": "recap",
+      "png": "build/render/10-recap.png",
+      "sha256": "bd61b16d47e3ba0ea584405f0ba29414cdf084f70db398168e969bb0b1819568",
+      "size": [
+        1600,
+        900
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "file": "build/render/contact-01.png",
+      "slides": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    }
+  ]
+}

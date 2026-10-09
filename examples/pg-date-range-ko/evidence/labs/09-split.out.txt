@@ -1,0 +1,132 @@
+CREATE EXTENSION
+CREATE EXTENSION
+SET
+SET
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate
+   ->  Index Scan using orders_created_at_idx on orders
+         Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+(3 rows)
+
+ table_pages_loaded 
+--------------------
+               7353
+(1 row)
+
+ buffers_evicted 
+-----------------
+            2745
+(1 row)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+ pg_stat_reset 
+---------------
+ 
+(1 row)
+
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=72 read=30
+   ->  Index Scan using orders_created_at_idx on orders (actual rows=9600.00 loops=1)
+         Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+         Index Searches: 1
+         Buffers: shared hit=72 read=30
+ Planning Time: 0.019 ms
+ Execution Time: 0.890 ms
+(8 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+       relation        | hit | read 
+-----------------------+-----+------
+ table                 |  72 |    0
+ orders_created_at_idx |   0 |   30
+(2 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+ pg_stat_reset 
+---------------
+ 
+(1 row)
+
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=102
+   ->  Index Scan using orders_created_at_idx on orders (actual rows=9600.00 loops=1)
+         Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+         Index Searches: 1
+         Buffers: shared hit=102
+ Planning Time: 0.014 ms
+ Execution Time: 0.587 ms
+(8 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+       relation        | hit | read 
+-----------------------+-----+------
+ table                 |  72 |    0
+ orders_created_at_idx |  30 |    0
+(2 rows)
+
+CREATE INDEX
+ANALYZE
+                                           QUERY PLAN                                            
+-------------------------------------------------------------------------------------------------
+ Aggregate
+   ->  Index Scan using orders_created_kst_date_idx on orders
+         Index Cond: (((created_at AT TIME ZONE 'Asia/Seoul'::text))::date = '2026-07-01'::date)
+(3 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+ pg_stat_reset 
+---------------
+ 
+(1 row)
+
+                                           QUERY PLAN                                            
+-------------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=72 read=11
+   ->  Index Scan using orders_created_kst_date_idx on orders (actual rows=9600.00 loops=1)
+         Index Cond: (((created_at AT TIME ZONE 'Asia/Seoul'::text))::date = '2026-07-01'::date)
+         Index Searches: 1
+         Buffers: shared hit=72 read=11
+ Planning Time: 0.016 ms
+ Execution Time: 0.735 ms
+(8 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+          relation           | hit | read 
+-----------------------------+-----+------
+ table                       |  72 |    0
+ orders_created_kst_date_idx |   0 |   11
+(2 rows)
+
+DROP INDEX
+DROP EXTENSION
+DROP EXTENSION

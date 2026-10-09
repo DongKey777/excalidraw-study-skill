@@ -1,0 +1,1030 @@
+{
+  "combinedSha256": "22fb9ce02e9f7d64c8c41545b19a21b54b5a42d089fa13efb178eb359538bb4a",
+  "renderer": "excalidraw@0.18.1 exportToSvg in chrome 154.0.8037.98",
+  "widths": {
+    "cover-002-series": [
+      376.59375
+    ],
+    "cover-004-title": [
+      662.3125,
+      431.296875
+    ],
+    "cover-005-subtitle": [
+      522.859375
+    ],
+    "cover-006-meta": [
+      323.140625
+    ],
+    "cover-008-toc-n": [
+      19.8125
+    ],
+    "cover-009-toc": [
+      199.15625
+    ],
+    "cover-010-toc-n": [
+      19.8125
+    ],
+    "cover-011-toc": [
+      120.671875
+    ],
+    "cover-012-toc-n": [
+      19.8125
+    ],
+    "cover-013-toc": [
+      168.65625
+    ],
+    "cover-014-toc-n": [
+      19.8125
+    ],
+    "cover-015-toc": [
+      238.1875
+    ],
+    "cover-016-toc-n": [
+      19.8125
+    ],
+    "cover-017-toc": [
+      283.484375
+    ],
+    "cover-018-toc-n": [
+      19.8125
+    ],
+    "cover-019-toc": [
+      114.828125
+    ],
+    "cover-020-toc-n": [
+      19.8125
+    ],
+    "cover-021-toc": [
+      175.15625
+    ],
+    "cover-022-toc-n": [
+      19.8125
+    ],
+    "cover-023-toc": [
+      162.828125
+    ],
+    "cover-024-toc-n": [
+      19.8125
+    ],
+    "cover-025-toc": [
+      186.828125
+    ],
+    "situation-004-badge-label": [
+      231.3125
+    ],
+    "situation-007-step-label": [
+      25.953125
+    ],
+    "situation-010-step-label": [
+      25.953125
+    ],
+    "situation-013-step-label": [
+      25.953125
+    ],
+    "situation-016-step-label": [
+      25.953125
+    ],
+    "situation-017-series": [
+      256.78125
+    ],
+    "situation-018-title": [
+      960.953125
+    ],
+    "situation-019-subtitle": [
+      478.765625
+    ],
+    "situation-020-source": [
+      322.53125
+    ],
+    "situation-022-takeaway-label": [
+      29.421875
+    ],
+    "situation-023-takeaway-text": [
+      452.59375
+    ],
+    "situation-027-code": [
+      178.203125,
+      108.90625,
+      376.203125
+    ],
+    "situation-030-box-title": [
+      125.5625
+    ],
+    "situation-031-box-body": [
+      443.484375,
+      469.4375,
+      432
+    ],
+    "situation-032-text": [
+      390.78125
+    ],
+    "situation-135-text": [
+      931.890625
+    ],
+    "plan-before-004-badge-label": [
+      231.3125
+    ],
+    "plan-before-007-step-label": [
+      25.953125
+    ],
+    "plan-before-010-step-label": [
+      25.953125
+    ],
+    "plan-before-013-step-label": [
+      25.953125
+    ],
+    "plan-before-016-step-label": [
+      25.953125
+    ],
+    "plan-before-017-series": [
+      256.78125
+    ],
+    "plan-before-018-title": [
+      718.078125
+    ],
+    "plan-before-019-subtitle": [
+      841.40625
+    ],
+    "plan-before-020-source": [
+      245.8125
+    ],
+    "plan-before-022-takeaway-label": [
+      29.421875
+    ],
+    "plan-before-023-takeaway-text": [
+      538.765625
+    ],
+    "plan-before-027-code": [
+      222.75,
+      330,
+      305.25,
+      569.25,
+      0,
+      462,
+      214.5,
+      610.5,
+      453.75,
+      313.5,
+      264,
+      8.25,
+      206.25
+    ],
+    "plan-before-028-text": [
+      778.75,
+      676.546875
+    ],
+    "plan-before-031-box-title": [
+      95.40625
+    ],
+    "plan-before-032-box-body": [
+      374.921875,
+      263.625
+    ],
+    "plan-before-035-box-title": [
+      101.53125
+    ],
+    "plan-before-036-box-body": [
+      231.0625
+    ],
+    "plan-before-040-box-title": [
+      48.890625
+    ],
+    "plan-before-041-box-body": [
+      423.703125,
+      152.921875
+    ],
+    "plan-before-044-box-title": [
+      69.3125
+    ],
+    "plan-before-045-box-body": [
+      445.046875,
+      448.171875,
+      330.84375
+    ],
+    "plan-before-048-box-title": [
+      107.375
+    ],
+    "plan-before-049-box-body": [
+      448.296875,
+      399.421875,
+      422.125,
+      151.46875
+    ],
+    "buffers-004-badge-label": [
+      231.3125
+    ],
+    "buffers-007-step-label": [
+      25.953125
+    ],
+    "buffers-010-step-label": [
+      25.953125
+    ],
+    "buffers-013-step-label": [
+      25.953125
+    ],
+    "buffers-016-step-label": [
+      25.953125
+    ],
+    "buffers-017-series": [
+      256.78125
+    ],
+    "buffers-018-title": [
+      808.703125
+    ],
+    "buffers-019-subtitle": [
+      681.796875
+    ],
+    "buffers-020-source": [
+      263.15625
+    ],
+    "buffers-022-takeaway-label": [
+      29.421875
+    ],
+    "buffers-023-takeaway-text": [
+      445.46875
+    ],
+    "buffers-026-box-title": [
+      82.234375
+    ],
+    "buffers-027-box-body": [
+      122.375
+    ],
+    "buffers-029-text": [
+      143.328125
+    ],
+    "buffers-030-text": [
+      327.765625
+    ],
+    "buffers-032-text": [
+      137.625
+    ],
+    "buffers-033-text": [
+      241.3125
+    ],
+    "buffers-052-page-label": [
+      16.90625
+    ],
+    "buffers-055-page-label": [
+      32.03125
+    ],
+    "buffers-084-text": [
+      65.875
+    ],
+    "buffers-085-text": [
+      80.0625
+    ],
+    "buffers-086-text": [
+      112.140625
+    ],
+    "buffers-089-box-title": [
+      96.625
+    ],
+    "buffers-090-box-body": [
+      367.296875,
+      375.53125,
+      206.859375
+    ],
+    "buffers-093-box-title": [
+      117.421875
+    ],
+    "buffers-094-box-body": [
+      330.71875,
+      324.46875,
+      103.4375
+    ],
+    "buffers-097-box-title": [
+      82.234375
+    ],
+    "buffers-098-box-body": [
+      339.171875,
+      330.28125,
+      356.40625
+    ],
+    "buffers-099-text": [
+      656.515625
+    ],
+    "btree-004-badge-label": [
+      231.3125
+    ],
+    "btree-007-step-label": [
+      25.953125
+    ],
+    "btree-010-step-label": [
+      25.953125
+    ],
+    "btree-013-step-label": [
+      25.953125
+    ],
+    "btree-016-step-label": [
+      25.953125
+    ],
+    "btree-017-series": [
+      256.78125
+    ],
+    "btree-018-title": [
+      928.53125
+    ],
+    "btree-019-subtitle": [
+      496.25
+    ],
+    "btree-020-source": [
+      176.4375
+    ],
+    "btree-022-takeaway-label": [
+      29.421875
+    ],
+    "btree-023-takeaway-text": [
+      829.390625
+    ],
+    "btree-026-box-title": [
+      115.5
+    ],
+    "btree-029-box-title": [
+      115.5
+    ],
+    "btree-032-box-title": [
+      115.5
+    ],
+    "btree-033-text": [
+      25.953125
+    ],
+    "btree-034-text": [
+      25.953125,
+      38.9375
+    ],
+    "btree-036-text": [
+      115.5
+    ],
+    "btree-037-text": [
+      115.5
+    ],
+    "btree-038-text": [
+      115.5
+    ],
+    "btree-040-text": [
+      115.5
+    ],
+    "btree-041-text": [
+      115.5
+    ],
+    "btree-042-text": [
+      115.5
+    ],
+    "btree-044-text": [
+      115.5
+    ],
+    "btree-045-text": [
+      115.5
+    ],
+    "btree-047-text": [
+      115.5
+    ],
+    "btree-049-text": [
+      115.5
+    ],
+    "btree-050-text": [
+      115.5
+    ],
+    "btree-051-text": [
+      115.5
+    ],
+    "btree-052-text": [
+      25.953125
+    ],
+    "btree-062-text": [
+      25.953125,
+      43.09375
+    ],
+    "btree-065-page-label": [
+      32.265625
+    ],
+    "btree-068-page-label": [
+      32.265625
+    ],
+    "btree-071-page-label": [
+      32.265625
+    ],
+    "btree-074-page-label": [
+      33.375
+    ],
+    "btree-077-page-label": [
+      33.375
+    ],
+    "btree-080-page-label": [
+      33.375
+    ],
+    "btree-081-text": [
+      18
+    ],
+    "btree-082-text": [
+      38.9375,
+      38.9375
+    ],
+    "btree-087-marker-label": [
+      10.015625
+    ],
+    "btree-090-marker-label": [
+      10.015625
+    ],
+    "btree-093-marker-label": [
+      10.015625
+    ],
+    "btree-096-marker-label": [
+      10.015625
+    ],
+    "btree-097-text": [
+      94.0625,
+      74.875
+    ],
+    "btree-098-text": [
+      867.390625
+    ],
+    "btree-101-box-title": [
+      98.65625
+    ],
+    "btree-102-box-body": [
+      310.28125,
+      252.84375,
+      305.78125,
+      206.859375
+    ],
+    "btree-105-box-title": [
+      217.453125
+    ],
+    "btree-106-box-body": [
+      258.5625,
+      206.859375,
+      254.984375,
+      344.265625
+    ],
+    "function-order-004-badge-label": [
+      231.3125
+    ],
+    "function-order-007-step-label": [
+      25.953125
+    ],
+    "function-order-010-step-label": [
+      25.953125
+    ],
+    "function-order-013-step-label": [
+      25.953125
+    ],
+    "function-order-016-step-label": [
+      25.953125
+    ],
+    "function-order-017-series": [
+      256.78125
+    ],
+    "function-order-018-title": [
+      1061.53125
+    ],
+    "function-order-019-subtitle": [
+      590.296875
+    ],
+    "function-order-020-source": [
+      229.90625
+    ],
+    "function-order-022-takeaway-label": [
+      29.421875
+    ],
+    "function-order-023-takeaway-text": [
+      586.65625
+    ],
+    "function-order-024-text": [
+      231.578125
+    ],
+    "function-order-028-text": [
+      75.609375,
+      87.5
+    ],
+    "function-order-030-text": [
+      81.828125
+    ],
+    "function-order-032-text": [
+      81.828125
+    ],
+    "function-order-034-text": [
+      81.828125
+    ],
+    "function-order-036-text": [
+      17
+    ],
+    "function-order-038-text": [
+      81.828125
+    ],
+    "function-order-040-text": [
+      17
+    ],
+    "function-order-042-text": [
+      81.828125
+    ],
+    "function-order-044-text": [
+      81.828125
+    ],
+    "function-order-046-text": [
+      81.828125
+    ],
+    "function-order-047-text": [
+      117.40625,
+      87.5
+    ],
+    "function-order-049-text": [
+      43.484375
+    ],
+    "function-order-051-text": [
+      43.484375
+    ],
+    "function-order-053-text": [
+      43.484375
+    ],
+    "function-order-055-text": [
+      17
+    ],
+    "function-order-057-text": [
+      43.484375
+    ],
+    "function-order-059-text": [
+      17
+    ],
+    "function-order-061-text": [
+      43.484375
+    ],
+    "function-order-063-text": [
+      43.484375
+    ],
+    "function-order-065-text": [
+      43.484375
+    ],
+    "function-order-068-code": [
+      345.953125
+    ],
+    "function-order-071-code": [
+      363,
+      363
+    ],
+    "function-order-074-box-title": [
+      101.265625
+    ],
+    "function-order-075-box-body": [
+      596.546875,
+      424.296875
+    ],
+    "function-order-078-box-title": [
+      82.234375
+    ],
+    "function-order-079-box-body": [
+      562.671875,
+      196.28125
+    ],
+    "function-order-082-box-title": [
+      101.265625
+    ],
+    "function-order-083-box-body": [
+      861.5625
+    ],
+    "volatility-004-badge-label": [
+      231.3125
+    ],
+    "volatility-007-step-label": [
+      25.953125
+    ],
+    "volatility-010-step-label": [
+      25.953125
+    ],
+    "volatility-013-step-label": [
+      25.953125
+    ],
+    "volatility-016-step-label": [
+      25.953125
+    ],
+    "volatility-017-series": [
+      256.78125
+    ],
+    "volatility-018-title": [
+      1022.203125
+    ],
+    "volatility-019-subtitle": [
+      751.390625
+    ],
+    "volatility-020-source": [
+      339.25
+    ],
+    "volatility-022-takeaway-label": [
+      29.421875
+    ],
+    "volatility-023-takeaway-text": [
+      474.125
+    ],
+    "volatility-026-box-title": [
+      120.296875
+    ],
+    "volatility-027-box-body": [
+      332.140625,
+      587.5625,
+      332.140625
+    ],
+    "volatility-028-text": [
+      121.828125
+    ],
+    "volatility-031-pill-label": [
+      184.125
+    ],
+    "volatility-034-box-title": [
+      185.953125
+    ],
+    "volatility-035-box-body": [
+      167.109375
+    ],
+    "volatility-038-box-title": [
+      137.875
+    ],
+    "volatility-039-box-body": [
+      167.109375
+    ],
+    "volatility-042-text": [
+      546.4375,
+      505.90625,
+      206.59375
+    ],
+    "volatility-045-table-head": [
+      119.625
+    ],
+    "volatility-047-table-head": [
+      73.65625
+    ],
+    "volatility-049-table-head": [
+      41.53125
+    ],
+    "volatility-051-table-cell": [
+      140.8125
+    ],
+    "volatility-053-table-cell": [
+      149.609375
+    ],
+    "volatility-055-table-cell": [
+      60.1875
+    ],
+    "volatility-057-table-cell": [
+      140.8125
+    ],
+    "volatility-059-table-cell": [
+      149.609375
+    ],
+    "volatility-061-table-cell": [
+      60.1875
+    ],
+    "volatility-065-code": [
+      508.203125,
+      477.40625
+    ],
+    "volatility-069-code": [
+      523.609375,
+      477.40625
+    ],
+    "volatility-070-text": [
+      693.6875
+    ],
+    "fix-004-badge-label": [
+      231.3125
+    ],
+    "fix-007-step-label": [
+      25.953125
+    ],
+    "fix-010-step-label": [
+      25.953125
+    ],
+    "fix-013-step-label": [
+      25.953125
+    ],
+    "fix-016-step-label": [
+      25.953125
+    ],
+    "fix-017-series": [
+      256.78125
+    ],
+    "fix-018-title": [
+      1219.203125
+    ],
+    "fix-019-subtitle": [
+      680.96875
+    ],
+    "fix-020-source": [
+      411.296875
+    ],
+    "fix-022-takeaway-label": [
+      29.421875
+    ],
+    "fix-023-takeaway-text": [
+      474.828125
+    ],
+    "fix-027-code": [
+      284.90625,
+      231,
+      669.90625,
+      7.703125,
+      785.40625,
+      1216.609375,
+      192.5,
+      292.609375,
+      7.703125
+    ],
+    "fix-030-box-title": [
+      290.546875
+    ],
+    "fix-031-box-body": [
+      350.625,
+      319.078125,
+      316.359375,
+      170.703125
+    ],
+    "fix-032-text": [
+      331.6875,
+      106.15625
+    ],
+    "fix-033-text": [
+      140.96875
+    ],
+    "fix-034-text": [
+      83.171875
+    ],
+    "fix-036-text": [
+      45.046875
+    ],
+    "fix-037-text": [
+      67.28125
+    ],
+    "fix-039-text": [
+      30.046875
+    ],
+    "fix-040-text": [
+      171.5
+    ],
+    "fix-042-text": [
+      63.765625
+    ],
+    "fix-044-text": [
+      63.765625
+    ],
+    "fix-045-text": [
+      67.28125
+    ],
+    "fix-046-text": [
+      45.546875
+    ],
+    "fix-047-text": [
+      425.546875,
+      195.28125
+    ],
+    "fix-050-box-title": [
+      233.109375
+    ],
+    "fix-051-box-body": [
+      339.75,
+      328.703125,
+      353.625,
+      335.265625,
+      228.359375
+    ],
+    "fix-052-text": [
+      311.171875
+    ],
+    "fix-053-text": [
+      48.1875
+    ],
+    "fix-055-text": [
+      18.921875
+    ],
+    "fix-056-text": [
+      63.546875
+    ],
+    "fix-058-text": [
+      42.546875
+    ],
+    "expr-index-004-badge-label": [
+      231.3125
+    ],
+    "expr-index-007-step-label": [
+      25.953125
+    ],
+    "expr-index-010-step-label": [
+      25.953125
+    ],
+    "expr-index-013-step-label": [
+      25.953125
+    ],
+    "expr-index-016-step-label": [
+      25.953125
+    ],
+    "expr-index-017-series": [
+      256.78125
+    ],
+    "expr-index-018-title": [
+      1011.25
+    ],
+    "expr-index-019-subtitle": [
+      546.859375
+    ],
+    "expr-index-020-source": [
+      406.46875
+    ],
+    "expr-index-022-takeaway-label": [
+      29.421875
+    ],
+    "expr-index-023-takeaway-text": [
+      653.828125
+    ],
+    "expr-index-025-left-label": [
+      43.09375
+    ],
+    "expr-index-026-left-text": [
+      706.421875
+    ],
+    "expr-index-029-box-title": [
+      89.796875
+    ],
+    "expr-index-030-box-body": [
+      173.890625,
+      91.640625
+    ],
+    "expr-index-033-box-title": [
+      234.3125
+    ],
+    "expr-index-034-box-body": [
+      208.78125,
+      97.9375
+    ],
+    "expr-index-038-box-title": [
+      176.59375
+    ],
+    "expr-index-039-box-body": [
+      157.859375
+    ],
+    "expr-index-043-box-title": [
+      47.546875
+    ],
+    "expr-index-044-box-body": [
+      122.828125,
+      97.9375
+    ],
+    "expr-index-048-box-title": [
+      36.984375
+    ],
+    "expr-index-049-box-body": [
+      86.96875
+    ],
+    "expr-index-051-text": [
+      1348.3125
+    ],
+    "expr-index-054-code": [
+      412.5,
+      420.75,
+      0,
+      536.25
+    ],
+    "expr-index-055-text": [
+      284.390625
+    ],
+    "expr-index-056-text": [
+      121.578125
+    ],
+    "expr-index-058-text": [
+      16.6875
+    ],
+    "expr-index-060-text": [
+      16.6875
+    ],
+    "expr-index-061-text": [
+      43.015625
+    ],
+    "expr-index-062-text": [
+      87.5
+    ],
+    "expr-index-064-text": [
+      15.59375
+    ],
+    "expr-index-066-text": [
+      16.6875
+    ],
+    "expr-index-067-text": [
+      33.5625
+    ],
+    "expr-index-068-text": [
+      549.609375,
+      236.328125
+    ],
+    "expr-index-071-box-title": [
+      176.703125
+    ],
+    "expr-index-072-box-body": [
+      508.765625,
+      227.421875
+    ],
+    "expr-index-075-box-title": [
+      170.578125
+    ],
+    "expr-index-076-box-body": [
+      595.28125,
+      330.84375
+    ],
+    "recap-004-badge-label": [
+      76.734375
+    ],
+    "recap-005-series": [
+      256.78125
+    ],
+    "recap-006-title": [
+      391.453125
+    ],
+    "recap-007-subtitle": [
+      531.296875
+    ],
+    "recap-008-source": [
+      197.390625
+    ],
+    "recap-010-takeaway-label": [
+      29.421875
+    ],
+    "recap-011-takeaway-text": [
+      440.140625
+    ],
+    "recap-014-table-head": [
+      29.421875
+    ],
+    "recap-016-table-head": [
+      14.71875
+    ],
+    "recap-018-table-head": [
+      68.28125
+    ],
+    "recap-020-table-cell": [
+      239.46875
+    ],
+    "recap-022-table-cell": [
+      417.421875
+    ],
+    "recap-024-table-cell": [
+      61.96875
+    ],
+    "recap-026-table-cell": [
+      224.765625
+    ],
+    "recap-028-table-cell": [
+      632.875
+    ],
+    "recap-030-table-cell": [
+      24.171875
+    ],
+    "recap-032-table-cell": [
+      310.125
+    ],
+    "recap-034-table-cell": [
+      293.03125
+    ],
+    "recap-036-table-cell": [
+      24.171875
+    ],
+    "recap-038-table-cell": [
+      320.109375
+    ],
+    "recap-040-table-cell": [
+      512.453125
+    ],
+    "recap-042-table-cell": [
+      24.171875
+    ],
+    "recap-044-table-cell": [
+      286.21875
+    ],
+    "recap-046-table-cell": [
+      418.09375
+    ],
+    "recap-048-table-cell": [
+      24.171875
+    ],
+    "recap-050-table-cell": [
+      127.09375
+    ],
+    "recap-052-table-cell": [
+      583.421875,
+      210.0625
+    ],
+    "recap-054-table-cell": [
+      43.0625
+    ],
+    "recap-057-box-title": [
+      107.375
+    ],
+    "recap-058-box-body": [
+      614.34375,
+      481.734375
+    ],
+    "recap-061-box-title": [
+      69.328125
+    ],
+    "recap-062-box-body": [
+      254.671875,
+      155.140625,
+      150.09375
+    ]
+  }
+}

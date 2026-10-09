@@ -1,0 +1,13 @@
+== index sizes
+orders_created_at_idx 2745 21 MB
+orders_created_kst_date_idx 852 6816 kB
+== range condition
+table 72
+index orders_pkey 1
+index orders_created_at_idx 31
+index orders_created_kst_date_idx 1
+== expression index
+table 72
+index orders_pkey 1
+index orders_created_at_idx 1
+index orders_created_kst_date_idx 12

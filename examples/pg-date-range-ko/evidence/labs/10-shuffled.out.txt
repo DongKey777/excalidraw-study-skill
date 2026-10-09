@@ -1,0 +1,82 @@
+SET
+SET
+SELECT 1000000
+CREATE INDEX
+VACUUM
+    tablename    |  correlation  
+-----------------+---------------
+ orders          |             1
+ orders_shuffled | -0.0018788724
+(2 rows)
+
+ july_1_rows | table_pages 
+-------------+-------------
+        9600 |        5382
+(1 row)
+
+                                                                              QUERY PLAN                                                                              
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=5412
+   ->  Bitmap Heap Scan on orders_shuffled (actual rows=9600.00 loops=1)
+         Recheck Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+         Heap Blocks: exact=5382
+         Buffers: shared hit=5412
+         ->  Bitmap Index Scan on orders_shuffled_created_at_idx (actual rows=9600.00 loops=1)
+               Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+               Index Searches: 1
+               Buffers: shared hit=30
+ Planning:
+   Buffers: shared hit=6
+ Planning Time: 0.055 ms
+ Execution Time: 3.281 ms
+(14 rows)
+
+SET
+SET
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate
+   ->  Index Scan using orders_shuffled_created_at_idx on orders_shuffled
+         Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+(3 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+ pg_stat_reset 
+---------------
+ 
+(1 row)
+
+                                                                           QUERY PLAN                                                                           
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=9628
+   ->  Index Scan using orders_shuffled_created_at_idx on orders_shuffled (actual rows=9600.00 loops=1)
+         Index Cond: ((created_at >= '2026-07-01 00:00:00+09'::timestamp with time zone) AND (created_at < '2026-07-02 00:00:00+09'::timestamp with time zone))
+         Index Searches: 1
+         Buffers: shared hit=9628
+ Planning Time: 0.014 ms
+ Execution Time: 2.341 ms
+(8 rows)
+
+ pg_stat_force_next_flush 
+--------------------------
+ 
+(1 row)
+
+ relation | accesses 
+----------+----------
+ table    |     9598
+ index    |       30
+(2 rows)
+
+ by_range  
+-----------
+ 480008800
+(1 row)
+
+DROP TABLE

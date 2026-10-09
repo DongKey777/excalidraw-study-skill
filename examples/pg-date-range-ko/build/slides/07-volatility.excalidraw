@@ -1,0 +1,2426 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "frame",
+      "x": 3560,
+      "y": 1080,
+      "width": 1600,
+      "height": 900,
+      "name": "07. date(timestamptz)는 세션 시간대에 따라 결과가 달라진다",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "volatility-frame",
+      "version": 1,
+      "versionNonce": 1165058738,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 498999384,
+      "groupIds": [],
+      "frameId": null,
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "frame",
+          "slide": "volatility"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3560,
+      "y": 1080,
+      "width": 1600,
+      "height": 900,
+      "backgroundColor": "#F8FAFC",
+      "fillStyle": "solid",
+      "strokeColor": "#F8FAFC",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "volatility-001-background",
+      "version": 1,
+      "versionNonce": 2090612017,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1186693407,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.background"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 1125,
+      "width": 313,
+      "height": 40,
+      "backgroundColor": "#F3E8FF",
+      "fillStyle": "solid",
+      "strokeColor": "#F3E8FF",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "volatility-003-badge-box",
+      "version": 1,
+      "versionNonce": 1882552289,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 322660235,
+      "groupIds": [
+        "volatility-002-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 1133.75,
+      "width": 313,
+      "height": 23,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#7E22CE",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "07  예제 상황 · 하루치 주문 조회",
+      "originalText": "07  예제 상황 · 하루치 주문 조회",
+      "id": "volatility-004-badge-label",
+      "version": 1,
+      "versionNonce": 1925796638,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 776767876,
+      "groupIds": [
+        "volatility-002-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4824,
+      "y": 1128,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "volatility-006-step-box",
+      "version": 1,
+      "versionNonce": 1266729321,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 171476911,
+      "groupIds": [
+        "volatility-005-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4824,
+      "y": 1133.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "상황",
+      "originalText": "상황",
+      "id": "volatility-007-step-label",
+      "version": 1,
+      "versionNonce": 116984746,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1824204392,
+      "groupIds": [
+        "volatility-005-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4892,
+      "y": 1128,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "volatility-009-step-box",
+      "version": 1,
+      "versionNonce": 345805736,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 643189650,
+      "groupIds": [
+        "volatility-008-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4892,
+      "y": 1133.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "분석",
+      "originalText": "분석",
+      "id": "volatility-010-step-label",
+      "version": 1,
+      "versionNonce": 581877812,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1960728318,
+      "groupIds": [
+        "volatility-008-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4960,
+      "y": 1128,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#7E22CE",
+      "fillStyle": "solid",
+      "strokeColor": "#7E22CE",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "volatility-012-step-box",
+      "version": 1,
+      "versionNonce": 1405593172,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 675684374,
+      "groupIds": [
+        "volatility-011-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4960,
+      "y": 1133.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "원리",
+      "originalText": "원리",
+      "id": "volatility-013-step-label",
+      "version": 1,
+      "versionNonce": 1061681055,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2093768273,
+      "groupIds": [
+        "volatility-011-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 5028,
+      "y": 1128,
+      "width": 62,
+      "height": 30,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "volatility-015-step-box",
+      "version": 1,
+      "versionNonce": 292368929,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 315144359,
+      "groupIds": [
+        "volatility-014-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 5028,
+      "y": 1133.625,
+      "width": 62,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#475569",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "해결",
+      "originalText": "해결",
+      "id": "volatility-016-step-label",
+      "version": 1,
+      "versionNonce": 1926629677,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1880837731,
+      "groupIds": [
+        "volatility-014-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.step.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4490,
+      "y": 1168,
+      "width": 600,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "originalText": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "id": "volatility-017-series",
+      "version": 1,
+      "versionNonce": 2002660921,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 146402063,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.series"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 1192,
+      "width": 1460,
+      "height": 55,
+      "fontSize": 44,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(timestamptz)는 세션 시간대에 따라 결과가 달라진다",
+      "originalText": "date(timestamptz)는 세션 시간대에 따라 결과가 달라진다",
+      "id": "volatility-018-title",
+      "version": 1,
+      "versionNonce": 401421829,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 10074667,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3632,
+      "y": 1258,
+      "width": 1460,
+      "height": 27,
+      "fontSize": 21,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(created_at)으로 인덱스를 만들면 될 것 같지만 이 함수는 STABLE이라 만들 수 없다",
+      "originalText": "date(created_at)으로 인덱스를 만들면 될 것 같지만 이 함수는 STABLE이라 만들 수 없다",
+      "id": "volatility-019-subtitle",
+      "version": 1,
+      "versionNonce": 956168790,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1988123540,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.subtitle"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 1954,
+      "width": 1460,
+      "height": 17,
+      "fontSize": 13,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "근거 §4 · §7 · §9 · §1 labs/04-volatility, 06-timezone, 11-cast",
+      "originalText": "근거 §4 · §7 · §9 · §1 labs/04-volatility, 06-timezone, 11-cast",
+      "id": "volatility-020-source",
+      "version": 1,
+      "versionNonce": 450095356,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1878633546,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.source"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 1890,
+      "width": 1460,
+      "height": 54,
+      "backgroundColor": "#F3E8FF",
+      "fillStyle": "solid",
+      "strokeColor": "#7E22CE",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "volatility-021-takeaway",
+      "version": 1,
+      "versionNonce": 2079740502,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2119965028,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 1905,
+      "width": 64,
+      "height": 22,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#7E22CE",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "정리",
+      "originalText": "정리",
+      "id": "volatility-022-takeaway-label",
+      "version": 1,
+      "versionNonce": 1503969698,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1092820984,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3725,
+      "y": 1902,
+      "width": 1335,
+      "height": 24,
+      "fontSize": 19,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(timestamptz)는 STABLE이라 인덱스 정의에 쓸 수 없다.",
+      "originalText": "date(timestamptz)는 STABLE이라 인덱스 정의에 쓸 수 없다.",
+      "id": "volatility-023-takeaway-text",
+      "version": 1,
+      "versionNonce": 1199327140,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 414662254,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.takeaway"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 1712,
+      "width": 1460,
+      "height": 162,
+      "backgroundColor": "#CCFBF1",
+      "fillStyle": "solid",
+      "strokeColor": "#0F766E",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "volatility-025-box",
+      "version": 1,
+      "versionNonce": 1452877582,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 831789964,
+      "groupIds": [
+        "volatility-024-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 1738.1,
+      "width": 1416,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#0F766E",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "함수의 변동성",
+      "originalText": "함수의 변동성",
+      "id": "volatility-026-box-title",
+      "version": 1,
+      "versionNonce": 600286023,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 656058473,
+      "groupIds": [
+        "volatility-024-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 1776.5,
+      "width": 1416,
+      "height": 72,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "IMMUTABLE: 같은 입력이면 언제나 같은 결과다\nSTABLE: SQL 문 하나 안에서는 같지만 TimeZone 같은 설정이 바뀌면 달라질 수 있다\n인덱스 정의에는 IMMUTABLE 함수만 쓸 수 있다",
+      "originalText": "IMMUTABLE: 같은 입력이면 언제나 같은 결과다\nSTABLE: SQL 문 하나 안에서는 같지만 TimeZone 같은 설정이 바뀌면 달라질 수 있다\n인덱스 정의에는 IMMUTABLE 함수만 쓸 수 있다",
+      "id": "volatility-027-box-body",
+      "version": 1,
+      "versionNonce": 408327917,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 367986475,
+      "groupIds": [
+        "volatility-024-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 1316,
+      "width": 642,
+      "height": 22,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "같은 시각, 두 날짜",
+      "originalText": "같은 시각, 두 날짜",
+      "id": "volatility-028-text",
+      "version": 1,
+      "versionNonce": 500479083,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1404329873,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3843,
+      "y": 1352,
+      "width": 216,
+      "height": 34,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "volatility-030-pill",
+      "version": 1,
+      "versionNonce": 924672234,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1352422348,
+      "groupIds": [
+        "volatility-029-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chip.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3843,
+      "y": 1357.75,
+      "width": 216,
+      "height": 23,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "2026-06-30 15:30 UTC",
+      "originalText": "2026-06-30 15:30 UTC",
+      "id": "volatility-031-pill-label",
+      "version": 1,
+      "versionNonce": 261522453,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 541869399,
+      "groupIds": [
+        "volatility-029-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chip.label"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3630,
+      "y": 1446,
+      "width": 307,
+      "height": 100,
+      "backgroundColor": "#DBEAFE",
+      "fillStyle": "solid",
+      "strokeColor": "#2563EB",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "volatility-033-box",
+      "version": 1,
+      "versionNonce": 45662751,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1877951713,
+      "groupIds": [
+        "volatility-032-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 1466.6,
+      "width": 263,
+      "height": 22,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#1D4ED8",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "TimeZone = Asia/Seoul",
+      "originalText": "TimeZone = Asia/Seoul",
+      "id": "volatility-034-box-title",
+      "version": 1,
+      "versionNonce": 557609694,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1611617152,
+      "groupIds": [
+        "volatility-032-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3652,
+      "y": 1500.2,
+      "width": 263,
+      "height": 26,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date() → 2026-07-01",
+      "originalText": "date() → 2026-07-01",
+      "id": "volatility-035-box-body",
+      "version": 1,
+      "versionNonce": 234002817,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 472218759,
+      "groupIds": [
+        "volatility-032-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 3965,
+      "y": 1446,
+      "width": 307,
+      "height": 100,
+      "backgroundColor": "#DBEAFE",
+      "fillStyle": "solid",
+      "strokeColor": "#2563EB",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "volatility-037-box",
+      "version": 1,
+      "versionNonce": 1923803365,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1935066011,
+      "groupIds": [
+        "volatility-036-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3987,
+      "y": 1466.6,
+      "width": 263,
+      "height": 22,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#1D4ED8",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "TimeZone = UTC",
+      "originalText": "TimeZone = UTC",
+      "id": "volatility-038-box-title",
+      "version": 1,
+      "versionNonce": 524450808,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1053033702,
+      "groupIds": [
+        "volatility-036-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3987,
+      "y": 1500.2,
+      "width": 263,
+      "height": 26,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date() → 2026-06-30",
+      "originalText": "date() → 2026-06-30",
+      "id": "volatility-039-box-body",
+      "version": 1,
+      "versionNonce": 1417993887,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1863610857,
+      "groupIds": [
+        "volatility-036-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "arrow",
+      "x": 3911,
+      "y": 1394,
+      "width": 127.5,
+      "height": 44,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -127.5,
+          44
+        ]
+      ],
+      "strokeColor": "#334155",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-040-arrow",
+      "version": 1,
+      "versionNonce": 1320710812,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1710186190,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "connector"
+        }
+      }
+    },
+    {
+      "type": "arrow",
+      "x": 3991,
+      "y": 1394,
+      "width": 127.5,
+      "height": 44,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          127.5,
+          44
+        ]
+      ],
+      "strokeColor": "#334155",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-041-arrow",
+      "version": 1,
+      "versionNonce": 1872426725,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 114370775,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "connector"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3630,
+      "y": 1568,
+      "width": 642,
+      "height": 65,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "timestamptz는 시각을 UTC로 저장한다. 화면에 보여 줄 때와 date()로 날짜를 꺼낼 때\n세션 시간대로 바꾼다. 그래서 같은 행이라도 세션마다 date() 값이 달라 인덱스에\n저장할 값을 하나로 정할 수 없다.",
+      "originalText": "timestamptz는 시각을 UTC로 저장한다. 화면에 보여 줄 때와 date()로 날짜를 꺼낼 때\n세션 시간대로 바꾼다. 그래서 같은 행이라도 세션마다 date() 값이 달라 인덱스에\n저장할 값을 하나로 정할 수 없다.",
+      "id": "volatility-042-text",
+      "version": 1,
+      "versionNonce": 1041175587,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 727953581,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "note"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4320,
+      "y": 1316,
+      "width": 770,
+      "height": 48.8,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "volatility-044-table-row",
+      "version": 1,
+      "versionNonce": 607364092,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1843429530,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4334,
+      "y": 1330,
+      "width": 280,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "인덱스에 쓰려는 식",
+      "originalText": "인덱스에 쓰려는 식",
+      "id": "volatility-045-table-head",
+      "version": 1,
+      "versionNonce": 265851779,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1563758525,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.head"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 4628,
+      "y": 1316,
+      "width": 0,
+      "height": 48.80000000000001,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          48.80000000000001
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-046-table-sep",
+      "version": 1,
+      "versionNonce": 801083235,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 807497429,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4642,
+      "y": 1330,
+      "width": 280,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "부르는 함수",
+      "originalText": "부르는 함수",
+      "id": "volatility-047-table-head",
+      "version": 1,
+      "versionNonce": 423315958,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1369834408,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.head"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 4936,
+      "y": 1316,
+      "width": 0,
+      "height": 48.80000000000001,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          48.80000000000001
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-048-table-sep",
+      "version": 1,
+      "versionNonce": 796266806,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 168678340,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4950,
+      "y": 1330,
+      "width": 126,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "변동성",
+      "originalText": "변동성",
+      "id": "volatility-049-table-head",
+      "version": 1,
+      "versionNonce": 551973133,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1846766899,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.head"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4320,
+      "y": 1364.8,
+      "width": 770,
+      "height": 48.8,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "volatility-050-table-row",
+      "version": 1,
+      "versionNonce": 80043860,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 909875942,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4334,
+      "y": 1378.8,
+      "width": 280,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(created_at)",
+      "originalText": "date(created_at)",
+      "id": "volatility-051-table-cell",
+      "version": 1,
+      "versionNonce": 374636571,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 172546061,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 4628,
+      "y": 1364.8,
+      "width": 0,
+      "height": 48.80000000000001,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          48.80000000000001
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-052-table-sep",
+      "version": 1,
+      "versionNonce": 573231415,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 717563685,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4642,
+      "y": 1378.8,
+      "width": 280,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(timestamptz)",
+      "originalText": "date(timestamptz)",
+      "id": "volatility-053-table-cell",
+      "version": 1,
+      "versionNonce": 306650842,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1792788876,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 4936,
+      "y": 1364.8,
+      "width": 0,
+      "height": 48.80000000000001,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          48.80000000000001
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-054-table-sep",
+      "version": 1,
+      "versionNonce": 730231272,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1596848746,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4950,
+      "y": 1378.8,
+      "width": 126,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#B91C1C",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "STABLE",
+      "originalText": "STABLE",
+      "id": "volatility-055-table-cell",
+      "version": 1,
+      "versionNonce": 302147169,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1001341431,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4320,
+      "y": 1413.6,
+      "width": 770,
+      "height": 48.8,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "volatility-056-table-row",
+      "version": 1,
+      "versionNonce": 1129098987,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1284534297,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4334,
+      "y": 1427.6,
+      "width": 280,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "created_at::date",
+      "originalText": "created_at::date",
+      "id": "volatility-057-table-cell",
+      "version": 1,
+      "versionNonce": 1231712880,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1253819270,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 4628,
+      "y": 1413.6,
+      "width": 0,
+      "height": 48.80000000000001,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          48.80000000000001
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-058-table-sep",
+      "version": 1,
+      "versionNonce": 1092651130,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 344247512,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4642,
+      "y": 1427.6,
+      "width": 280,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(timestamptz)",
+      "originalText": "date(timestamptz)",
+      "id": "volatility-059-table-cell",
+      "version": 1,
+      "versionNonce": 1441397063,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1507250513,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 4936,
+      "y": 1413.6,
+      "width": 0,
+      "height": 48.80000000000001,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          48.80000000000001
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "volatility-060-table-sep",
+      "version": 1,
+      "versionNonce": 817689431,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 570356709,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4950,
+      "y": 1427.6,
+      "width": 126,
+      "height": 21,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#B91C1C",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "STABLE",
+      "originalText": "STABLE",
+      "id": "volatility-061-table-cell",
+      "version": 1,
+      "versionNonce": 1563166585,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1513365635,
+      "groupIds": [
+        "volatility-043-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4320,
+      "y": 1480.4,
+      "width": 770,
+      "height": 62,
+      "backgroundColor": "#334155",
+      "fillStyle": "solid",
+      "strokeColor": "#334155",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "volatility-063-code-box",
+      "version": 1,
+      "versionNonce": 292019913,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1705487179,
+      "groupIds": [
+        "volatility-062-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.box"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4330,
+      "y": 1509.4,
+      "width": 750,
+      "height": 22.900000000000002,
+      "backgroundColor": "#EF4444",
+      "fillStyle": "solid",
+      "strokeColor": "#EF4444",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 40,
+      "id": "volatility-064-code-mark",
+      "version": 1,
+      "versionNonce": 434363231,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 842869609,
+      "groupIds": [
+        "volatility-062-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.mark"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4344,
+      "y": 1492.5,
+      "width": 722,
+      "height": 38,
+      "fontSize": 14,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "CREATE INDEX orders_created_date_idx ON orders (date(created_at));\nERROR:  functions in index expression must be marked IMMUTABLE",
+      "originalText": "CREATE INDEX orders_created_date_idx ON orders (date(created_at));\nERROR:  functions in index expression must be marked IMMUTABLE",
+      "id": "volatility-065-code",
+      "version": 1,
+      "versionNonce": 278648874,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2127459240,
+      "groupIds": [
+        "volatility-062-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4320,
+      "y": 1554.4,
+      "width": 770,
+      "height": 62,
+      "backgroundColor": "#334155",
+      "fillStyle": "solid",
+      "strokeColor": "#334155",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "volatility-067-code-box",
+      "version": 1,
+      "versionNonce": 321092315,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 794819001,
+      "groupIds": [
+        "volatility-066-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.box"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 4330,
+      "y": 1583.4,
+      "width": 750,
+      "height": 22.900000000000002,
+      "backgroundColor": "#EF4444",
+      "fillStyle": "solid",
+      "strokeColor": "#EF4444",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 4
+      },
+      "opacity": 40,
+      "id": "volatility-068-code-mark",
+      "version": 1,
+      "versionNonce": 288531141,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1806365675,
+      "groupIds": [
+        "volatility-066-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code.mark"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4344,
+      "y": 1566.5,
+      "width": 722,
+      "height": 38,
+      "fontSize": 14,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#FFFFFF",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "CREATE INDEX orders_created_cast_idx ON orders ((created_at::date));\nERROR:  functions in index expression must be marked IMMUTABLE",
+      "originalText": "CREATE INDEX orders_created_cast_idx ON orders ((created_at::date));\nERROR:  functions in index expression must be marked IMMUTABLE",
+      "id": "volatility-069-code",
+      "version": 1,
+      "versionNonce": 648037092,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1966272742,
+      "groupIds": [
+        "volatility-066-group"
+      ],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "code"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 4320,
+      "y": 1628.4,
+      "width": 770,
+      "height": 22,
+      "fontSize": 16,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.35,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "::date는 date로 형 변환하는 표기다. timestamptz에 쓰면 같은 date(timestamptz)를 불러 같은 오류가 난다.",
+      "originalText": "::date는 date로 형 변환하는 표기다. timestamptz에 쓰면 같은 date(timestamptz)를 불러 같은 오류가 난다.",
+      "id": "volatility-070-text",
+      "version": 1,
+      "versionNonce": 1571443654,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 572490352,
+      "groupIds": [],
+      "frameId": "volatility-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "note"
+        }
+      }
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#FFFFFF"
+  },
+  "files": {}
+}

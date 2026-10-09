@@ -1,0 +1,2508 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "frame",
+      "x": 1780,
+      "y": 2160,
+      "width": 1600,
+      "height": 900,
+      "name": "10. 이제 설명할 수 있는 것",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-frame",
+      "version": 1,
+      "versionNonce": 437150480,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 108375326,
+      "groupIds": [],
+      "frameId": null,
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "frame",
+          "slide": "recap"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1780,
+      "y": 2160,
+      "width": 1600,
+      "height": 900,
+      "backgroundColor": "#F8FAFC",
+      "fillStyle": "solid",
+      "strokeColor": "#F8FAFC",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-001-background",
+      "version": 1,
+      "versionNonce": 970490567,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1534711101,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.background"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2205,
+      "width": 132,
+      "height": 40,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#F1F5F9",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 10
+      },
+      "opacity": 100,
+      "id": "recap-003-badge-box",
+      "version": 1,
+      "versionNonce": 1245314963,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 403547157,
+      "groupIds": [
+        "recap-002-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 2213.75,
+      "width": 132,
+      "height": 23,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "center",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "10  마무리",
+      "originalText": "10  마무리",
+      "id": "recap-004-badge-label",
+      "version": 1,
+      "versionNonce": 1719848796,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1775858482,
+      "groupIds": [
+        "recap-002-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.badge.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2710,
+      "y": 2248,
+      "width": 600,
+      "height": 19,
+      "fontSize": 15,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "originalText": "예제 · 느린 쿼리로 배우는 PostgreSQL 18",
+      "id": "recap-005-series",
+      "version": 1,
+      "versionNonce": 1934235401,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 923202919,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.series"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 2272,
+      "width": 1460,
+      "height": 55,
+      "fontSize": 44,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "이제 설명할 수 있는 것",
+      "originalText": "이제 설명할 수 있는 것",
+      "id": "recap-006-title",
+      "version": 1,
+      "versionNonce": 215242758,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 483050512,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1852,
+      "y": 2338,
+      "width": 1460,
+      "height": 27,
+      "fontSize": 21,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "실행 계획에서 시작해 인덱스에서 범위를 읽는 방식까지 따라왔다",
+      "originalText": "실행 계획에서 시작해 인덱스에서 범위를 읽는 방식까지 따라왔다",
+      "id": "recap-007-subtitle",
+      "version": 1,
+      "versionNonce": 13287788,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2044320254,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.subtitle"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1850,
+      "y": 3034,
+      "width": 1460,
+      "height": 17,
+      "fontSize": 13,
+      "fontFamily": 2,
+      "textAlign": "right",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#64748B",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "근거 §1 labs/08-pages, 10-shuffled",
+      "originalText": "근거 §1 labs/08-pages, 10-shuffled",
+      "id": "recap-008-source",
+      "version": 1,
+      "versionNonce": 621398223,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 564580725,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.source"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2970,
+      "width": 1460,
+      "height": 54,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#334155",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "recap-009-takeaway",
+      "version": 1,
+      "versionNonce": 237377349,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 710740051,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1872,
+      "y": 2985,
+      "width": 64,
+      "height": 22,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "정리",
+      "originalText": "정리",
+      "id": "recap-010-takeaway-label",
+      "version": 1,
+      "versionNonce": 2000923035,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 163758753,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.footer.label"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1945,
+      "y": 2982,
+      "width": 1335,
+      "height": 24,
+      "fontSize": 19,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.25,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "느린 쿼리를 만나면 실행 계획의 Filter와 Buffers부터 본다.",
+      "originalText": "느린 쿼리를 만나면 실행 계획의 Filter와 Buffers부터 본다.",
+      "id": "recap-011-takeaway-text",
+      "version": 1,
+      "versionNonce": 2137013618,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1072124236,
+      "groupIds": [],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "chrome.takeaway"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2396,
+      "width": 1460,
+      "height": 49.41428571428571,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-013-table-row",
+      "version": 1,
+      "versionNonce": 133330470,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1639895436,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2409.657142857143,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "질문",
+      "originalText": "질문",
+      "id": "recap-014-table-head",
+      "version": 1,
+      "versionNonce": 67403566,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2098177060,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.head"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2396,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-015-table-sep",
+      "version": 1,
+      "versionNonce": 400168267,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 14471217,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2409.657142857143,
+      "width": 850,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "답",
+      "originalText": "답",
+      "id": "recap-016-table-head",
+      "version": 1,
+      "versionNonce": 536608507,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 735721945,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.head"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2396,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-017-table-sep",
+      "version": 1,
+      "versionNonce": 530128060,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 564071810,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2409.657142857143,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "다시 볼 장",
+      "originalText": "다시 볼 장",
+      "id": "recap-018-table-head",
+      "version": 1,
+      "versionNonce": 568649552,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 377594746,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.head"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2445.4142857142856,
+      "width": 1460,
+      "height": 49.41428571428571,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-019-table-row",
+      "version": 1,
+      "versionNonce": 725541045,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1439323059,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2459.0714285714284,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "쿼리가 무엇을 읽었는지 어떻게 아나",
+      "originalText": "쿼리가 무엇을 읽었는지 어떻게 아나",
+      "id": "recap-020-table-cell",
+      "version": 1,
+      "versionNonce": 1431477013,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 215196651,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2445.4142857142856,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-021-table-sep",
+      "version": 1,
+      "versionNonce": 1478615252,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 712667094,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2459.0714285714284,
+      "width": 850,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "실행 계획의 Seq Scan·Filter·Index Cond·Buffers 줄을 본다",
+      "originalText": "실행 계획의 Seq Scan·Filter·Index Cond·Buffers 줄을 본다",
+      "id": "recap-022-table-cell",
+      "version": 1,
+      "versionNonce": 928306868,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1731736938,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2445.4142857142856,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-023-table-sep",
+      "version": 1,
+      "versionNonce": 356299997,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1596339591,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2459.0714285714284,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "3, 4, 8장",
+      "originalText": "3, 4, 8장",
+      "id": "recap-024-table-cell",
+      "version": 1,
+      "versionNonce": 2049684383,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 399473009,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2494.828571428571,
+      "width": 1460,
+      "height": 49.41428571428571,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-025-table-row",
+      "version": 1,
+      "versionNonce": 1844973288,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1096409114,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2508.4857142857145,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "범위 조건은 인덱스를 어떻게 읽나",
+      "originalText": "범위 조건은 인덱스를 어떻게 읽나",
+      "id": "recap-026-table-cell",
+      "version": 1,
+      "versionNonce": 606097262,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1438148096,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2494.828571428571,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-027-table-sep",
+      "version": 1,
+      "versionNonce": 949033603,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 61008961,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2508.4857142857145,
+      "width": 850,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "시작 키까지 내려가 리프를 옆으로 읽으며 키마다 TID로 테이블 행을 가져오고 끝 키에서 멈춘다",
+      "originalText": "시작 키까지 내려가 리프를 옆으로 읽으며 키마다 TID로 테이블 행을 가져오고 끝 키에서 멈춘다",
+      "id": "recap-028-table-cell",
+      "version": 1,
+      "versionNonce": 1192084185,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1029195927,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2494.828571428571,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-029-table-sep",
+      "version": 1,
+      "versionNonce": 1845513712,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 314297866,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2508.4857142857145,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "5장",
+      "originalText": "5장",
+      "id": "recap-030-table-cell",
+      "version": 1,
+      "versionNonce": 382525670,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 4616076,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2544.2428571428572,
+      "width": 1460,
+      "height": 49.41428571428571,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-031-table-row",
+      "version": 1,
+      "versionNonce": 666105826,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 833389784,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2557.9,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(created_at) 조건은 왜 인덱스를 못 쓰나",
+      "originalText": "date(created_at) 조건은 왜 인덱스를 못 쓰나",
+      "id": "recap-032-table-cell",
+      "version": 1,
+      "versionNonce": 539083627,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1789737801,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2544.2428571428572,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-033-table-sep",
+      "version": 1,
+      "versionNonce": 1827998781,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1238291815,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2557.9,
+      "width": 850,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "조건에 쓴 식이 인덱스에 저장한 식과 다르다",
+      "originalText": "조건에 쓴 식이 인덱스에 저장한 식과 다르다",
+      "id": "recap-034-table-cell",
+      "version": 1,
+      "versionNonce": 279470836,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1959913950,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2544.2428571428572,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-035-table-sep",
+      "version": 1,
+      "versionNonce": 1976935856,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 679190358,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2557.9,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "6장",
+      "originalText": "6장",
+      "id": "recap-036-table-cell",
+      "version": 1,
+      "versionNonce": 172369,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 765459107,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2593.657142857143,
+      "width": 1460,
+      "height": 49.41428571428571,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-037-table-row",
+      "version": 1,
+      "versionNonce": 276349819,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 916795885,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2607.3142857142857,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(created_at)으로는 왜 인덱스를 못 만드나",
+      "originalText": "date(created_at)으로는 왜 인덱스를 못 만드나",
+      "id": "recap-038-table-cell",
+      "version": 1,
+      "versionNonce": 579097514,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1508023472,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2593.657142857143,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-039-table-sep",
+      "version": 1,
+      "versionNonce": 1515510410,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 484347636,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2607.3142857142857,
+      "width": 850,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "date(timestamptz)는 세션 시간대에 따라 결과가 달라지는 STABLE 함수다",
+      "originalText": "date(timestamptz)는 세션 시간대에 따라 결과가 달라지는 STABLE 함수다",
+      "id": "recap-040-table-cell",
+      "version": 1,
+      "versionNonce": 776416412,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1268870454,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2593.657142857143,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-041-table-sep",
+      "version": 1,
+      "versionNonce": 971371061,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1059561115,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2607.3142857142857,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "7장",
+      "originalText": "7장",
+      "id": "recap-042-table-cell",
+      "version": 1,
+      "versionNonce": 210201117,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1021682791,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2643.0714285714284,
+      "width": 1460,
+      "height": 49.41428571428571,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-043-table-row",
+      "version": 1,
+      "versionNonce": 402416182,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1746226720,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2656.7285714285713,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "9,600행인데 테이블 접근은 왜 72번뿐인가",
+      "originalText": "9,600행인데 테이블 접근은 왜 72번뿐인가",
+      "id": "recap-044-table-cell",
+      "version": 1,
+      "versionNonce": 1287183638,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 388059452,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2643.0714285714284,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-045-table-sep",
+      "version": 1,
+      "versionNonce": 36157051,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1249700821,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2656.7285714285713,
+      "width": 850,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "행이 시간 순서로 쌓여 이어지는 TID가 같은 페이지를 가리킨다",
+      "originalText": "행이 시간 순서로 쌓여 이어지는 TID가 같은 페이지를 가리킨다",
+      "id": "recap-046-table-cell",
+      "version": 1,
+      "versionNonce": 2020342087,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1619002429,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2643.0714285714284,
+      "width": 0,
+      "height": 49.41428571428571,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          49.41428571428571
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-047-table-sep",
+      "version": 1,
+      "versionNonce": 769034362,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 958052076,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2656.7285714285713,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "8장",
+      "originalText": "8장",
+      "id": "recap-048-table-cell",
+      "version": 1,
+      "versionNonce": 1810657904,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 325273210,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2692.4857142857145,
+      "width": 1460,
+      "height": 71.51428571428572,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": null,
+      "opacity": 100,
+      "id": "recap-049-table-row",
+      "version": 1,
+      "versionNonce": 805482219,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 2134332525,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.row"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1861,
+      "y": 2717.192857142857,
+      "width": 424,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "무엇을 바꾸면 되나",
+      "originalText": "무엇을 바꾸면 되나",
+      "id": "recap-050-table-cell",
+      "version": 1,
+      "versionNonce": 2142111609,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 374020211,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 2296,
+      "y": 2692.4857142857145,
+      "width": 0,
+      "height": 71.51428571428573,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          71.51428571428573
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-051-table-sep",
+      "version": 1,
+      "versionNonce": 494072663,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1195140949,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2307,
+      "y": 2706.142857142857,
+      "width": 850,
+      "height": 45,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "조건을 created_at 반열린 범위로 바꾸거나 시간대를 적은 날짜 식으로 표현식 인덱스를\n만들고 조건에도 같은 식을 쓴다",
+      "originalText": "조건을 created_at 반열린 범위로 바꾸거나 시간대를 적은 날짜 식으로 표현식 인덱스를\n만들고 조건에도 같은 식을 쓴다",
+      "id": "recap-052-table-cell",
+      "version": 1,
+      "versionNonce": 1093856700,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1256111086,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "line",
+      "x": 3168,
+      "y": 2692.4857142857145,
+      "width": 0,
+      "height": 71.51428571428573,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          71.51428571428573
+        ]
+      ],
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "opacity": 100,
+      "startBinding": null,
+      "endBinding": null,
+      "lastCommittedPoint": null,
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "roundness": {
+        "type": 2
+      },
+      "id": "recap-053-table-sep",
+      "version": 1,
+      "versionNonce": 1613954440,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 871244198,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "rule"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 3179,
+      "y": 2717.192857142857,
+      "width": 120,
+      "height": 23,
+      "fontSize": 17,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.3,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "8, 9장",
+      "originalText": "8, 9장",
+      "id": "recap-054-table-cell",
+      "version": 1,
+      "versionNonce": 317466835,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 343189401,
+      "groupIds": [
+        "recap-012-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "table.cell"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 1850,
+      "y": 2788,
+      "width": 714,
+      "height": 166,
+      "backgroundColor": "#FFFFFF",
+      "fillStyle": "solid",
+      "strokeColor": "#CBD5E1",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "recap-056-box",
+      "version": 1,
+      "versionNonce": 1634753117,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 14968015,
+      "groupIds": [
+        "recap-055-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1872,
+      "y": 2814,
+      "width": 670,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "직접 해 보기",
+      "originalText": "직접 해 보기",
+      "id": "recap-057-box-title",
+      "version": 1,
+      "versionNonce": 66495489,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 38389151,
+      "groupIds": [
+        "recap-055-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 1872,
+      "y": 2852.4,
+      "width": 670,
+      "height": 51,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "evidence/labs의 SQL을 로컬 PostgreSQL 18에서 돌리고 Buffers 숫자를 비교한다.\nlabs/10에서는 행 순서를 섞으면 플래너가 고르는 계획도 볼 수 있다.",
+      "originalText": "evidence/labs의 SQL을 로컬 PostgreSQL 18에서 돌리고 Buffers 숫자를 비교한다.\nlabs/10에서는 행 순서를 섞으면 플래너가 고르는 계획도 볼 수 있다.",
+      "id": "recap-058-box-body",
+      "version": 1,
+      "versionNonce": 170146978,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 714214080,
+      "groupIds": [
+        "recap-055-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    },
+    {
+      "type": "rectangle",
+      "x": 2596,
+      "y": 2788,
+      "width": 714,
+      "height": 166,
+      "backgroundColor": "#F1F5F9",
+      "fillStyle": "solid",
+      "strokeColor": "#334155",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "roundness": {
+        "type": 3,
+        "value": 8
+      },
+      "opacity": 100,
+      "id": "recap-060-box",
+      "version": 1,
+      "versionNonce": 1576173273,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1407773175,
+      "groupIds": [
+        "recap-059-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.box"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2618,
+      "y": 2814,
+      "width": 670,
+      "height": 27,
+      "fontSize": 22,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.2,
+      "autoResize": false,
+      "strokeColor": "#334155",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "더 볼 것",
+      "originalText": "더 볼 것",
+      "id": "recap-061-box-title",
+      "version": 1,
+      "versionNonce": 1115978765,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1868038911,
+      "groupIds": [
+        "recap-059-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.title"
+        }
+      }
+    },
+    {
+      "type": "text",
+      "x": 2618,
+      "y": 2852.4,
+      "width": 670,
+      "height": 76,
+      "fontSize": 18,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "lineHeight": 1.4,
+      "autoResize": false,
+      "strokeColor": "#172033",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "text": "Index Only Scan과 visibility map\n복합 인덱스의 열 순서\nBitmap Heap Scan",
+      "originalText": "Index Only Scan과 visibility map\n복합 인덱스의 열 순서\nBitmap Heap Scan",
+      "id": "recap-062-box-body",
+      "version": 1,
+      "versionNonce": 1781053605,
+      "isDeleted": false,
+      "angle": 0,
+      "seed": 1658044051,
+      "groupIds": [
+        "recap-059-group"
+      ],
+      "frameId": "recap-frame",
+      "boundElements": [],
+      "updated": 1790208000000,
+      "link": null,
+      "locked": false,
+      "customData": {
+        "study": {
+          "role": "card.body"
+        }
+      }
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#FFFFFF"
+  },
+  "files": {}
+}

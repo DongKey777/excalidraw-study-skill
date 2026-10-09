@@ -1,0 +1,10 @@
+{
+  "renderer": "excalidraw@0.18.1 exportToSvg in chrome 154.0.8037.98",
+  "samples": 394,
+  "metrics": {
+    "wide": 0.88,
+    "narrow": 0.5,
+    "monoWide": 1.2,
+    "monoNarrow": 0.6
+  }
+}

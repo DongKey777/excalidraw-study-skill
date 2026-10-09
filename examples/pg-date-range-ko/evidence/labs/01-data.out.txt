@@ -1,0 +1,21 @@
+                                                         version                                                          
+--------------------------------------------------------------------------------------------------------------------------
+ PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+(1 row)
+
+DROP TABLE
+NOTICE:  table "orders" does not exist, skipping
+CREATE TABLE
+INSERT 0 1000000
+CREATE INDEX
+VACUUM
+ orders  |      first_order       |       last_order       
+---------+------------------------+------------------------
+ 1000000 | 2026-05-31 15:00:00+00 | 2026-09-12 18:59:51+00
+(1 row)
+
+ table_size | index_size | table_pages 
+------------+------------+-------------
+ 57 MB      | 21 MB      |        7353
+(1 row)
+

@@ -1,0 +1,26 @@
+SET
+ max_parallel_workers_per_gather 
+---------------------------------
+ 2
+(1 row)
+
+                                 QUERY PLAN                                  
+-----------------------------------------------------------------------------
+ Finalize Aggregate (actual rows=1.00 loops=1)
+   Buffers: shared hit=7353
+   ->  Gather (actual rows=3.00 loops=1)
+         Workers Planned: 2
+         Workers Launched: 2
+         Buffers: shared hit=7353
+         ->  Partial Aggregate (actual rows=1.00 loops=3)
+               Buffers: shared hit=7353
+               ->  Parallel Seq Scan on orders (actual rows=3200.00 loops=3)
+                     Filter: (date(created_at) = '2026-07-01'::date)
+                     Rows Removed by Filter: 330133
+                     Buffers: shared hit=7353
+ Planning:
+   Buffers: shared hit=80 read=1
+ Planning Time: 0.254 ms
+ Execution Time: 53.133 ms
+(16 rows)
+
