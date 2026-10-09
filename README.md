@@ -117,13 +117,14 @@ Concept-first, about 15 slides, verify every header behaviour with curl.
 
 | 명령 | 하는 일 |
 |---|---|
-| `node new.mjs <dir> --flow case` | 자료 폴더를 만듭니다 |
-| `node check.mjs <dir>` | 빌드, 검사, 렌더링을 한 번에 합니다 |
-| `node review.mjs <dir> --mark 1-9` | 본 장을 기록합니다 |
-| `node review.mjs <dir> --audit facts --file report.md` | 감사 결과와 보고서를 남깁니다 |
-| `node claims.mjs <dir> --apply rows.md` | 받은 근거를 근거 목록에 합칩니다 |
+| `node new.mjs <dir> --flow case` | 자료 폴더 만들기 |
+| `node check.mjs <dir>` | 빌드, 검사, 렌더링 |
+| `node review.mjs <dir> --mark 1-9` | 본 장 기록 |
+| `node review.mjs <dir> --audit facts` | 감사 결과 기록 |
+| `node claims.mjs <dir> --apply rows.md` | 근거 행 합치기 |
 
-`--flow`에는 `case`, `concept`, `comparison`, `tour` 중 하나를 넣습니다.
+`--flow`에는 `case`, `concept`, `comparison`, `tour` 중 하나를 넣습니다.\
+감사 보고서는 `--file report.md`를 붙이면 `audits/` 폴더에 함께 남습니다.
 
 ## 배경
 
