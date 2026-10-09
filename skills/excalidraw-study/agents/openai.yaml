@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excalidraw Study"
+  short_description: "Build verified study material as Excalidraw slides"
+  default_prompt: "Use $excalidraw-study to turn this topic and structure into a study material made of Excalidraw slides, checked and reviewed slide by slide."
