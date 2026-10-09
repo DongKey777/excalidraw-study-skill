@@ -5,6 +5,10 @@
 import { base } from "./scene.mjs";
 import { estWidth, fitText, lineCount, maxLineWidth, textHeight, wrapParagraph, wrapText } from "./text.mjs";
 
+// Width for a label sized to its own text. Estimates can run a few percent
+// short of the rendered width, so leave room instead of fitting exactly.
+const roomy = (w) => Math.ceil(w * 1.08) + 10;
+
 const REF = /\{\{#([a-z0-9][a-z0-9-]*)\}\}/g;
 
 export function slide(spec, draw = () => {}) {
@@ -94,6 +98,7 @@ export class Slide {
   meta(opts, role) {
     const m = { role: opts.role ?? role };
     if (opts.lint) m.lint = opts.lint;
+    if (opts.shrunkFrom) m.shrunkFrom = opts.shrunkFrom;
     return m;
   }
 
@@ -345,7 +350,7 @@ export class Slide {
       if (bodyStr) {
         ids.push(this.text(bodyStr, x + pad, top + titleH + gap, inner, {
           size: bodySize, color: opts.bodyColor ?? this.C.ink, align, lineHeight: bodyLH,
-          family, hint: "box-body", role: family === this.theme.font.mono ? "code" : "card.body", lint: opts.lint,
+          family, hint: "box-body", role: family === this.theme.font.mono ? "code" : "card.body", lint: opts.lint, shrunkFrom: opts.shrunkFrom,
         }));
       }
       if (opts.valign !== "top" && titleStr && bodyStr) this.centered.push({ y, h: height, top, ids });
@@ -384,7 +389,8 @@ export class Slide {
         family,
       })
       : { size: opts.bodySize ?? this.theme.type.body, text: "" };
-    return this.box(r.x, r.y, r.w, r.h, titleStr, fit.text, { ...opts, bodySize: fit.size, wrap: false });
+    const asked = opts.bodySize ?? this.theme.type.body;
+    return this.box(r.x, r.y, r.w, r.h, titleStr, fit.text, { ...opts, bodySize: fit.size, wrap: false, shrunkFrom: body && fit.size < asked ? asked : undefined });
   }
 
   code(value, x, y, width, height, opts = {}) {
@@ -483,7 +489,7 @@ export class Slide {
       const size = opts.labelSize ?? this.theme.type.caption;
       const mx = (p1[0] + p2[0]) / 2;
       const my = (p1[1] + p2[1]) / 2;
-      const w = Math.ceil(maxLineWidth(opts.label, size)) + 8;
+      const w = roomy(maxLineWidth(opts.label, size));
       if (horizontal) this.text(opts.label, mx - w / 2, my - size * 1.25 - 6, w, { size, color: opts.labelColor ?? this.C.muted, align: "center", role: "connector.label" });
       else this.text(opts.label, mx + 12, my - (size * 1.25) / 2, w, { size, color: opts.labelColor ?? this.C.muted, role: "connector.label" });
     }
@@ -512,12 +518,12 @@ export class Slide {
         else this.rect(x, y, w, h, { ...style, radius: n.radius ?? 8 });
         if (n.label) {
           const size = n.size ?? opts.size ?? 15;
-          const lw = Math.max(w, Math.ceil(maxLineWidth(this.resolve(n.label), size)) + 8);
+          const lw = Math.max(w, roomy(maxLineWidth(this.resolve(n.label), size)));
           this.text(n.label, n.x - lw / 2, n.y - (lineCount(n.label) * size * 1.25) / 2, lw, { size, color: n.color ?? tone.title, align: "center", hint: "node-label", role: "graph.label" });
         }
         if (n.sub) {
           const size = opts.subSize ?? 14;
-          const sw = Math.max(w, Math.ceil(maxLineWidth(this.resolve(n.sub), size)) + 8);
+          const sw = Math.max(w, roomy(maxLineWidth(this.resolve(n.sub), size)));
           this.text(n.sub, n.x - sw / 2, y + h + 6, sw, { size, color: this.C.muted, align: "center", hint: "node-sub", role: "graph.sub" });
         }
         rects[n.id] = { x, y, w, h, cx: n.x, cy: n.y, circle };
@@ -551,7 +557,7 @@ export class Slide {
         const id = this.arrow(p1[0], p1[1], p2[0], p2[1], { ...draw, via });
         if (e.label) {
           const size = opts.labelSize ?? this.theme.type.caption;
-          const lw = Math.ceil(maxLineWidth(this.resolve(e.label), size)) + 8;
+          const lw = roomy(maxLineWidth(this.resolve(e.label), size));
           const lh = size * 1.25;
           if (via) {
             this.text(e.label, via[0][0] + 8, via[0][1] - lh - 4, lw, { size, color: this.C.muted, hint: "edge-label", role: "graph.edge-label" });
@@ -776,7 +782,7 @@ export class Slide {
       return;
     }
     const hasLeft = Boolean(spec.left);
-    const labelW = Math.max(64, Math.ceil(Math.max(estWidth(labels.takeaway, 17), hasLeft ? estWidth(labels.left, 15) : 0)) + 6);
+    const labelW = Math.max(64, roomy(Math.max(estWidth(labels.takeaway, 17), hasLeft ? estWidth(labels.left, 15) : 0)));
     const textX = L.margin + 22 + labelW + 9;
     const textW = right - textX - 30;
     const takeLines = wrapParagraph(this.resolve(spec.takeaway), T.type.takeaway, textW);

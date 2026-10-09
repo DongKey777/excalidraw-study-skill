@@ -49,20 +49,23 @@ export function fitMetrics(samples) {
       sww += x1 * x1; swn += x1 * x2; snn += x2 * x2; swy += x1 * s.width; sny += x2 * s.width; n += 1;
       if (W >= 3) wideLines += 1;
     }
+    if (n < 20) return null;
+    // Text without wide glyphs (English): fit the narrow factor alone.
+    if (sww === 0) return snn > 0 ? { a: null, b: sny / snn, wideLines } : null;
     const det = sww * snn - swn * swn;
-    if (n < 20 || Math.abs(det) < 1e-9) return null;
+    if (Math.abs(det) < 1e-9) return null;
     return { a: (swy * snn - sny * swn) / det, b: (sww * sny - swn * swy) / det, wideLines };
   };
   const clamp = (k, v) => Math.min(LIMITS[k][1], Math.max(LIMITS[k][0], Math.round(v * 1.03 * 1000) / 1000));
   const out = { ...DEFAULT_METRICS };
   const sans = fit(samples.filter((s) => !MONO.has(s.family)));
   if (sans) {
-    if (sans.wideLines >= 10) out.wide = clamp("wide", sans.a);
+    if (sans.a !== null && sans.wideLines >= 10) out.wide = clamp("wide", sans.a);
     out.narrow = clamp("narrow", sans.b);
   }
   const mono = fit(samples.filter((s) => MONO.has(s.family)));
   if (mono) {
-    if (mono.wideLines >= 10) out.monoWide = clamp("monoWide", mono.a);
+    if (mono.a !== null && mono.wideLines >= 10) out.monoWide = clamp("monoWide", mono.a);
     out.monoNarrow = clamp("monoNarrow", mono.b);
   }
   return out;
@@ -88,24 +91,33 @@ export function lineCount(value) {
 // "Bitmap Heap Scan은"). Keep up to three such words together when wrapping;
 // a run wider than the line is split again.
 const GLUE = "\u00a0";
+// A number and its unit ("4 s", "120 ms", "3 MB") also stay on one line.
+const UNIT = /^(s|ms|µs|us|ns|min|h|d|B|kB|KB|MB|GB|TB|KiB|MiB|GiB|px|em|%|x|rows?|pages?|slides?)[.,;:)]?$/;
+
+const NUMBER = /^\(?[~≈<>]?[\d.,]+$/;
+
 function units(value, size, maxWidth, family) {
   const words = value.split(" ");
-  if (![...value].some(isWideChar)) return words;
+  const wide = [...value].some(isWideChar);
   const out = [];
   for (const word of words) {
     const prev = out[out.length - 1];
-    const glue = prev !== undefined && /^[A-Za-z][A-Za-z0-9_.-]*$/.test(prev.split(GLUE).pop())
-      && /^[A-Za-z]/.test(word) && prev.split(GLUE).length < 3;
-    if (glue) out[out.length - 1] = `${prev}${GLUE}${word}`;
+    const last = prev === undefined ? "" : prev.split(GLUE).pop();
+    // A run of Latin words, not a number with its unit, so "120 ms" does not use up a term's budget.
+    const latin = wide && prev !== undefined && /^[A-Za-z][A-Za-z0-9_.-]*$/.test(last)
+      && /^[A-Za-z]/.test(word) && prev.split(GLUE).length < 3 && !NUMBER.test(prev.split(GLUE)[0]);
+    const unit = prev !== undefined && NUMBER.test(last) && UNIT.test(word);
+    if (latin || unit) out[out.length - 1] = `${prev}${GLUE}${word}`;
     else out.push(word);
   }
   return out.flatMap((u) => (u.includes(GLUE) && estWidth(u, size, family) > maxWidth ? u.split(GLUE) : [u]));
 }
 
-function greedy(value, size, maxWidth, family) {
+// glueWidth is the real line width: narrower trial widths must not split a number from its unit.
+function greedy(value, size, maxWidth, family, glueWidth = maxWidth) {
   const lines = [];
   let cur = "";
-  for (const word of units(value, size, maxWidth, family)) {
+  for (const word of units(value, size, glueWidth, family)) {
     const next = cur ? `${cur} ${word}` : word;
     if (!cur || estWidth(next, size, family) <= maxWidth) {
       cur = next;
@@ -128,9 +140,9 @@ export function wrapParagraph(value, size, maxWidth, family = 2) {
   // Ragged: the last line holds one word, or is under a third of the line before it.
   const ragged = (ls) => ls.length >= 2 && (!ls[ls.length - 1].includes(" ")
     || estWidth(ls[ls.length - 1], size, family) < estWidth(ls[ls.length - 2], size, family) / 3);
-  if (!ragged(first)) return first;
+  if (!ragged(first) || !(maxWidth > 0)) return first;
   for (let w = maxWidth * 0.98; w >= maxWidth * 0.6; w -= maxWidth * 0.02) {
-    const cand = greedy(value, size, w, family);
+    const cand = greedy(value, size, w, family, maxWidth);
     if (cand.length > first.length) break;
     if (!ragged(cand)) return cand;
   }
