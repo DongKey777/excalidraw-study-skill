@@ -56,10 +56,10 @@ Everything inside `draw` is frame-local: (0,0) is the frame's top-left, the fram
 | `s.table(rect, rows, { weights, size = 17, header = true, align: [...], fill })` | table; `rows[0]` is the header. Cells: string or `{ t, color, size, family, fill, align }`. Rows take their natural height; `fill: true` stretches them. |
 | `s.timeline(rect, events, { cardWidth })` | axis with dots; events `{ at, title, body, tone, pos }` (`pos` 0..1 overrides even spacing) |
 | `s.bars(rect, data, { max, format, tone, labelWidth })` | horizontal bars; data `{ label, value, display, tone }` |
-| `s.code(text, x, y, w, h, { highlight: [lineIndex], size, valign })` | dark code panel; highlighted lines get a band |
-| `s.connect(a, b, { label, dir, color, style, start, end })` | arrow between the facing edges of two rects |
+| `s.code(text, x, y, w, h, { highlight: [lineIndex], size, valign })` | dark code panel; highlighted lines get a band. Code never wraps: break long lines yourself or lower `size`, and lint reports lines that overflow |
+| `s.connect(a, b, { label, dir, color, width, style, start, end, gap, x, y, labelSize, labelColor })` | arrow between the facing edges of two rects. `x` (vertical arrows) or `y` (horizontal) pins the arrow to that coordinate when it lies inside the span both rects share, and is ignored outside it; `gap` (default 8) is the space left at each end |
 | `s.note(text, x, y, w, { size, color })` | muted explanatory text, wrapped |
-| `s.marker(n, x, y, { color, d })` | numbered circle, for real sequences only |
+| `s.marker(n, x, y, { color, d })` | numbered circle, for real sequences only. `x, y` is its top-left corner, unlike `s.graph` nodes |
 | `s.graph(nodes, edges, { shape, d, w, h, tone, route, size })` | nodes and edges: commit graphs, trees, state machines. Node `{ id, x, y, label, sub, shape: "circle" \| "box", d \| w, h, tone, strokeStyle }` with `x, y` as its centre; edge `{ from, to, label, route: "straight" \| "hv" \| "vh", style, color, arrow }` (`hv` goes across then up or down). Edges start and end on the node outline. |
 
 ## Primitives
@@ -82,6 +82,11 @@ Compatible with earlier generators:
 Every primitive accepts `role` (used by lint) and `lint: { ignore: ["rule-id"], reason: "…" }` for an element-level exception.
 
 `s.C` is the colour palette, `s.theme.tones` the tones, `s.stepTheme` the current step's colours.
+
+- Palette keys: `ink`, `muted`, `mutedStrong`, `line`, `surface`, `white`, `slate`, `slateSoft`, and for each of blue, teal, green, orange, purple, red and yellow the colour, its `…Soft` fill and, for blue, orange, red and yellow, a darker `…Text` shade for text on the soft fill.
+- Tones: `problem`, `fix`, `note`, `info`, `concept`, `memory`, `warn`, `plain`, `muted`.
+
+There is no component for sequence diagrams (lifelines with messages) or for a time axis with bands; draw them from `s.line`, `s.arrow` and `s.text` in a `slides/_name.mjs` helper. `s.timeline` spaces its cards evenly unless `pos` is set; events placed at real times need `cardWidth` smaller than the gap between them, or the cards overlap.
 
 ## Return values
 

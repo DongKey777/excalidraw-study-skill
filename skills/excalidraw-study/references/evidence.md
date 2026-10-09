@@ -30,7 +30,8 @@ Rules:
 Behaviour ("HOT does not apply when an indexed column changes", "a function on the column prevents an index range scan") must be reproduced, not recalled.
 
 - Pin versions: `docker run --rm -d --name study-pg18 -p 55432:5432 -e POSTGRES_PASSWORD=pw postgres:18.4`.
-- Use a dedicated container name and port.
+- Use a dedicated container name and port, and check the port is free before you start (`lsof -i :18081`, `ss -ltn`). Keep server errors visible: a server that failed to bind while another app holds the port makes every request in the lab hit the wrong program.
+- Run the client whose behaviour you claim. Browser caching, a driver's retry or a pool's timeout need that browser, driver or pool in the lab; `curl` or `psql` only shows what the server sends.
 - Keep each experiment as an input/output pair: `03-hot.sql` and `03-hot.out.txt`, output saved from the command, never retyped.
 - Record in `labs/README.md`: setup, command, which claims it verifies, and whether the result changed the material.
 - Never run experiments against production or shared environments. If a claim can only be checked in production, mark it unverified and say so on the slide or in the README.
@@ -45,7 +46,7 @@ Numbers are for understanding, not for proving diligence.
 
 - Keep a number if it sets scale ("about 300 MB, 3 seconds"), compares ("five times fewer pages"), or is a threshold or setting the reader must remember.
 - Round to what the argument needs; keep exact values in the ledger.
-- Put the number and its unit in one text element.
+- Put the number and its unit in one text element. The kit keeps a number on the same line as a following unit (`4 s`, `30 ms`, `12 MB`, `5 rows`); for other pairs write a no-break space (`\u00a0`) between them.
 - A definition (what a tree hash or a visibility map is) is a claim too: cite the official documentation (`문서`/`documented`) or show it in a lab. When the user asked for "only what you verified by running it", prefer the lab, and drop a term you can neither show nor cite.
 - Escape a pipe inside a ledger cell as `\|`; the ledger is a markdown table.
 - Label examples as examples. A calculation example is not a benchmark.

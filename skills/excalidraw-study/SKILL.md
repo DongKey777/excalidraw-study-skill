@@ -12,6 +12,8 @@ You produce a study material the reader can learn from: one `.excalidraw` file w
 
 `<skill>` below is the directory that contains this SKILL.md. Scripts need Node 18+. The first render installs a small runtime into `~/.cache/excalidraw-study` (network, about 40 MB) and drives an installed Chrome, Edge or Chromium.
 
+Some agent sandboxes (Codex's default sandbox on macOS, for one) let the scripts find the browser but not start it. `render.mjs` then reports `BROWSER_BLOCKED` and falls back to an approximate preview that is not an Excalidraw render. Installing another browser does not help. Ask the user to approve running `check.mjs` or `render.mjs` outside the sandbox; everything else runs inside it. When a browser fails to start for another reason (missing system libraries, for one), it reports `BROWSER_FAILED` with what to install.
+
 ## Principles
 
 1. **The brief wins.** The user's topic, structure, order and wording override every default here. Copy them verbatim into `brief.md`. When a default in this skill conflicts with the brief, follow the brief.
@@ -72,7 +74,7 @@ Fix every lint error before the next batch. Warnings are decisions: fix them or 
 
 ### 4 Review
 
-Render everything (`check.mjs <study-dir>`), then open each PNG in `build/render/` and the contact sheets `contact-NN.png`, and walk the checklist in [review.md](references/review.md). Mark the slides you viewed right away, even the ones with findings: the marks are how `review.mjs` later tells you which slides changed. Fix all findings in one batch, re-run `check.mjs`, look at the slides it lists as changed, and mark them again. Record only what you actually viewed:
+Render everything (`check.mjs <study-dir>`), then open each PNG in `build/render/` and the contact sheets `contact-NN.png`, and walk the checklist in [review.md](references/review.md). Mark the slides you viewed right away, even the ones with findings: the marks are how `review.mjs` later tells you which slides changed. Fix all findings in one batch, re-run `check.mjs`, look at the slides it lists as changed since the previous render, and mark them again. Record only what you actually viewed:
 
 ```bash
 node <skill>/scripts/review.mjs <study-dir> --mark 1-12 --note "layout, text, figures checked"
@@ -81,17 +83,17 @@ node <skill>/scripts/review.mjs <study-dir>            # what still needs a look
 
 ### 5 Audit
 
-Give auditors the brief, `plan.md`, `evidence/`, the PNGs and nothing of your reasoning. Use separate subagents or fresh sessions when your runtime has them; otherwise do the passes yourself one at a time and say so. Prompts are in [review.md](references/review.md). Record each pass before you fix anything, keeping the full report in the study:
+Give auditors the inputs listed in [review.md](references/review.md#audits-phase-5) (brief, plan, evidence, outline, PNGs, lint result) and nothing of your reasoning. Use separate subagents or fresh sessions when your runtime has them; otherwise do the passes yourself one at a time and say so. Prompts are in [review.md](references/review.md). Record each pass before you fix anything, keeping the full report in the study:
 
 ```bash
 node <skill>/scripts/review.mjs <study-dir> --audit facts --by "fresh subagent" --summary "48 claims checked, 2 wrong" --verdict fix --file report.md
 ```
 
-Then apply the findings ([review.md](references/review.md#applying-audit-findings) shows how to split a large batch across fixers without facts drifting apart), run the consistency pass, and re-check: `check.mjs`, view changed slides, `claims.mjs` for the ledger.
+Then apply the findings ([review.md](references/review.md#applying-audit-findings) shows how to split a large batch across fixers without facts drifting apart), run the consistency pass, and re-check: `check.mjs`, view changed slides, `claims.mjs` for the ledger. Follow-up audits are for the kinds that did not return `ship`.
 
 ### 6 Deliver
 
-Complete `README.md` from the template, run `check.mjs` one last time, reveal the file (`open -R <file>` on macOS, `xdg-open <dir>` on Linux, `explorer /select,<file>` on Windows) and report: what was built, which checks ran with what result, what was not verified, and the choices you made that the user may want to change.
+Complete `README.md` from the template, run `check.mjs` one last time, reveal the file (`open -R <file>` on macOS, `xdg-open <dir>` on Linux, `explorer /select,<file>` on Windows; without a desktop, print its absolute path) and report: what was built, which checks ran with what result, what was not verified, and the choices you made that the user may want to change.
 
 ## Revising an existing study
 

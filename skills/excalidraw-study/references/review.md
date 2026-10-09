@@ -18,9 +18,10 @@ Keep them apart when you report:
 1. `node <skill>/scripts/check.mjs <dir>` with no `--slides`, so every slide and the contact sheets are fresh.
 2. Open the contact sheets (`build/render/contact-NN.png`) first. Judge the study as a whole: rhythm of dense and light slides, repeated compositions, colour meaning, whether parts are visually distinct.
 3. Open every slide PNG at full size and walk the checklist below. Write findings down as you go (slide, problem, fix). Do not fix while viewing.
-4. Fix all findings in one batch in `slides/`.
-5. Re-run `check.mjs`. View every slide whose PNG changed. Mark what you viewed: `review.mjs <dir> --mark …`.
-6. One confirmation round at most. Then stop; further polishing goes to the audit.
+4. Mark every slide you viewed, including the ones with findings: `review.mjs <dir> --mark 1-12`. The marks hold the hash of the PNG you saw.
+5. Fix all findings in one batch in `slides/`.
+6. Re-run `check.mjs`. It prints "changed since the previous render" with the slide numbers whose PNG changed, and `review.mjs` lists marked slides whose PNG no longer matches. View those, then mark them.
+7. One confirmation round at most, in the same order: view, mark, fix, check. Then stop; further polishing goes to the audit.
 
 ### Per-slide checklist
 
@@ -47,11 +48,13 @@ Keep them apart when you report:
 
 ## Audits (phase 5)
 
-Run each audit in a context that did not write the slides: a subagent, a separate session, or another person. Give it `brief.md`, `plan.md`, `evidence/`, `build/outline.md`, the PNGs and `build/lint.json`. Do not give it your reasoning. When your runtime cannot start a fresh context, run the passes yourself one at a time and say in the report that they were not independent.
+Run each audit in a context that did not write the slides: a subagent, a separate session, or another person. Give every auditor the same inputs: `brief.md`, `plan.md`, `evidence/`, `build/outline.md`, the PNGs in `build/render/` and `build/lint.json`, plus `study.config.mjs` for the consistency pass. Do not give it your reasoning. Ask it to write its report to `audits/drafts/<kind>.md` in the study. When your runtime cannot start a fresh context, run the passes yourself one at a time and say in the report that they were not independent.
 
 For a long study (more than about 15 slides), split the facts audit by part so each auditor checks 5–15 slides against the sources, and give each group's findings to a second fresh reader who tries to refute them before you act. Auditors misread sources too (UTC vs KST, one node vs the whole plan, before vs after a deploy).
 
-Record each pass right after it returns and before you change anything: `review.mjs <dir> --audit <kind> --by "<who>" --summary "<result>" --verdict <ship|fix|…> --file <report>`. Kinds are facts, pedagogy, writing, consistency and visual; a follow-up is the same kind recorded again on the fixed build, and `--amend` replaces a record you got wrong. The record is bound to the build the auditor saw; recording it after your fixes would claim the fixed build was audited. `--file` copies the auditor's full report into `audits/` inside the study. Keep reports there, not in a temp directory: fixes often take more than one session, and a lost report means auditing again.
+Record each pass right after it returns and before you change anything: `review.mjs <dir> --audit <kind> --by "<who>" --summary "<result>" --verdict <ship|fix|…> --file <report>`. Kinds are facts, pedagogy, writing, consistency and visual; a follow-up is the same kind recorded again on the fixed build, and `--amend` replaces a record you got wrong. The record is bound to the build the auditor saw; recording it after your fixes would claim the fixed build was audited. `--file` copies the auditor's full report into `audits/` inside the study as `NN-<kind>-<date>.md`; delete `audits/drafts/` once every draft is recorded. Keep reports in the study, not in a temp directory: fixes often take more than one session, and a lost report means auditing again.
+
+After fixes, run a follow-up only for the kinds whose verdict was not `ship`, plus the consistency pass. A kind that returned `ship` is not repeated unless your fixes touched what it judged (a fact changed, a slide was redrawn).
 
 ### Facts
 
@@ -94,5 +97,5 @@ If a fixer stops part way, its file may hold some edits. Restart it on the curre
 
 1. Finish `README.md` and delete its template marker line: how to open, structure (from `build/outline.md`), evidence and its date, verification record (lint result with kept warnings and why, how many slides viewed, which audits ran and what they changed), what could not be verified, decisions left to the user, history.
 2. Run `check.mjs` once more; the report must match the README.
-3. Reveal the file to the user (`open -R <file>` / `xdg-open <dir>` / `explorer /select,<file>`).
+3. Reveal the file to the user (`open -R <file>` / `xdg-open <dir>` / `explorer /select,<file>`). Without a desktop (a remote machine, a container, a CLI agent with no GUI), print the absolute path of the `.excalidraw` file and the contact sheets instead.
 4. Report in a few lines: what was built (slides, parts), which checks ran with results, what was not verified, decisions the user may want to revisit. Do not claim a check you did not run.

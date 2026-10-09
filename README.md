@@ -56,6 +56,9 @@ Codex는 프로젝트 안의 `.agents/skills/` 폴더에 두어도 스킬을 찾
 브라우저가 없다면 `npx playwright-core install chromium`으로 설치하면 됩니다.\
 렌더러는 처음 한 번 `~/.cache/excalidraw-study` 폴더에 내려받습니다(약 40MB).
 
+Codex 기본 샌드박스(macOS)에서는 브라우저를 찾아도 실행하지 못합니다.\
+이때 에이전트가 렌더링 명령만 샌드박스 밖에서 돌리도록 승인을 요청합니다.
+
 ## 쓰는 법
 
 에이전트에게 주제와 구성을 말하면 됩니다.

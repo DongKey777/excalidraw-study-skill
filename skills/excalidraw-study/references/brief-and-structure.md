@@ -21,9 +21,9 @@ Pick the flow from the goal. The user's structure overrides all of these.
 
 | Flow | Use when | Steps preset |
 |---|---|---|
-| Case-first (`--flow case`) | real incidents or projects teach the concepts | `case-first-ko`: 상황 → 분석 → 원리 → 해결 (`case-first-en`) |
-| Concept-first (`--flow concept`) | no shared incidents; a topic is built up piece by piece | `concept-first-ko`: 질문 → 개념 → 동작 → 적용 (`concept-first-en`) |
-| Comparison (`--flow comparison`) | two designs, versions or tools | `comparison-ko`: 질문 → 기준 → 비교 → 고르기 (`comparison-en`); parts per aspect |
+| Case-first (`--flow case`) | real incidents or projects teach the concepts | `case-first-ko`: 상황 → 분석 → 원리 → 해결; `case-first-en`: Situation → Analysis → Principle → Fix |
+| Concept-first (`--flow concept`) | no shared incidents; a topic is built up piece by piece | `concept-first-ko`: 질문 → 개념 → 동작 → 적용; `concept-first-en`: Question → Concept → Mechanism → Apply |
+| Comparison (`--flow comparison`) | two designs, versions or tools | `comparison-ko`: 질문 → 기준 → 비교 → 고르기; `comparison-en`: Question → Criteria → Compare → Choose; parts per aspect |
 | Tour (`--flow tour`) | a system walked through end to end | none; parts per component |
 
 ### Case-first in detail
